@@ -23,7 +23,7 @@ High-performance OCR pipeline for historical Ukrainian documents with Named Enti
 
 The fastest way to get started is with our Google Colab notebook:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/ukrainian-ocr-pipeline/blob/main/examples/Ukrainian_OCR_Colab_Demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mary-lev/ukrainian-ocr-pipeline/blob/main/examples/Ukrainian_OCR_Colab_Demo.ipynb)
 
 ### Local Installation
 
@@ -80,7 +80,7 @@ pip install ukrainian-ocr-pipeline[all]
 
 ### Development
 ```bash
-git clone https://github.com/your-username/ukrainian-ocr-pipeline
+git clone https://github.com/mary-lev/ukrainian-ocr-pipeline
 cd ukrainian-ocr-pipeline
 pip install -e .[dev]
 ```
@@ -239,7 +239,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 ### Development Setup
 
 ```bash
-git clone https://github.com/your-username/ukrainian-ocr-pipeline
+git clone https://github.com/mary-lev/ukrainian-ocr-pipeline
 cd ukrainian-ocr-pipeline
 pip install -e .[dev]
 
@@ -265,8 +265,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - 📖 [Documentation](https://ukrainian-ocr-pipeline.readthedocs.io/)
-- 🐛 [Issue Tracker](https://github.com/your-username/ukrainian-ocr-pipeline/issues)
-- 💬 [Discussions](https://github.com/your-username/ukrainian-ocr-pipeline/discussions)
+- 🐛 [Issue Tracker](https://github.com/mary-lev/ukrainian-ocr-pipeline/issues)
+- 💬 [Discussions](https://github.com/mary-lev/ukrainian-ocr-pipeline/discussions)
 
 ## 📈 Roadmap
 
