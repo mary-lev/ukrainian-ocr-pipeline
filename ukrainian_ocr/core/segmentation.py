@@ -489,19 +489,26 @@ class KrakenSegmenter:
         vis_image = image.copy()
         
         for line in lines:
-            # Draw bounding box
-            bbox = line.get('bbox', [])
-            if len(bbox) >= 4:
-                cv2.rectangle(vis_image, 
-                            (int(bbox[0]), int(bbox[1])), 
-                            (int(bbox[2]), int(bbox[3])), 
-                            (0, 255, 0), 2)
-            
-            # Draw polygon if available
+            # Prioritize polygon over bounding box for more accurate visualization
             polygon = line.get('polygon', [])
-            if polygon:
+            if polygon and len(polygon) >= 3:
+                # Draw polygon boundary (blue)
                 pts = np.array(polygon, np.int32)
                 cv2.polylines(vis_image, [pts], True, (255, 0, 0), 2)
+            else:
+                # Fallback to bounding box if no polygon available (green)
+                bbox = line.get('bbox', [])
+                if len(bbox) >= 4:
+                    cv2.rectangle(vis_image, 
+                                (int(bbox[0]), int(bbox[1])), 
+                                (int(bbox[2]), int(bbox[3])), 
+                                (0, 255, 0), 2)
+            
+            # Optional: Draw baseline if available (red, thinner)
+            baseline = line.get('baseline', [])
+            if baseline and len(baseline) >= 2:
+                pts = np.array(baseline, np.int32)
+                cv2.polylines(vis_image, [pts], False, (0, 0, 255), 1)
         
         cv2.imwrite(str(output_path), vis_image)
         self.logger.info(f"Saved segmentation visualization to: {output_path}")
