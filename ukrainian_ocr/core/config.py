@@ -32,6 +32,8 @@ class NERConfig:
     backend_config: Dict[str, Any] = field(default_factory=dict)
     device: Optional[str] = None
     confidence_threshold: float = 0.7
+    model_name: Optional[str] = None
+    api_key: Optional[str] = None
     
     # Model mappings
     model_mappings: Dict[str, str] = field(default_factory=lambda: {
@@ -43,6 +45,17 @@ class NERConfig:
     false_positive_words: set = field(default_factory=lambda: {
         "ім'я", "прізвище", "по-батькові", "особа", "людина"
     })
+
+@dataclass
+class SurnameMatchingConfig:
+    """Configuration for surname matching"""
+    enabled: bool = True
+    surname_file: Optional[str] = None
+    surnames: Optional[list] = None
+    threshold: float = 0.8
+    use_phonetic: bool = True
+    min_length: int = 3
+    export_matches: bool = True
 
 @dataclass
 class PostProcessingConfig:
@@ -58,6 +71,7 @@ class OCRPipelineConfig:
     segmentation: SegmentationConfig = field(default_factory=SegmentationConfig)
     ocr: OCRConfig = field(default_factory=OCRConfig) 
     ner: NERConfig = field(default_factory=NERConfig)
+    surname_matching: SurnameMatchingConfig = field(default_factory=SurnameMatchingConfig)
     post_processing: PostProcessingConfig = field(default_factory=PostProcessingConfig)
     
     # Global settings
@@ -87,16 +101,18 @@ class OCRPipelineConfig:
         segmentation = SegmentationConfig(**config_dict.get('segmentation', {}))
         ocr = OCRConfig(**config_dict.get('ocr', {}))
         ner = NERConfig(**config_dict.get('ner', {}))
+        surname_matching = SurnameMatchingConfig(**config_dict.get('surname_matching', {}))
         post_processing = PostProcessingConfig(**config_dict.get('post_processing', {}))
         
         # Create main config
         main_config = {k: v for k, v in config_dict.items() 
-                      if k not in ['segmentation', 'ocr', 'ner', 'post_processing']}
+                      if k not in ['segmentation', 'ocr', 'ner', 'surname_matching', 'post_processing']}
         
         return cls(
             segmentation=segmentation,
             ocr=ocr, 
             ner=ner,
+            surname_matching=surname_matching,
             post_processing=post_processing,
             **main_config
         )
@@ -151,5 +167,5 @@ class OCRPipelineConfig:
         if self.device == 'cuda':
             self.batch_size = self.batch_size or 8
 
-# Alias for backward compatibility
-OCRConfig = OCRPipelineConfig
+# Backward compatibility: Export the main config as the default
+# Note: OCRConfig class is defined above and should not be overridden

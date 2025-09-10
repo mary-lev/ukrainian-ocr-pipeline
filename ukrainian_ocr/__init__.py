@@ -16,6 +16,7 @@ from .core.batch_processor import BatchProcessor
 from .core.segmentation import KrakenSegmenter
 from .core.ocr import TrOCRProcessor
 from .core.ner import NERExtractor, Entity, SpacyNERBackend, TransformersNERBackend, OpenAINERBackend, RuleBasedNERBackend
+from .core.surname_matcher import SurnameMatcher, MatchResult
 from .core.enhancement import ALTOEnhancer
 
 # Utility imports
@@ -49,6 +50,8 @@ __all__ = [
     "TransformersNERBackend", 
     "OpenAINERBackend",
     "RuleBasedNERBackend",
+    "SurnameMatcher",
+    "MatchResult",
     "ALTOEnhancer",
     
     # Utils

@@ -11,9 +11,11 @@ import torch
 from tqdm.auto import tqdm
 
 from ..config import OCRConfig
+from .config import OCRPipelineConfig
 from .segmentation import KrakenSegmenter
 from .ocr import TrOCRProcessor
 from .ner import NERExtractor
+from .surname_matcher import SurnameMatcher
 from .enhancement import ALTOEnhancer
 from ..utils.gpu import check_gpu_availability, optimize_for_device
 from ..utils.io import IOUtils
@@ -32,7 +34,7 @@ class UkrainianOCRPipeline:
     
     def __init__(
         self, 
-        config: Optional[Union[str, Dict, OCRConfig]] = None,
+        config: Optional[Union[str, Dict, OCRConfig, OCRPipelineConfig]] = None,
         device: Optional[str] = None,
         batch_size: Optional[int] = None,
         verbose: bool = True
@@ -61,6 +63,7 @@ class UkrainianOCRPipeline:
         self.segmenter = None
         self.ocr_processor = None 
         self.ner_extractor = None
+        self.surname_matcher = None
         self.alto_enhancer = None
         
         # Performance tracking
@@ -89,16 +92,19 @@ class UkrainianOCRPipeline:
         logger.setLevel(logging.INFO if verbose else logging.WARNING)
         return logger
         
-    def _load_config(self, config: Optional[Union[str, Dict, OCRConfig]]) -> OCRConfig:
+    def _load_config(self, config: Optional[Union[str, Dict, OCRConfig, OCRPipelineConfig]]) -> OCRPipelineConfig:
         """Load and validate configuration"""
-        if isinstance(config, OCRConfig):
+        if isinstance(config, OCRPipelineConfig):
             return config
+        elif isinstance(config, OCRConfig):
+            # Convert old OCRConfig to new OCRPipelineConfig for backward compatibility
+            return OCRPipelineConfig()
         elif isinstance(config, dict):
-            return OCRConfig.from_dict(config)
+            return OCRPipelineConfig.from_dict(config)
         elif isinstance(config, str):
-            return OCRConfig.from_file(config)
+            return OCRPipelineConfig.from_file(config)
         else:
-            return OCRConfig()  # Default configuration
+            return OCRPipelineConfig()  # Default configuration
             
     def _setup_device(self, device: Optional[str]) -> str:
         """Setup computation device with optimization"""
@@ -159,6 +165,16 @@ class UkrainianOCRPipeline:
             self.ner_extractor = NERExtractor(
                 backend=self.config.ner.backend,
                 backend_config=backend_config
+            )
+            
+        if not self.surname_matcher and self.config.surname_matching.enabled:
+            self.logger.info("Loading surname matcher...")
+            self.surname_matcher = SurnameMatcher(
+                surname_file=self.config.surname_matching.surname_file,
+                surnames=self.config.surname_matching.surnames,
+                threshold=self.config.surname_matching.threshold,
+                use_phonetic=self.config.surname_matching.use_phonetic,
+                min_length=self.config.surname_matching.min_length
             )
             
         if not self.alto_enhancer:
@@ -255,6 +271,19 @@ class UkrainianOCRPipeline:
                                 entities_by_line[line_id]['entities'].append(entity)
                                 break
             
+            # Step 5.1: Surname Matching (if enabled)
+            surname_matches = []
+            if self.surname_matcher and self.config.surname_matching.enabled:
+                self.logger.info("Finding surname matches...")
+                surname_results = self.surname_matcher.find_in_lines(lines_with_text)
+                surname_matches = surname_results
+                
+                # Export matches if requested
+                if self.config.surname_matching.export_matches and surname_matches:
+                    matches_file = paths['base'] / f"{paths['base'].stem}_surname_matches.json"
+                    self.surname_matcher.export_matches(surname_matches, str(matches_file))
+                    paths['surname_matches'] = matches_file
+            
             # Step 5.5: Generate enhanced ALTO with NER entities
             enhanced_alto = None  # Initialize as None by default
             
@@ -300,10 +329,13 @@ class UkrainianOCRPipeline:
                 'entities_extracted': len(entities_by_line) if entities_by_line else 0,
                 'total_entities': sum(len(data['entities']) for data in entities_by_line.values()) if entities_by_line else 0,
                 'ner_backend': ner_results.get('backend', 'unknown') if ner_results else 'none',
+                'surnames_found': len(surname_matches) if surname_matches else 0,
+                'unique_surnames': len(set(m.matched_surname for m in surname_matches)) if surname_matches else 0,
                 'output_paths': {
                     'alto_basic': str(paths['alto_basic']) if 'alto_basic' in paths else None,
                     'alto_enhanced': str(paths['alto_enhanced']) if enhanced_alto else None,
-                    'visualization': str(paths['visualization']) if save_intermediate and 'visualization' in paths else None
+                    'visualization': str(paths['visualization']) if save_intermediate and 'visualization' in paths else None,
+                    'surname_matches': str(paths['surname_matches']) if 'surname_matches' in paths else None
                 }
             }
             

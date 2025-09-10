@@ -1,0 +1,2037 @@
+<?xml version='1.0' encoding='utf-8'?>
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v4#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+  <Description>
+    <MeasurementUnit>pixel</MeasurementUnit>
+    <sourceImageInformation>
+      <fileName>804-03494422-l-m-a-n2982-4-1001-00004.jpg</fileName>
+    </sourceImageInformation>
+  </Description>
+  <Tags>
+    <OtherTag ID="BT1" LABEL="text" DESCRIPTION="block type text" />
+    <OtherTag ID="LT1" LABEL="default" DESCRIPTION="line type default" />
+  <OtherTag ID="LT2" LABEL="person" DESCRIPTION="NER_PERSON" /><OtherTag ID="LT3" LABEL="location" DESCRIPTION="NER_LOCATION" /><OtherTag ID="LT4" LABEL="organization" DESCRIPTION="NER_ORGANIZATION" /><OtherTag ID="LT5" LABEL="mixed_entities" DESCRIPTION="NER_MIXED" /><OtherTag ID="LT6" LABEL="has_entity" DESCRIPTION="NER_ENTITY" /><OtherTag ID="BT2" LABEL="person_dense_region" DESCRIPTION="NER_PERSON_DENSE_BLOCK" /></Tags>
+  <Layout>
+    <Page ID="page_1" PHYSICAL_IMG_NR="1" WIDTH="3946" HEIGHT="2589">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="3946" HEIGHT="2589">
+        <TextBlock ID="block_1" TAGREFS="BT1">
+          <TextLine ID="line_0" TAGREFS="LT1" HPOS="112" VPOS="288" WIDTH="39" HEIGHT="68" BASELINE="122 326 143 327">
+            <Shape>
+              <Polygon POINTS="120 340 123 296 143 303 143 327 139 348" />
+            </Shape>
+            <String CONTENT="2." HPOS="112" VPOS="288" WIDTH="39" HEIGHT="68" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_1" TAGREFS="LT1" HPOS="124" VPOS="409" WIDTH="50" HEIGHT="56" BASELINE="132 441 166 441">
+            <Shape>
+              <Polygon POINTS="166 424 166 454 132 457 132 417" />
+            </Shape>
+            <String CONTENT="-" HPOS="124" VPOS="409" WIDTH="50" HEIGHT="56" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_2" TAGREFS="LT1" HPOS="184" VPOS="404" WIDTH="49" HEIGHT="61" BASELINE="192 441 225 441">
+            <Shape>
+              <Polygon POINTS="225 414 225 453 192 457 192 412" />
+            </Shape>
+            <String CONTENT="2." HPOS="184" VPOS="404" WIDTH="49" HEIGHT="61" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_3" TAGREFS="LT1" HPOS="302" VPOS="288" WIDTH="469" HEIGHT="69" BASELINE="312 323 763 320">
+            <Shape>
+              <Polygon POINTS="312 340 310 307 325 297 759 296 763 320 762 345 615 349 430 349" />
+            </Shape>
+            <String CONTENT="прізвише, їм'я та по-батькові." HPOS="302" VPOS="288" WIDTH="469" HEIGHT="69" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_4" TAGREFS="LT1" HPOS="112" VPOS="495" WIDTH="577" HEIGHT="104" BASELINE="120 559 681 553">
+            <Shape>
+              <Polygon POINTS="120 586 120 510 122 507 159 504 297 503 386 503 503 506 625 510 679 519 681 553 680 589 365 591 363 591" />
+            </Shape>
+            <String CONTENT="1. 1. Шиталь Ев гений" HPOS="112" VPOS="495" WIDTH="577" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_5" TAGREFS="LT1" HPOS="104" VPOS="639" WIDTH="63" HEIGHT="103" BASELINE="115 706 158 709">
+            <Shape>
+              <Polygon POINTS="122 647 159 654 158 709 155 733 112 734 116 678" />
+            </Shape>
+            <String CONTENT="2" HPOS="104" VPOS="639" WIDTH="63" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_6" TAGREFS="LT1" HPOS="115" VPOS="773" WIDTH="101" HEIGHT="122" BASELINE="123 861 208 861">
+            <Shape>
+              <Polygon POINTS="208 781 208 861 207 881 166 887 123 887 123 805 182 781" />
+            </Shape>
+            <String CONTENT="з҃і" HPOS="115" VPOS="773" WIDTH="101" HEIGHT="122" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_7" TAGREFS="LT1" HPOS="115" VPOS="1082" WIDTH="46" HEIGHT="101" BASELINE="129 1140 146 1143">
+            <Shape>
+              <Polygon POINTS="123 1175 136 1090 153 1093 146 1143 140 1173" />
+            </Shape>
+            <String CONTENT="5" HPOS="115" VPOS="1082" WIDTH="46" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_8" TAGREFS="LT1" HPOS="118" VPOS="1230" WIDTH="59" HEIGHT="99" BASELINE="130 1294 169 1291">
+            <Shape>
+              <Polygon POINTS="132 1321 126 1245 140 1238 143 1238 165 1244 169 1291 169 1321" />
+            </Shape>
+            <String CONTENT="6" HPOS="118" VPOS="1230" WIDTH="59" HEIGHT="99" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_9" TAGREFS="LT1" HPOS="128" VPOS="1378" WIDTH="58" HEIGHT="98" BASELINE="140 1439 176 1436">
+            <Shape>
+              <Polygon POINTS="142 1468 136 1386 172 1393 176 1436 178 1467" />
+            </Shape>
+            <String CONTENT="і" HPOS="128" VPOS="1378" WIDTH="58" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_10" TAGREFS="LT1" HPOS="122" VPOS="1526" WIDTH="61" HEIGHT="94" BASELINE="135 1590 175 1587">
+            <Shape>
+              <Polygon POINTS="136 1612 130 1541 140 1534 143 1534 171 1543 175 1587 175 1612" />
+            </Shape>
+            <String CONTENT="8." HPOS="122" VPOS="1526" WIDTH="61" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_11" TAGREFS="LT1" HPOS="127" VPOS="1670" WIDTH="46" HEIGHT="105" BASELINE="135 1736 165 1736">
+            <Shape>
+              <Polygon POINTS="165 1678 165 1736 163 1767 135 1766 135 1714 138 1678" />
+            </Shape>
+            <String CONTENT="9" HPOS="127" VPOS="1670" WIDTH="46" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_12" TAGREFS="LT1" HPOS="124" VPOS="1824" WIDTH="58" HEIGHT="92" BASELINE="132 1878 174 1878">
+            <Shape>
+              <Polygon POINTS="174 1832 174 1907 132 1908 132 1832" />
+            </Shape>
+            <String CONTENT="10" HPOS="124" VPOS="1824" WIDTH="58" HEIGHT="92" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_13" TAGREFS="LT1" HPOS="180" VPOS="931" WIDTH="72" HEIGHT="103" BASELINE="191 1003 244 1002">
+            <Shape>
+              <Polygon POINTS="244 1002 243 1026 191 1022 188 939 241 950" />
+            </Shape>
+            <String CONTENT="2" HPOS="180" VPOS="931" WIDTH="72" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_14" TAGREFS="LT1" HPOS="183" VPOS="1079" WIDTH="78" HEIGHT="112" BASELINE="194 1142 253 1146">
+            <Shape>
+              <Polygon POINTS="248 1183 191 1183 197 1087 212 1087 215 1088 253 1116 253 1146" />
+            </Shape>
+            <String CONTENT="2" HPOS="183" VPOS="1079" WIDTH="78" HEIGHT="112" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_15" TAGREFS="LT1" HPOS="296" VPOS="573" WIDTH="309" HEIGHT="102" BASELINE="306 625 597 631">
+            <Shape>
+              <Polygon POINTS="327 581 526 583 555 589 597 598 597 631 594 658 460 665 365 667 316 667 312 665 304 660 306 589" />
+            </Shape>
+            <String CONTENT="францевия" HPOS="296" VPOS="573" WIDTH="309" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_16" TAGREFS="LT1" HPOS="258" VPOS="636" WIDTH="460" HEIGHT="112" BASELINE="267 696 710 706">
+            <Shape>
+              <Polygon POINTS="269 644 680 654 710 661 710 706 709 733 611 740 609 740 418 736 266 730 267 696" />
+            </Shape>
+            <String CONTENT="Шимбель Клавдія" HPOS="258" VPOS="636" WIDTH="460" HEIGHT="112" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_17" TAGREFS="LT1" HPOS="383" VPOS="719" WIDTH="299" HEIGHT="94" BASELINE="392 775 674 778">
+            <Shape>
+              <Polygon POINTS="391 801 392 727 599 730 673 745 674 778 671 805" />
+            </Shape>
+            <String CONTENT="Васильевна" HPOS="383" VPOS="719" WIDTH="299" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_18" TAGREFS="LT1" HPOS="263" VPOS="794" WIDTH="439" HEIGHT="92" BASELINE="273 854 694 848">
+            <Shape>
+              <Polygon POINTS="273 878 271 805 513 802 517 802 621 808 691 819 694 848 693 877" />
+            </Shape>
+            <String CONTENT="Штейель Лариси" HPOS="263" VPOS="794" WIDTH="439" HEIGHT="92" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_19" TAGREFS="LT1" HPOS="348" VPOS="866" WIDTH="277" HEIGHT="101" BASELINE="358 924 617 930">
+            <Shape>
+              <Polygon POINTS="356 952 358 874 424 875 543 878 617 898 617 930 614 959" />
+            </Shape>
+            <String CONTENT="Ев геньевна" HPOS="348" VPOS="866" WIDTH="277" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_20" TAGREFS="LT1" HPOS="261" VPOS="938" WIDTH="495" HEIGHT="101" BASELINE="270 1003 748 996">
+            <Shape>
+              <Polygon POINTS="270 1031 269 949 468 946 474 946 559 947 745 965 748 996 748 1031" />
+            </Shape>
+            <String CONTENT="Неведрова Лишаная" HPOS="261" VPOS="938" WIDTH="495" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_21" TAGREFS="LT1" HPOS="396" VPOS="1018" WIDTH="318" HEIGHT="96" BASELINE="405 1074 706 1077">
+            <Shape>
+              <Polygon POINTS="437 1026 627 1028 704 1045 706 1077 703 1106 404 1103 405 1029 435 1026" />
+            </Shape>
+            <String CONTENT="Васильевна" HPOS="396" VPOS="1018" WIDTH="318" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_22" TAGREFS="LT1" HPOS="259" VPOS="1086" WIDTH="402" HEIGHT="98" BASELINE="269 1147 653 1140">
+            <Shape>
+              <Polygon POINTS="269 1176 267 1100 297 1098 527 1094 559 1094 650 1110 653 1140 653 1172" />
+            </Shape>
+            <String CONTENT="Неведрова Верс." HPOS="259" VPOS="1086" WIDTH="402" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_23" TAGREFS="LT1" HPOS="426" VPOS="1159" WIDTH="227" HEIGHT="96" BASELINE="434 1222 645 1222">
+            <Shape>
+              <Polygon POINTS="434 1167 563 1167 584 1169 645 1190 645 1241 434 1247" />
+            </Shape>
+            <String CONTENT="Увановка" HPOS="426" VPOS="1159" WIDTH="227" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_24" TAGREFS="LT1" HPOS="196" VPOS="1228" WIDTH="498" HEIGHT="106" BASELINE="204 1291 686 1291">
+            <Shape>
+              <Polygon POINTS="204 1291 204 1238 254 1236 573 1236 686 1254 686 1317 466 1326 205 1326" />
+            </Shape>
+            <String CONTENT="2 Невезрова Іван" HPOS="196" VPOS="1228" WIDTH="498" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_25" TAGREFS="LT1" HPOS="187" VPOS="1379" WIDTH="77" HEIGHT="73" BASELINE="197 1438 256 1436">
+            <Shape>
+              <Polygon POINTS="197 1444 195 1395 208 1387 212 1387 253 1398 256 1436 256 1444" />
+            </Shape>
+            <String CONTENT="ѯ҃" HPOS="187" VPOS="1379" WIDTH="77" HEIGHT="73" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_26" TAGREFS="LT1" HPOS="189" VPOS="1515" WIDTH="70" HEIGHT="109" BASELINE="201 1587 251 1585">
+            <Shape>
+              <Polygon POINTS="202 1616 197 1523 247 1531 251 1585 251 1610" />
+            </Shape>
+            <String CONTENT="з" HPOS="189" VPOS="1515" WIDTH="70" HEIGHT="109" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_27" TAGREFS="LT1" HPOS="199" VPOS="1647" WIDTH="62" HEIGHT="124" BASELINE="207 1737 253 1737">
+            <Shape>
+              <Polygon POINTS="207 1655 251 1655 253 1737 253 1763 207 1763" />
+            </Shape>
+            <String CONTENT="ѕ҃" HPOS="199" VPOS="1647" WIDTH="62" HEIGHT="124" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_28" TAGREFS="LT1" HPOS="207" VPOS="1972" WIDTH="48" HEIGHT="94" BASELINE="220 2039 247 2038">
+            <Shape>
+              <Polygon POINTS="220 2058 215 1980 243 1982 247 2038 247 2058" />
+            </Shape>
+            <String CONTENT="1." HPOS="207" VPOS="1972" WIDTH="48" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_29" TAGREFS="LT1" HPOS="371" VPOS="1315" WIDTH="316" HEIGHT="91" BASELINE="381 1366 679 1369">
+            <Shape>
+              <Polygon POINTS="399 1323 620 1323 677 1337 679 1369 677 1389 538 1398 379 1392 381 1329" />
+            </Shape>
+            <String CONTENT="Фмитриевич" HPOS="371" VPOS="1315" WIDTH="316" HEIGHT="91" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_30" TAGREFS="LT1" HPOS="262" VPOS="1381" WIDTH="501" HEIGHT="96" BASELINE="271 1436 755 1435">
+            <Shape>
+              <Polygon POINTS="270 1389 657 1389 752 1405 755 1435 752 1467 435 1469 316 1469 271 1458" />
+            </Shape>
+            <String CONTENT="Гончаров с фекла" HPOS="262" VPOS="1381" WIDTH="501" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_31" TAGREFS="LT1" HPOS="384" VPOS="1459" WIDTH="357" HEIGHT="85" BASELINE="394 1513 733 1516">
+            <Shape>
+              <Polygon POINTS="392 1536 394 1467 648 1469 732 1488 733 1516 732 1533" />
+            </Shape>
+            <String CONTENT="Тимофеевна" HPOS="384" VPOS="1459" WIDTH="357" HEIGHT="85" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_32" TAGREFS="LT1" HPOS="801" VPOS="488" WIDTH="97" HEIGHT="132" BASELINE="811 555 890 552">
+            <Shape>
+              <Polygon POINTS="812 612 809 499 883 496 890 552 889 599 830 612" />
+            </Shape>
+            <String CONTENT="гоя." HPOS="801" VPOS="488" WIDTH="97" HEIGHT="132" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_33" TAGREFS="LT1" HPOS="796" VPOS="647" WIDTH="85" HEIGHT="98" BASELINE="804 706 873 706">
+            <Shape>
+              <Polygon POINTS="871 737 804 720 804 706 805 655 873 673 873 706" />
+            </Shape>
+            <String CONTENT="он." HPOS="796" VPOS="647" WIDTH="85" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_34" TAGREFS="LT1" HPOS="797" VPOS="800" WIDTH="88" HEIGHT="88" BASELINE="808 852 877 850">
+            <Shape>
+              <Polygon POINTS="808 873 805 815 832 808 834 808 874 814 877 850 877 880" />
+            </Shape>
+            <String CONTENT="не" HPOS="797" VPOS="800" WIDTH="88" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_35" TAGREFS="LT1" HPOS="803" VPOS="928" WIDTH="86" HEIGHT="106" BASELINE="811 996 881 996">
+            <Shape>
+              <Polygon POINTS="881 965 881 1022 811 1026 811 936 831 936" />
+            </Shape>
+            <String CONTENT="не" HPOS="803" VPOS="928" WIDTH="86" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_36" TAGREFS="LT1" HPOS="801" VPOS="1088" WIDTH="81" HEIGHT="110" BASELINE="809 1147 874 1147">
+            <Shape>
+              <Polygon POINTS="874 1175 809 1190 809 1103 845 1096 874 1103" />
+            </Shape>
+            <String CONTENT="Ис" HPOS="801" VPOS="1088" WIDTH="81" HEIGHT="110" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_37" TAGREFS="LT1" HPOS="904" VPOS="334" WIDTH="64" HEIGHT="49" BASELINE="933 342 933 375">
+            <Shape>
+              <Polygon POINTS="960 373 933 375 912 373 912 342 956 342" />
+            </Shape>
+            <String CONTENT="і҆ꙋ́д" HPOS="904" VPOS="334" WIDTH="64" HEIGHT="49" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_38" TAGREFS="LT1" HPOS="915" VPOS="377" WIDTH="35" HEIGHT="86" BASELINE="923 438 942 438">
+            <Shape>
+              <Polygon POINTS="942 385 942 455 923 455 923 385" />
+            </Shape>
+            <String CONTENT="Бого і҃" HPOS="915" VPOS="377" WIDTH="35" HEIGHT="86" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_39" TAGREFS="LT1" HPOS="941" VPOS="225" WIDTH="66" HEIGHT="211" BASELINE="973 234 979 428">
+            <Shape>
+              <Polygon POINTS="949 234 998 233 999 424 979 428 955 428" />
+            </Shape>
+            <String CONTENT="помолит." HPOS="941" VPOS="225" WIDTH="66" HEIGHT="211" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_40" TAGREFS="LT1" HPOS="889" VPOS="489" WIDTH="117" HEIGHT="100" BASELINE="897 552 998 552">
+            <Shape>
+              <Polygon POINTS="922 497 996 500 998 552 998 579 897 581 897 507 917 497" />
+            </Shape>
+            <String CONTENT="1908" HPOS="889" VPOS="489" WIDTH="117" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_41" TAGREFS="LT1" HPOS="881" VPOS="578" WIDTH="115" HEIGHT="94" BASELINE="890 627 988 624">
+            <Shape>
+              <Polygon POINTS="889 586 983 586 988 624 988 651 978 663 891 664 890 627" />
+            </Shape>
+            <String CONTENT="24. и" HPOS="881" VPOS="578" WIDTH="115" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_42" TAGREFS="LT1" HPOS="889" VPOS="647" WIDTH="111" HEIGHT="90" BASELINE="899 700 992 703">
+            <Shape>
+              <Polygon POINTS="897 726 899 660 976 655 981 655 992 663 992 703 989 729" />
+            </Shape>
+            <String CONTENT="1909" HPOS="889" VPOS="647" WIDTH="111" HEIGHT="90" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_43" TAGREFS="LT1" HPOS="891" VPOS="790" WIDTH="102" HEIGHT="98" BASELINE="900 847 985 850">
+            <Shape>
+              <Polygon POINTS="983 798 985 850 983 875 912 880 907 880 899 873 900 799" />
+            </Shape>
+            <String CONTENT="1934" HPOS="891" VPOS="790" WIDTH="102" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_44" TAGREFS="LT1" HPOS="889" VPOS="872" WIDTH="100" HEIGHT="86" BASELINE="899 923 981 920">
+            <Shape>
+              <Polygon POINTS="899 950 897 886 930 880 933 880 976 888 981 920 981 950" />
+            </Shape>
+            <String CONTENT="177" HPOS="889" VPOS="872" WIDTH="100" HEIGHT="86" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_45" TAGREFS="LT1" HPOS="888" VPOS="932" WIDTH="112" HEIGHT="81" BASELINE="897 992 992 995">
+            <Shape>
+              <Polygon POINTS="896 1005 897 940 992 949 992 995 991 1001" />
+            </Shape>
+            <String CONTENT="1905" HPOS="888" VPOS="932" WIDTH="112" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_46" TAGREFS="LT1" HPOS="889" VPOS="1011" WIDTH="131" HEIGHT="95" BASELINE="900 1071 1012 1065">
+            <Shape>
+              <Polygon POINTS="897 1019 943 1019 1008 1025 1012 1065 1012 1098 900 1094" />
+            </Shape>
+            <String CONTENT="25. Nи" HPOS="889" VPOS="1011" WIDTH="131" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_47" TAGREFS="LT1" HPOS="904" VPOS="1086" WIDTH="115" HEIGHT="92" BASELINE="912 1146 1011 1146">
+            <Shape>
+              <Polygon POINTS="1011 1110 1011 1170 912 1170 912 1110 946 1094 949 1094" />
+            </Shape>
+            <String CONTENT="1927" HPOS="904" VPOS="1086" WIDTH="115" HEIGHT="92" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_48" TAGREFS="LT1" HPOS="896" VPOS="1164" WIDTH="124" HEIGHT="89" BASELINE="907 1216 1012 1212">
+            <Shape>
+              <Polygon POINTS="1012 1212 1011 1245 907 1239 904 1172 1009 1179" />
+            </Shape>
+            <String CONTENT="26. чт." HPOS="896" VPOS="1164" WIDTH="124" HEIGHT="89" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_49" TAGREFS="LT1" HPOS="788" VPOS="1231" WIDTH="206" HEIGHT="95" BASELINE="798 1288 986 1291">
+            <Shape>
+              <Polygon POINTS="985 1248 986 1291 983 1318 796 1317 798 1244 828 1239 832 1239 943 1242" />
+            </Shape>
+            <String CONTENT="гри. 1891" HPOS="788" VPOS="1231" WIDTH="206" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_50" TAGREFS="LT1" HPOS="796" VPOS="1372" WIDTH="220" HEIGHT="103" BASELINE="808 1438 1006 1428">
+            <Shape>
+              <Polygon POINTS="809 1467 804 1383 897 1380 942 1380 1004 1387 1008 1461" />
+            </Shape>
+            <String CONTENT="рек 1900" HPOS="796" VPOS="1372" WIDTH="220" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_51" TAGREFS="LT1" HPOS="263" VPOS="1523" WIDTH="756" HEIGHT="107" BASELINE="273 1585 1011 1583">
+            <Shape>
+              <Polygon POINTS="271 1531 1006 1531 1011 1583 1011 1608 973 1622 615 1622 409 1621 294 1619 273 1608" />
+            </Shape>
+            <String CONTENT="Такарев Владимир гол. 1935." HPOS="263" VPOS="1523" WIDTH="756" HEIGHT="107" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_52" TAGREFS="LT1" HPOS="432" VPOS="1597" WIDTH="306" HEIGHT="96" BASELINE="441 1655 730 1658">
+            <Shape>
+              <Polygon POINTS="443 1605 673 1608 730 1623 730 1658 727 1685 440 1681 441 1655" />
+            </Shape>
+            <String CONTENT="чиколаевся" HPOS="432" VPOS="1597" WIDTH="306" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_53" TAGREFS="LT1" HPOS="261" VPOS="1666" WIDTH="414" HEIGHT="111" BASELINE="270 1736 667 1727">
+            <Shape>
+              <Polygon POINTS="270 1736 269 1679 533 1674 536 1674 611 1685 663 1695 667 1727 666 1749 552 1757 489 1760 271 1769" />
+            </Shape>
+            <String CONTENT="Кивченко алма" HPOS="261" VPOS="1666" WIDTH="414" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_54" TAGREFS="LT1" HPOS="357" VPOS="1739" WIDTH="331" HEIGHT="98" BASELINE="366 1797 680 1800">
+            <Shape>
+              <Polygon POINTS="404 1747 605 1749 638 1756 680 1766 680 1800 679 1829 365 1829 366 1749 399 1747" />
+            </Shape>
+            <String CONTENT="боемьянивна" HPOS="357" VPOS="1739" WIDTH="331" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_55" TAGREFS="LT1" HPOS="271" VPOS="1822" WIDTH="318" HEIGHT="93" BASELINE="281 1882 581 1874">
+            <Shape>
+              <Polygon POINTS="281 1907 279 1830 398 1830 576 1839 581 1874 581 1902" />
+            </Shape>
+            <String CONTENT="Перепелица" HPOS="271" VPOS="1822" WIDTH="318" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_56" TAGREFS="LT1" HPOS="262" VPOS="1889" WIDTH="483" HEIGHT="105" BASELINE="271 1951 663 1944 737 1948">
+            <Shape>
+              <Polygon POINTS="271 1976 270 1902 655 1897 660 1897 719 1901 736 1910 737 1948 735 1973 634 1982 342 1986 339 1986" />
+            </Shape>
+            <String CONTENT="Лейкита федоровся" HPOS="262" VPOS="1889" WIDTH="483" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_57" TAGREFS="LT1" HPOS="263" VPOS="1965" WIDTH="457" HEIGHT="99" BASELINE="273 2033 405 2023 712 2022">
+            <Shape>
+              <Polygon POINTS="273 2046 271 1979 556 1973 671 1973 710 1987 712 2022 710 2045 542 2052 391 2055 286 2056 283 2056 281 2055" />
+            </Shape>
+            <String CONTENT="перенелица Юлта." HPOS="263" VPOS="1965" WIDTH="457" HEIGHT="99" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_58" TAGREFS="LT1" HPOS="432" VPOS="2034" WIDTH="296" HEIGHT="98" BASELINE="440 2092 720 2092">
+            <Shape>
+              <Polygon POINTS="440 2042 620 2042 720 2064 720 2124 440 2124" />
+            </Shape>
+            <String CONTENT="Балілѣвна" HPOS="432" VPOS="2034" WIDTH="296" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_59" TAGREFS="LT1" HPOS="122" VPOS="2103" WIDTH="626" HEIGHT="112" BASELINE="132 2180 740 2166">
+            <Shape>
+              <Polygon POINTS="132 2203 130 2133 195 2120 254 2118 563 2111 565 2111 737 2127 740 2166 740 2197 355 2207 353 2207" />
+            </Shape>
+            <String CONTENT="12 14 Перепелица Віктор" HPOS="122" VPOS="2103" WIDTH="626" HEIGHT="112" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_60" TAGREFS="LT1" HPOS="122" VPOS="2255" WIDTH="127" HEIGHT="107" BASELINE="132 2324 241 2322">
+            <Shape>
+              <Polygon POINTS="132 2354 130 2274 179 2263 184 2263 238 2274 241 2322 240 2354" />
+            </Shape>
+            <String CONTENT="13/5" HPOS="122" VPOS="2255" WIDTH="127" HEIGHT="107" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_61" TAGREFS="LT1" HPOS="832" VPOS="411" WIDTH="33" HEIGHT="47" BASELINE="841 438 857 437">
+            <Shape>
+              <Polygon POINTS="841 450 840 419 851 419 857 437 857 450" />
+            </Shape>
+            <String CONTENT="ѕ҃" HPOS="832" VPOS="411" WIDTH="33" HEIGHT="47" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_62" TAGREFS="LT1" HPOS="965" VPOS="376" WIDTH="29" HEIGHT="87" BASELINE="973 438 986 438">
+            <Shape>
+              <Polygon POINTS="986 455 973 455 973 386 983 384 986 438" />
+            </Shape>
+            <String CONTENT="оу҃" HPOS="965" VPOS="376" WIDTH="29" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_63" TAGREFS="LT1" HPOS="381" VPOS="2192" WIDTH="344" HEIGHT="87" BASELINE="389 2243 717 2243">
+            <Shape>
+              <Polygon POINTS="717 2215 717 2265 389 2271 389 2213 415 2200 605 2200" />
+            </Shape>
+            <String CONTENT="Ленкийович" HPOS="381" VPOS="2192" WIDTH="344" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_64" TAGREFS="LT1" HPOS="259" VPOS="2255" WIDTH="298" HEIGHT="110" BASELINE="270 2322 549 2315">
+            <Shape>
+              <Polygon POINTS="270 2347 267 2268 487 2263 493 2263 546 2276 549 2315 548 2350 420 2354 312 2357" />
+            </Shape>
+            <String CONTENT="Назарешко" HPOS="259" VPOS="2255" WIDTH="298" HEIGHT="110" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_65" TAGREFS="LT1" HPOS="284" VPOS="2327" WIDTH="446" HEIGHT="116" BASELINE="292 2387 441 2391 722 2383">
+            <Shape>
+              <Polygon POINTS="292 2425 292 2343 468 2338 622 2335 625 2335 719 2350 722 2383 720 2425 519 2432 351 2435 349 2435" />
+            </Shape>
+            <String CONTENT="федор степанович" HPOS="284" VPOS="2327" WIDTH="446" HEIGHT="116" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_66" TAGREFS="LT1" HPOS="889" VPOS="1598" WIDTH="114" HEIGHT="102" BASELINE="899 1661 995 1659">
+            <Shape>
+              <Polygon POINTS="897 1606 992 1618 995 1659 995 1679 971 1692 901 1692 899 1661" />
+            </Shape>
+            <String CONTENT="25 к҃і" HPOS="889" VPOS="1598" WIDTH="114" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_67" TAGREFS="LT1" HPOS="796" VPOS="1663" WIDTH="216" HEIGHT="104" BASELINE="805 1731 1004 1730">
+            <Shape>
+              <Polygon POINTS="998 1671 1004 1730 1002 1756 935 1759 853 1759 805 1744 804 1678 838 1671" />
+            </Shape>
+            <String CONTENT="ж. 1903" HPOS="796" VPOS="1663" WIDTH="216" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_68" TAGREFS="LT1" HPOS="797" VPOS="1811" WIDTH="107" HEIGHT="98" BASELINE="809 1875 896 1871">
+            <Shape>
+              <Polygon POINTS="809 1901 805 1819 893 1829 896 1871 896 1891 886 1900 883 1901" />
+            </Shape>
+            <String CONTENT="чод." HPOS="797" VPOS="1811" WIDTH="107" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_69" TAGREFS="LT1" HPOS="791" VPOS="1975" WIDTH="101" HEIGHT="76" BASELINE="801 2022 884 2020">
+            <Shape>
+              <Polygon POINTS="801 2043 799 1983 880 1983 884 2020 884 2042" />
+            </Shape>
+            <String CONTENT="не" HPOS="791" VPOS="1975" WIDTH="101" HEIGHT="76" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_70" TAGREFS="LT1" HPOS="893" VPOS="1741" WIDTH="129" HEIGHT="96" BASELINE="904 1800 1014 1797">
+            <Shape>
+              <Polygon POINTS="904 1825 901 1756 910 1749 979 1749 1012 1757 1014 1797 1012 1829" />
+            </Shape>
+            <String CONTENT="ѱі́лъ" HPOS="893" VPOS="1741" WIDTH="129" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_71" TAGREFS="LT1" HPOS="905" VPOS="1817" WIDTH="118" HEIGHT="92" BASELINE="914 1874 1015 1878">
+            <Shape>
+              <Polygon POINTS="913 1894 916 1825 979 1828 1015 1846 1015 1878 1012 1901" />
+            </Shape>
+            <String CONTENT="1897" HPOS="905" VPOS="1817" WIDTH="118" HEIGHT="92" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_72" TAGREFS="LT1" HPOS="896" VPOS="1894" WIDTH="130" HEIGHT="85" BASELINE="906 1950 1017 1954">
+            <Shape>
+              <Polygon POINTS="904 1971 909 1902 1004 1907 1018 1915 1017 1954 1015 1970" />
+            </Shape>
+            <String CONTENT="14." HPOS="896" VPOS="1894" WIDTH="130" HEIGHT="85" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_73" TAGREFS="LT1" HPOS="1053" VPOS="282" WIDTH="85" HEIGHT="166" BASELINE="1093 440 1096 291">
+            <Shape>
+              <Polygon POINTS="1093 440 1064 435 1061 322 1061 317 1068 290 1130 291 1114 437" />
+            </Shape>
+            <String CONTENT="і҆ѡ҃" HPOS="1053" VPOS="282" WIDTH="85" HEIGHT="166" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_74" TAGREFS="LT1" HPOS="1029" VPOS="502" WIDTH="131" HEIGHT="97" BASELINE="1040 553 1152 549">
+            <Shape>
+              <Polygon POINTS="1041 591 1037 510 1149 512 1152 549 1152 578" />
+            </Shape>
+            <String CONTENT="украш" HPOS="1029" VPOS="502" WIDTH="131" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_75" TAGREFS="LT1" HPOS="1026" VPOS="646" WIDTH="135" HEIGHT="111" BASELINE="1035 701 1153 699">
+            <Shape>
+              <Polygon POINTS="1153 699 1152 733 1037 749 1035 701 1034 661 1065 654 1150 667" />
+            </Shape>
+            <String CONTENT="украш" HPOS="1026" VPOS="646" WIDTH="135" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_76" TAGREFS="LT1" HPOS="1020" VPOS="787" WIDTH="104" HEIGHT="109" BASELINE="1028 852 1116 852">
+            <Shape>
+              <Polygon POINTS="1116 819 1116 880 1096 888 1093 888 1028 881 1028 852 1030 795" />
+            </Shape>
+            <String CONTENT="укр" HPOS="1020" VPOS="787" WIDTH="104" HEIGHT="109" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_77" TAGREFS="LT1" HPOS="1030" VPOS="947" WIDTH="113" HEIGHT="90" BASELINE="1040 995 1135 998">
+            <Shape>
+              <Polygon POINTS="1038 1029 1040 957 1078 955 1081 955 1135 973 1135 998 1133 1029" />
+            </Shape>
+            <String CONTENT="рос" HPOS="1030" VPOS="947" WIDTH="113" HEIGHT="90" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_78" TAGREFS="LT1" HPOS="904" VPOS="2184" WIDTH="99" HEIGHT="90" BASELINE="914 2240 995 2246">
+            <Shape>
+              <Polygon POINTS="995 2199 995 2246 992 2266 912 2262 914 2240 919 2192" />
+            </Shape>
+            <String CONTENT="1." HPOS="904" VPOS="2184" WIDTH="99" HEIGHT="90" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_79" TAGREFS="LT1" HPOS="906" VPOS="2250" WIDTH="124" HEIGHT="108" BASELINE="916 2311 1022 2314">
+            <Shape>
+              <Polygon POINTS="914 2335 916 2258 1022 2263 1022 2314 1019 2350" />
+            </Shape>
+            <String CONTENT="1892" HPOS="906" VPOS="2250" WIDTH="124" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_80" TAGREFS="LT1" HPOS="1135" VPOS="183" WIDTH="95" HEIGHT="106" BASELINE="1201 192 1205 280">
+            <Shape>
+              <Polygon POINTS="1143 281 1143 194 1222 191 1222 277 1205 280" />
+            </Shape>
+            <String CONTENT="Б҃." HPOS="1135" VPOS="183" WIDTH="95" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_81" TAGREFS="LT1" HPOS="1033" VPOS="1385" WIDTH="130" HEIGHT="104" BASELINE="1042 1435 1155 1439">
+            <Shape>
+              <Polygon POINTS="1153 1400 1155 1439 1153 1468 1103 1481 1099 1481 1041 1478 1042 1435 1044 1393" />
+            </Shape>
+            <String CONTENT="украй" HPOS="1033" VPOS="1385" WIDTH="130" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_82" TAGREFS="LT1" HPOS="1282" VPOS="178" WIDTH="59" HEIGHT="183" BASELINE="1311 188 1317 353">
+            <Shape>
+              <Polygon POINTS="1290 188 1330 186 1333 349 1317 353 1299 352" />
+            </Shape>
+            <String CONTENT="гдⷭ҇ь къ" HPOS="1282" VPOS="178" WIDTH="59" HEIGHT="183" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_83" TAGREFS="LT1" HPOS="1164" VPOS="355" WIDTH="166" HEIGHT="100" BASELINE="1175 435 1322 431">
+            <Shape>
+              <Polygon POINTS="1175 447 1172 389 1215 371 1265 366 1313 363 1322 431 1322 445" />
+            </Shape>
+            <String CONTENT="И҆ речѐ гдⷭ҇ь ко" HPOS="1164" VPOS="355" WIDTH="166" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_84" TAGREFS="LT1" HPOS="1158" VPOS="501" WIDTH="65" HEIGHT="101" BASELINE="1169 548 1214 545">
+            <Shape>
+              <Polygon POINTS="1166 514 1209 509 1214 545 1215 594 1170 591" />
+            </Shape>
+            <String CONTENT="очі" HPOS="1158" VPOS="501" WIDTH="65" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_85" TAGREFS="LT1" HPOS="1183" VPOS="544" WIDTH="37" HEIGHT="63" BASELINE="1191 575 1212 575">
+            <Shape>
+              <Polygon POINTS="1212 575 1211 599 1191 596 1191 553 1211 552" />
+            </Shape>
+            <String CONTENT="н҃" HPOS="1183" VPOS="544" WIDTH="37" HEIGHT="63" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_86" TAGREFS="LT1" HPOS="1160" VPOS="646" WIDTH="82" HEIGHT="71" BASELINE="1170 697 1234 694">
+            <Shape>
+              <Polygon POINTS="1170 709 1168 661 1189 654 1192 654 1231 660 1234 694 1232 707" />
+            </Shape>
+            <String CONTENT="оц҃р" HPOS="1160" VPOS="646" WIDTH="82" HEIGHT="71" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_87" TAGREFS="LT1" HPOS="1175" VPOS="691" WIDTH="57" HEIGHT="64" BASELINE="1183 727 1224 727">
+            <Shape>
+              <Polygon POINTS="1224 699 1224 727 1222 747 1183 746 1183 699" />
+            </Shape>
+            <String CONTENT="34" HPOS="1175" VPOS="691" WIDTH="57" HEIGHT="64" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_88" TAGREFS="LT1" HPOS="1164" VPOS="800" WIDTH="71" HEIGHT="101" BASELINE="1172 854 1227 854">
+            <Shape>
+              <Polygon POINTS="1225 808 1227 854 1225 886 1173 893 1172 854 1172 808" />
+            </Shape>
+            <String CONTENT="зев" HPOS="1164" VPOS="800" WIDTH="71" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_89" TAGREFS="LT1" HPOS="1155" VPOS="957" WIDTH="77" HEIGHT="95" BASELINE="1165 996 1224 998">
+            <Shape>
+              <Polygon POINTS="1163 1032 1165 965 1224 966 1224 998 1222 1042 1188 1044 1186 1044" />
+            </Shape>
+            <String CONTENT="nan" HPOS="1155" VPOS="957" WIDTH="77" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_90" TAGREFS="LT1" HPOS="1042" VPOS="1086" WIDTH="195" HEIGHT="99" BASELINE="1051 1143 1229 1140">
+            <Shape>
+              <Polygon POINTS="1051 1177 1050 1096 1206 1094 1209 1094 1228 1101 1229 1140 1229 1172 1168 1176" />
+            </Shape>
+            <String CONTENT="рос дев;" HPOS="1042" VPOS="1086" WIDTH="195" HEIGHT="99" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_91" TAGREFS="LT1" HPOS="1034" VPOS="1234" WIDTH="123" HEIGHT="95" BASELINE="1042 1291 1149 1294">
+            <Shape>
+              <Polygon POINTS="1042 1321 1042 1242 1147 1268 1149 1294 1146 1317" />
+            </Shape>
+            <String CONTENT="рось" HPOS="1034" VPOS="1234" WIDTH="123" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_92" TAGREFS="LT1" HPOS="1162" VPOS="1231" WIDTH="80" HEIGHT="117" BASELINE="1173 1294 1232 1291">
+            <Shape>
+              <Polygon POINTS="1175 1340 1170 1239 1229 1257 1232 1291 1234 1340" />
+            </Shape>
+            <String CONTENT="ур" HPOS="1162" VPOS="1231" WIDTH="80" HEIGHT="117" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_93" TAGREFS="LT1" HPOS="1180" VPOS="1388" WIDTH="62" HEIGHT="104" BASELINE="1188 1438 1234 1438">
+            <Shape>
+              <Polygon POINTS="1234 1481 1188 1484 1188 1403 1209 1396 1214 1396 1234 1403" />
+            </Shape>
+            <String CONTENT="5р." HPOS="1180" VPOS="1388" WIDTH="62" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_94" TAGREFS="LT1" HPOS="1170" VPOS="1535" WIDTH="76" HEIGHT="88" BASELINE="1182 1589 1237 1583">
+            <Shape>
+              <Polygon POINTS="1178 1553 1231 1543 1237 1583 1238 1615 1183 1615" />
+            </Shape>
+            <String CONTENT="Хол" HPOS="1170" VPOS="1535" WIDTH="76" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_95" TAGREFS="LT1" HPOS="1164" VPOS="1690" WIDTH="71" HEIGHT="90" BASELINE="1172 1733 1227 1733">
+            <Shape>
+              <Polygon POINTS="1227 1772 1172 1772 1172 1698 1225 1698 1227 1733" />
+            </Shape>
+            <String CONTENT="раз" HPOS="1164" VPOS="1690" WIDTH="71" HEIGHT="90" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_96" TAGREFS="LT1" HPOS="1029" VPOS="1822" WIDTH="213" HEIGHT="106" BASELINE="1038 1878 1234 1875">
+            <Shape>
+              <Polygon POINTS="1037 1830 1229 1842 1234 1875 1234 1917 1201 1918 1099 1920 1040 1920 1038 1878" />
+            </Shape>
+            <String CONTENT="украш одр." HPOS="1029" VPOS="1822" WIDTH="213" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_97" TAGREFS="LT1" HPOS="901" VPOS="1965" WIDTH="269" HEIGHT="96" BASELINE="910 2022 1162 2025">
+            <Shape>
+              <Polygon POINTS="909 2046 910 1974 983 1973 1063 1974 1160 1987 1162 2025 1159 2053" />
+            </Shape>
+            <String CONTENT="1892 украи," HPOS="901" VPOS="1965" WIDTH="269" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_98" TAGREFS="LT1" HPOS="797" VPOS="2102" WIDTH="222" HEIGHT="103" BASELINE="807 2163 1011 2167">
+            <Shape>
+              <Polygon POINTS="805 2180 807 2121 927 2110 988 2115 1011 2125 1011 2167 1008 2193 876 2197 874 2197" />
+            </Shape>
+            <String CONTENT="гол." HPOS="797" VPOS="2102" WIDTH="222" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_99" TAGREFS="LT1" HPOS="807" VPOS="2240" WIDTH="98" HEIGHT="195" BASELINE="818 2312 896 2309">
+            <Shape>
+              <Polygon POINTS="822 2427 815 2248 835 2248 891 2258 896 2309 897 2425" />
+            </Shape>
+            <String CONTENT="ная." HPOS="807" VPOS="2240" WIDTH="98" HEIGHT="195" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_100" TAGREFS="LT1" HPOS="1037" VPOS="1533" WIDTH="94" HEIGHT="98" BASELINE="1048 1583 1122 1587">
+            <Shape>
+              <Polygon POINTS="1045 1619 1050 1541 1123 1550 1122 1587 1117 1623" />
+            </Shape>
+            <String CONTENT="укр" HPOS="1037" VPOS="1533" WIDTH="94" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_101" TAGREFS="LT1" HPOS="1043" VPOS="1670" WIDTH="79" HEIGHT="111" BASELINE="1053 1733 1114 1736">
+            <Shape>
+              <Polygon POINTS="1051 1766 1054 1678 1114 1692 1114 1736 1109 1773" />
+            </Shape>
+            <String CONTENT="укв" HPOS="1043" VPOS="1670" WIDTH="79" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_102" TAGREFS="LT1" HPOS="1288" VPOS="365" WIDTH="60" HEIGHT="44" BASELINE="1314 379 1319 398">
+            <Shape>
+              <Polygon POINTS="1299 401 1296 382 1337 373 1340 391 1319 398" />
+            </Shape>
+            <String CONTENT="nan" HPOS="1288" VPOS="365" WIDTH="60" HEIGHT="44" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_103" TAGREFS="LT1" HPOS="1168" VPOS="1976" WIDTH="64" HEIGHT="100" BASELINE="1178 2025 1224 2026">
+            <Shape>
+              <Polygon POINTS="1176 2053 1178 1984 1224 1993 1224 2026 1221 2066 1201 2068 1198 2068" />
+            </Shape>
+            <String CONTENT="оц҃і" HPOS="1168" VPOS="1976" WIDTH="64" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_104" TAGREFS="LT1" HPOS="1233" VPOS="499" WIDTH="92" HEIGHT="120" BASELINE="1244 546 1317 543">
+            <Shape>
+              <Polygon POINTS="1245 611 1241 512 1288 507 1294 507 1316 516 1317 543 1317 582 1263 611" />
+            </Shape>
+            <String CONTENT="гал." HPOS="1233" VPOS="499" WIDTH="92" HEIGHT="120" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_105" TAGREFS="LT1" HPOS="1234" VPOS="1392" WIDTH="101" HEIGHT="85" BASELINE="1244 1438 1327 1441">
+            <Shape>
+              <Polygon POINTS="1242 1452 1244 1403 1284 1400 1286 1400 1327 1415 1327 1441 1326 1467 1290 1469 1288 1469" />
+            </Shape>
+            <String CONTENT="гол." HPOS="1234" VPOS="1392" WIDTH="101" HEIGHT="85" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_106" TAGREFS="LT1" HPOS="1039" VPOS="2110" WIDTH="217" HEIGHT="102" BASELINE="1048 2166 1248 2169">
+            <Shape>
+              <Polygon POINTS="1047 2197 1048 2122 1078 2118 1194 2118 1247 2135 1248 2169 1245 2204 1119 2203" />
+            </Shape>
+            <String CONTENT="украи кол." HPOS="1039" VPOS="2110" WIDTH="217" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_107" TAGREFS="LT1" HPOS="1037" VPOS="2261" WIDTH="203" HEIGHT="118" BASELINE="1047 2314 1232 2317">
+            <Shape>
+              <Polygon POINTS="1045 2358 1047 2269 1120 2269 1209 2271 1232 2282 1232 2317 1229 2371 1058 2363" />
+            </Shape>
+            <String CONTENT="украш рур" HPOS="1037" VPOS="2261" WIDTH="203" HEIGHT="118" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_108" TAGREFS="LT1" HPOS="1244" VPOS="947" WIDTH="94" HEIGHT="87" BASELINE="1252 996 1330 996">
+            <Shape>
+              <Polygon POINTS="1330 996 1329 1026 1252 1021 1252 955 1330 973" />
+            </Shape>
+            <String CONTENT="гол." HPOS="1244" VPOS="947" WIDTH="94" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_109" TAGREFS="LT1" HPOS="1266" VPOS="1546" WIDTH="38" HEIGHT="55" BASELINE="1276 1583 1294 1585">
+            <Shape>
+              <Polygon POINTS="1274 1593 1277 1554 1296 1560 1294 1585 1293 1593" />
+            </Shape>
+            <String CONTENT="по" HPOS="1266" VPOS="1546" WIDTH="38" HEIGHT="55" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_110" TAGREFS="LT1" HPOS="1246" VPOS="1824" WIDTH="85" HEIGHT="115" BASELINE="1254 1879 1323 1879">
+            <Shape>
+              <Polygon POINTS="1255 1931 1254 1879 1254 1832 1323 1841 1323 1879 1322 1917" />
+            </Shape>
+            <String CONTENT="гоя." HPOS="1246" VPOS="1824" WIDTH="85" HEIGHT="115" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_111" TAGREFS="LT1" HPOS="1268" VPOS="1988" WIDTH="49" HEIGHT="81" BASELINE="1280 2026 1309 2029">
+            <Shape>
+              <Polygon POINTS="1276 2059 1283 1996 1309 1999 1309 2029 1304 2061" />
+            </Shape>
+            <String CONTENT="-" HPOS="1268" VPOS="1988" WIDTH="49" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_112" TAGREFS="LT1" HPOS="1253" VPOS="2270" WIDTH="91" HEIGHT="96" BASELINE="1263 2320 1336 2322">
+            <Shape>
+              <Polygon POINTS="1261 2347 1264 2278 1336 2285 1336 2322 1330 2358 1280 2357" />
+            </Shape>
+            <String CONTENT="год" HPOS="1253" VPOS="2270" WIDTH="91" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_113" TAGREFS="LT1" HPOS="1390" VPOS="194" WIDTH="68" HEIGHT="105" BASELINE="1422 202 1422 291">
+            <Shape>
+              <Polygon POINTS="1398 202 1450 202 1444 291 1422 291 1398 290" />
+            </Shape>
+            <String CONTENT="ѕ҃" HPOS="1390" VPOS="194" WIDTH="68" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_114" TAGREFS="LT1" HPOS="1393" VPOS="321" WIDTH="59" HEIGHT="112" BASELINE="1422 425 1424 330">
+            <Shape>
+              <Polygon POINTS="1401 422 1404 329 1441 330 1444 424 1422 425" />
+            </Shape>
+            <String CONTENT="го і" HPOS="1393" VPOS="321" WIDTH="59" HEIGHT="112" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_115" TAGREFS="LT1" HPOS="1426" VPOS="197" WIDTH="65" HEIGHT="174" BASELINE="1463 363 1464 207">
+            <Shape>
+              <Polygon POINTS="1434 225 1441 205 1483 207 1483 363 1463 363 1442 361 1434 227" />
+            </Shape>
+            <String CONTENT="И҃ ѕ҃" HPOS="1426" VPOS="197" WIDTH="65" HEIGHT="174" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_116" TAGREFS="LT1" HPOS="1472" VPOS="302" WIDTH="58" HEIGHT="134" BASELINE="1504 312 1503 425 1510 428">
+            <Shape>
+              <Polygon POINTS="1480 310 1522 312 1520 417 1510 428 1481 427" />
+            </Shape>
+            <String CONTENT="го я҃" HPOS="1472" VPOS="302" WIDTH="58" HEIGHT="134" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_117" TAGREFS="LT1" HPOS="1482" VPOS="393" WIDTH="36" HEIGHT="55" BASELINE="1491 427 1510 428">
+            <Shape>
+              <Polygon POINTS="1490 435 1493 401 1506 404 1510 428 1507 440" />
+            </Shape>
+            <String CONTENT="ѕ҃" HPOS="1482" VPOS="393" WIDTH="36" HEIGHT="55" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_118" TAGREFS="LT1" HPOS="1354" VPOS="483" WIDTH="177" HEIGHT="104" BASELINE="1365 549 1451 540 1523 542">
+            <Shape>
+              <Polygon POINTS="1366 579 1362 503 1379 496 1519 491 1523 542 1523 573" />
+            </Shape>
+            <String CONTENT="харків" HPOS="1354" VPOS="483" WIDTH="177" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_119" TAGREFS="LT1" HPOS="1358" VPOS="645" WIDTH="186" HEIGHT="86" BASELINE="1368 696 1536 693">
+            <Shape>
+              <Polygon POINTS="1368 723 1366 664 1386 653 1391 653 1506 655 1534 667 1536 693 1536 722" />
+            </Shape>
+            <String CONTENT="Линцы" HPOS="1358" VPOS="645" WIDTH="186" HEIGHT="86" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_120" TAGREFS="LT1" HPOS="1338" VPOS="709" WIDTH="203" HEIGHT="97" BASELINE="1349 766 1533 760">
+            <Shape>
+              <Polygon POINTS="1349 798 1346 719 1478 717 1483 717 1532 733 1533 760 1533 798" />
+            </Shape>
+            <String CONTENT="Хар абл." HPOS="1338" VPOS="709" WIDTH="203" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_121" TAGREFS="LT1" HPOS="1358" VPOS="783" WIDTH="184" HEIGHT="96" BASELINE="1369 848 1434 841 1534 842">
+            <Shape>
+              <Polygon POINTS="1369 871 1366 798 1370 793 1501 791 1507 791 1532 799 1534 842 1534 871" />
+            </Shape>
+            <String CONTENT="Харків" HPOS="1358" VPOS="783" WIDTH="184" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_122" TAGREFS="LT1" HPOS="1347" VPOS="936" WIDTH="217" HEIGHT="97" BASELINE="1355 995 1556 995">
+            <Shape>
+              <Polygon POINTS="1355 944 1458 944 1522 947 1556 956 1556 995 1555 1025 1355 1019" />
+            </Shape>
+            <String CONTENT="Прайворон" HPOS="1347" VPOS="936" WIDTH="217" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_123" TAGREFS="LT1" HPOS="1350" VPOS="1013" WIDTH="203" HEIGHT="93" BASELINE="1360 1070 1545 1064">
+            <Shape>
+              <Polygon POINTS="1360 1098 1358 1024 1504 1021 1509 1021 1540 1037 1545 1064 1545 1098" />
+            </Shape>
+            <String CONTENT="Кура абл." HPOS="1350" VPOS="1013" WIDTH="203" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_124" TAGREFS="LT1" HPOS="1354" VPOS="1083" WIDTH="171" HEIGHT="100" BASELINE="1366 1146 1516 1137">
+            <Shape>
+              <Polygon POINTS="1368 1175 1362 1106 1373 1100 1509 1091 1516 1137 1517 1170" />
+            </Shape>
+            <String CONTENT="харків" HPOS="1354" VPOS="1083" WIDTH="171" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_125" TAGREFS="LT1" HPOS="1587" VPOS="212" WIDTH="68" HEIGHT="72" BASELINE="1595 250 1647 250">
+            <Shape>
+              <Polygon POINTS="1647 230 1647 263 1595 276 1595 220" />
+            </Shape>
+            <String CONTENT="чиз" HPOS="1587" VPOS="212" WIDTH="68" HEIGHT="72" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_126" TAGREFS="LT1" HPOS="1596" VPOS="245" WIDTH="39" HEIGHT="72" BASELINE="1606 284 1625 283">
+            <Shape>
+              <Polygon POINTS="1627 309 1608 309 1606 284 1604 253 1622 253 1625 283" />
+            </Shape>
+            <String CONTENT="ч҃." HPOS="1596" VPOS="245" WIDTH="39" HEIGHT="72" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_127" TAGREFS="LT1" HPOS="1627" VPOS="273" WIDTH="51" HEIGHT="34" BASELINE="1648 287 1651 299">
+            <Shape>
+              <Polygon POINTS="1635 290 1665 281 1670 291 1651 299 1635 299" />
+            </Shape>
+            <String CONTENT="і҆и҃лю" HPOS="1627" VPOS="273" WIDTH="51" HEIGHT="34" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_128" TAGREFS="LT1" HPOS="1646" VPOS="321" WIDTH="46" HEIGHT="76" BASELINE="1662 330 1665 389">
+            <Shape>
+              <Polygon POINTS="1654 330 1683 329 1684 385 1665 389 1654 388" />
+            </Shape>
+            <String CONTENT="ч҃." HPOS="1646" VPOS="321" WIDTH="46" HEIGHT="76" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_129" TAGREFS="LT1" HPOS="1577" VPOS="340" WIDTH="108" HEIGHT="108" BASELINE="1589 428 1677 424">
+            <Shape>
+              <Polygon POINTS="1589 440 1585 356 1619 348 1625 348 1671 363 1677 424 1677 440" />
+            </Shape>
+            <String CONTENT="꙳и҆́мъ." HPOS="1577" VPOS="340" WIDTH="108" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_130" TAGREFS="LT1" HPOS="1613" VPOS="420" WIDTH="47" HEIGHT="81" BASELINE="1625 464 1650 461">
+            <Shape>
+              <Polygon POINTS="1628 493 1621 428 1644 428 1650 461 1652 493" />
+            </Shape>
+            <String CONTENT="і҃о" HPOS="1613" VPOS="420" WIDTH="47" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_131" TAGREFS="LT1" HPOS="1584" VPOS="481" WIDTH="95" HEIGHT="95" BASELINE="1595 542 1671 539">
+            <Shape>
+              <Polygon POINTS="1592 494 1667 489 1671 539 1671 565 1596 568" />
+            </Shape>
+            <String CONTENT="1908" HPOS="1584" VPOS="481" WIDTH="95" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_132" TAGREFS="LT1" HPOS="1574" VPOS="623" WIDTH="104" HEIGHT="121" BASELINE="1588 696 1668 690">
+            <Shape>
+              <Polygon POINTS="1591 736 1582 631 1664 638 1668 690 1670 717" />
+            </Shape>
+            <String CONTENT="1921" HPOS="1574" VPOS="623" WIDTH="104" HEIGHT="121" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_133" TAGREFS="LT1" HPOS="1581" VPOS="777" WIDTH="85" HEIGHT="106" BASELINE="1592 841 1657 845">
+            <Shape>
+              <Polygon POINTS="1652 875 1589 865 1595 785 1658 792 1657 845" />
+            </Shape>
+            <String CONTENT="193." HPOS="1581" VPOS="777" WIDTH="85" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_134" TAGREFS="LT1" HPOS="1588" VPOS="939" WIDTH="97" HEIGHT="93" BASELINE="1599 996 1677 992">
+            <Shape>
+              <Polygon POINTS="1596 955 1671 947 1677 992 1677 1024 1599 1021" />
+            </Shape>
+            <String CONTENT="19 /17" HPOS="1588" VPOS="939" WIDTH="97" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_135" TAGREFS="LT1" HPOS="1590" VPOS="1083" WIDTH="99" HEIGHT="101" BASELINE="1598 1149 1681 1149">
+            <Shape>
+              <Polygon POINTS="1681 1094 1681 1149 1680 1176 1598 1173 1598 1091" />
+            </Shape>
+            <String CONTENT="1927" HPOS="1590" VPOS="1083" WIDTH="99" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_136" TAGREFS="LT1" HPOS="1350" VPOS="1230" WIDTH="336" HEIGHT="101" BASELINE="1359 1293 1678 1295">
+            <Shape>
+              <Polygon POINTS="1678 1247 1678 1295 1675 1323 1358 1316 1359 1255 1402 1238 1406 1238 1582 1239" />
+            </Shape>
+            <String CONTENT="сенисовка (Я/ 18" HPOS="1350" VPOS="1230" WIDTH="336" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_137" TAGREFS="LT1" HPOS="1350" VPOS="1310" WIDTH="231" HEIGHT="100" BASELINE="1359 1370 1573 1367">
+            <Shape>
+              <Polygon POINTS="1359 1402 1358 1321 1530 1318 1534 1318 1570 1337 1573 1367 1572 1402" />
+            </Shape>
+            <String CONTENT="бригов обл." HPOS="1350" VPOS="1310" WIDTH="231" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_138" TAGREFS="LT1" HPOS="1350" VPOS="1390" WIDTH="174" HEIGHT="93" BASELINE="1359 1442 1516 1444">
+            <Shape>
+              <Polygon POINTS="1358 1462 1360 1402 1409 1398 1414 1398 1514 1412 1516 1444 1513 1468 1411 1475 1409 1475" />
+            </Shape>
+            <String CONTENT="хугрим." HPOS="1350" VPOS="1390" WIDTH="174" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_139" TAGREFS="LT1" HPOS="1362" VPOS="1457" WIDTH="218" HEIGHT="95" BASELINE="1372 1516 1572 1513">
+            <Shape>
+              <Polygon POINTS="1372 1544 1370 1468 1524 1465 1526 1465 1570 1482 1572 1513 1572 1544" />
+            </Shape>
+            <String CONTENT="Курс. обл." HPOS="1362" VPOS="1457" WIDTH="218" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_140" TAGREFS="LT1" HPOS="1383" VPOS="1538" WIDTH="198" HEIGHT="96" BASELINE="1391 1592 1573 1592">
+            <Shape>
+              <Polygon POINTS="1406 1546 1552 1546 1573 1556 1573 1592 1572 1626 1391 1623 1391 1554" />
+            </Shape>
+            <String CONTENT="Харків" HPOS="1383" VPOS="1538" WIDTH="198" HEIGHT="96" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_141" TAGREFS="LT1" HPOS="1593" VPOS="1387" WIDTH="88" HEIGHT="98" BASELINE="1604 1446 1673 1444">
+            <Shape>
+              <Polygon POINTS="1673 1444 1671 1477 1604 1471 1601 1395 1670 1398" />
+            </Shape>
+            <String CONTENT="1930" HPOS="1593" VPOS="1387" WIDTH="88" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_142" TAGREFS="LT1" HPOS="1591" VPOS="1532" WIDTH="107" HEIGHT="102" BASELINE="1599 1593 1690 1593">
+            <Shape>
+              <Polygon POINTS="1690 1543 1690 1593 1688 1626 1599 1621 1599 1540" />
+            </Shape>
+            <String CONTENT="1938" HPOS="1591" VPOS="1532" WIDTH="107" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_143" TAGREFS="LT1" HPOS="1768" VPOS="199" WIDTH="61" HEIGHT="151" BASELINE="1795 208 1798 342">
+            <Shape>
+              <Polygon POINTS="1776 342 1776 208 1816 207 1821 338 1798 342" />
+            </Shape>
+            <String CONTENT="Б҃." HPOS="1768" VPOS="199" WIDTH="61" HEIGHT="151" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_144" TAGREFS="LT1" HPOS="1716" VPOS="331" WIDTH="124" HEIGHT="109" BASELINE="1726 419 1832 418">
+            <Shape>
+              <Polygon POINTS="1832 418 1831 432 1726 431 1724 339 1828 348" />
+            </Shape>
+            <String CONTENT="И҆ речѐ гдⷭ҇ь ко" HPOS="1716" VPOS="331" WIDTH="124" HEIGHT="109" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_145" TAGREFS="LT1" HPOS="1770" VPOS="414" WIDTH="27" HEIGHT="87" BASELINE="1778 460 1789 460">
+            <Shape>
+              <Polygon POINTS="1779 493 1778 460 1778 422 1788 422 1789 460 1789 489" />
+            </Shape>
+            <String CONTENT="ц҃" HPOS="1770" VPOS="414" WIDTH="27" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_146" TAGREFS="LT1" HPOS="1686" VPOS="633" WIDTH="164" HEIGHT="91" BASELINE="1697 691 1842 686">
+            <Shape>
+              <Polygon POINTS="1697 716 1694 653 1721 641 1763 641 1806 642 1839 650 1842 686 1842 711" />
+            </Shape>
+            <String CONTENT="Линцы" HPOS="1686" VPOS="633" WIDTH="164" HEIGHT="91" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_147" TAGREFS="LT1" HPOS="1686" VPOS="703" WIDTH="172" HEIGHT="100" BASELINE="1696 760 1850 758">
+            <Shape>
+              <Polygon POINTS="1696 795 1694 713 1717 711 1803 711 1848 727 1850 758 1850 791" />
+            </Shape>
+            <String CONTENT="Харабл." HPOS="1686" VPOS="703" WIDTH="172" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_148" TAGREFS="LT1" HPOS="1903" VPOS="879" WIDTH="49" HEIGHT="81" BASELINE="1911 926 1944 926">
+            <Shape>
+              <Polygon POINTS="1944 888 1944 949 1911 952 1911 887" />
+            </Shape>
+            <String CONTENT="6." HPOS="1903" VPOS="879" WIDTH="49" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_149" TAGREFS="LT1" HPOS="1695" VPOS="938" WIDTH="229" HEIGHT="99" BASELINE="1704 995 1916 991">
+            <Shape>
+              <Polygon POINTS="1913 963 1916 991 1914 1011 1844 1028 1775 1029 1719 1029 1704 1019 1703 949 1776 946 1809 946" />
+            </Shape>
+            <String CONTENT="Грай вороц" HPOS="1695" VPOS="938" WIDTH="229" HEIGHT="99" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_150" TAGREFS="LT1" HPOS="1699" VPOS="1240" WIDTH="252" HEIGHT="94" BASELINE="1709 1298 1943 1293">
+            <Shape>
+              <Polygon POINTS="1709 1326 1707 1254 1760 1248 1901 1248 1942 1259 1943 1293 1943 1313 1906 1324" />
+            </Shape>
+            <String CONTENT="свеликовы" HPOS="1699" VPOS="1240" WIDTH="252" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_151" TAGREFS="LT1" HPOS="1711" VPOS="1309" WIDTH="184" HEIGHT="97" BASELINE="1719 1370 1887 1367">
+            <Shape>
+              <Polygon POINTS="1881 1317 1887 1367 1885 1395 1719 1398 1719 1320" />
+            </Shape>
+            <String CONTENT="Оригов об" HPOS="1711" VPOS="1309" WIDTH="184" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_152" TAGREFS="LT1" HPOS="1699" VPOS="1392" WIDTH="174" HEIGHT="98" BASELINE="1709 1448 1865 1442">
+            <Shape>
+              <Polygon POINTS="1709 1472 1707 1411 1763 1400 1766 1400 1861 1413 1865 1442 1865 1475 1778 1482 1773 1482" />
+            </Shape>
+            <String CONTENT="Я Угрем" HPOS="1699" VPOS="1392" WIDTH="174" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_153" TAGREFS="LT1" HPOS="1702" VPOS="1461" WIDTH="166" HEIGHT="113" BASELINE="1711 1520 1860 1517">
+            <Shape>
+              <Polygon POINTS="1711 1554 1710 1469 1742 1469 1855 1472 1860 1517 1860 1551 1778 1566 1776 1566" />
+            </Shape>
+            <String CONTENT="Кур оба" HPOS="1702" VPOS="1461" WIDTH="166" HEIGHT="113" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_154" TAGREFS="LT1" HPOS="1355" VPOS="1674" WIDTH="587" HEIGHT="114" BASELINE="1365 1734 1690 1747 1934 1740">
+            <Shape>
+              <Polygon POINTS="1933 1687 1934 1740 1933 1766 1818 1780 1776 1780 1572 1777 1393 1770 1363 1760 1365 1698 1386 1690 1602 1682 1606 1682" />
+            </Shape>
+            <String CONTENT="тубельцы (1924 к музелаці" HPOS="1355" VPOS="1674" WIDTH="587" HEIGHT="114" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_155" TAGREFS="LT1" HPOS="1354" VPOS="1755" WIDTH="216" HEIGHT="95" BASELINE="1363 1812 1562 1813">
+            <Shape>
+              <Polygon POINTS="1362 1833 1363 1766 1389 1763 1510 1763 1562 1777 1562 1813 1560 1839 1395 1842" />
+            </Shape>
+            <String CONTENT="киев обл." HPOS="1354" VPOS="1755" WIDTH="216" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_156" TAGREFS="LT1" HPOS="1708" VPOS="1756" WIDTH="165" HEIGHT="97" BASELINE="1717 1816 1865 1813">
+            <Shape>
+              <Polygon POINTS="1717 1845 1716 1766 1747 1764 1750 1764 1792 1770 1862 1782 1865 1813 1865 1845" />
+            </Shape>
+            <String CONTENT="Киевая" HPOS="1708" VPOS="1756" WIDTH="165" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_157" TAGREFS="LT1" HPOS="1345" VPOS="1824" WIDTH="633" HEIGHT="111" BASELINE="1355 1881 1786 1891 1970 1875">
+            <Shape>
+              <Polygon POINTS="1353 1902 1355 1836 1370 1832 1373 1832 1966 1833 1970 1875 1969 1905 1929 1914 1791 1925 1749 1927 1569 1927 1395 1920" />
+            </Shape>
+            <String CONTENT="Черноско-Лужи 1904 и законно-наро-" HPOS="1345" VPOS="1824" WIDTH="633" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_158" TAGREFS="LT1" HPOS="1352" VPOS="1897" WIDTH="213" HEIGHT="105" BASELINE="1362 1954 1557 1957">
+            <Shape>
+              <Polygon POINTS="1360 1983 1362 1905 1530 1908 1557 1920 1557 1957 1556 1990 1467 1994 1395 1993" />
+            </Shape>
+            <String CONTENT="Харків об." HPOS="1352" VPOS="1897" WIDTH="213" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_159" TAGREFS="LT1" HPOS="1344" VPOS="1971" WIDTH="361" HEIGHT="111" BASELINE="1353 2029 1697 2040">
+            <Shape>
+              <Polygon POINTS="1697 1996 1697 2040 1696 2074 1629 2074 1396 2065 1352 2055 1353 2029 1355 1979 1608 1987 1647 1989" />
+            </Shape>
+            <String CONTENT="Верноско-Лозоже 14/7" HPOS="1344" VPOS="1971" WIDTH="361" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_160" TAGREFS="LT1" HPOS="1368" VPOS="2044" WIDTH="199" HEIGHT="101" BASELINE="1379 2102 1559 2110">
+            <Shape>
+              <Polygon POINTS="1376 2131 1382 2052 1486 2056 1559 2065 1559 2110 1556 2137" />
+            </Shape>
+            <String CONTENT="Карковой" HPOS="1368" VPOS="2044" WIDTH="199" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_161" TAGREFS="LT1" HPOS="1364" VPOS="2116" WIDTH="189" HEIGHT="108" BASELINE="1375 2180 1545 2190">
+            <Shape>
+              <Polygon POINTS="1372 2204 1379 2124 1497 2131 1545 2153 1545 2190 1543 2212 1424 2216 1422 2216" />
+            </Shape>
+            <String CONTENT="Карків" HPOS="1364" VPOS="2116" WIDTH="189" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_162" TAGREFS="LT1" HPOS="1357" VPOS="2270" WIDTH="219" HEIGHT="98" BASELINE="1366 2327 1568 2331">
+            <Shape>
+              <Polygon POINTS="1566 2281 1568 2331 1565 2360 1365 2351 1366 2285 1406 2278 1409 2278" />
+            </Shape>
+            <String CONTENT="с Снемков" HPOS="1357" VPOS="2270" WIDTH="219" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_163" TAGREFS="LT1" HPOS="1358" VPOS="2337" WIDTH="222" HEIGHT="114" BASELINE="1368 2402 1572 2406">
+            <Shape>
+              <Polygon POINTS="1366 2432 1368 2345 1483 2348 1555 2351 1572 2363 1572 2406 1570 2443 1504 2443 1437 2440" />
+            </Shape>
+            <String CONTENT="Харків аб." HPOS="1358" VPOS="2337" WIDTH="222" HEIGHT="114" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_164" TAGREFS="LT1" HPOS="1583" VPOS="2123" WIDTH="108" HEIGHT="137" BASELINE="1593 2190 1683 2186">
+            <Shape>
+              <Polygon POINTS="1595 2252 1591 2131 1678 2141 1683 2186 1683 2217 1615 2252" />
+            </Shape>
+            <String CONTENT="1926" HPOS="1583" VPOS="2123" WIDTH="108" HEIGHT="137" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_165" TAGREFS="LT1" HPOS="1610" VPOS="2277" WIDTH="85" HEIGHT="99" BASELINE="1619 2338 1686 2341">
+            <Shape>
+              <Polygon POINTS="1621 2285 1687 2288 1686 2341 1684 2368 1618 2368 1619 2338" />
+            </Shape>
+            <String CONTENT="аа" HPOS="1610" VPOS="2277" WIDTH="85" HEIGHT="99" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_166" TAGREFS="LT1" HPOS="1705" VPOS="1903" WIDTH="180" HEIGHT="108" BASELINE="1714 1967 1877 1964">
+            <Shape>
+              <Polygon POINTS="1713 1917 1873 1911 1877 1964 1877 1993 1850 2003 1714 1997" />
+            </Shape>
+            <String CONTENT="хорося сей." HPOS="1705" VPOS="1903" WIDTH="180" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_167" TAGREFS="LT1" HPOS="1701" VPOS="1978" WIDTH="247" HEIGHT="111" BASELINE="1709 2039 1828 2040 1940 2032">
+            <Shape>
+              <Polygon POINTS="1709 2071 1709 1992 1936 1986 1940 2032 1940 2064 1903 2076 1746 2081 1742 2081" />
+            </Shape>
+            <String CONTENT="Чаркаскорму" HPOS="1701" VPOS="1978" WIDTH="247" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_168" TAGREFS="LT1" HPOS="1724" VPOS="2054" WIDTH="155" HEIGHT="107" BASELINE="1733 2115 1871 2112">
+            <Shape>
+              <Polygon POINTS="1733 2153 1732 2064 1826 2062 1828 2062 1868 2071 1871 2112 1871 2145" />
+            </Shape>
+            <String CONTENT="Хор обл" HPOS="1724" VPOS="2054" WIDTH="155" HEIGHT="107" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_169" TAGREFS="LT1" HPOS="1725" VPOS="2148" WIDTH="43" HEIGHT="54" BASELINE="1733 2180 1760 2180">
+            <Shape>
+              <Polygon POINTS="1760 2157 1760 2192 1733 2194 1733 2156" />
+            </Shape>
+            <String CONTENT="отъ" HPOS="1725" VPOS="2148" WIDTH="43" HEIGHT="54" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_170" TAGREFS="LT1" HPOS="1692" VPOS="2277" WIDTH="194" HEIGHT="104" BASELINE="1703 2341 1878 2332">
+            <Shape>
+              <Polygon POINTS="1704 2373 1700 2285 1750 2285 1848 2291 1875 2297 1878 2332 1878 2353 1791 2370" />
+            </Shape>
+            <String CONTENT="С Снемаки" HPOS="1692" VPOS="2277" WIDTH="194" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_171" TAGREFS="LT1" HPOS="1706" VPOS="2349" WIDTH="147" HEIGHT="111" BASELINE="1717 2413 1845 2407">
+            <Shape>
+              <Polygon POINTS="1717 2450 1714 2360 1819 2357 1822 2357 1841 2358 1845 2407 1845 2452" />
+            </Shape>
+            <String CONTENT="Хор об" HPOS="1706" VPOS="2349" WIDTH="147" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_172" TAGREFS="LT1" HPOS="1978" VPOS="870" WIDTH="45" HEIGHT="85" BASELINE="1992 926 2015 923">
+            <Shape>
+              <Polygon POINTS="1986 888 2006 878 2015 923 2015 947 1993 946" />
+            </Shape>
+            <String CONTENT="36." HPOS="1978" VPOS="870" WIDTH="45" HEIGHT="85" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_173" TAGREFS="LT1" HPOS="2047" VPOS="177" WIDTH="58" HEIGHT="66" BASELINE="2057 220 2097 221">
+            <Shape>
+              <Polygon POINTS="2055 233 2057 188 2091 185 2097 189 2097 221 2094 235" />
+            </Shape>
+            <String CONTENT="є҆го̀." HPOS="2047" VPOS="177" WIDTH="58" HEIGHT="66" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_174" TAGREFS="LT1" HPOS="2049" VPOS="342" WIDTH="57" HEIGHT="84" BASELINE="2061 391 2098 388">
+            <Shape>
+              <Polygon POINTS="2098 405 2064 418 2061 391 2057 350 2093 350 2098 388" />
+            </Shape>
+            <String CONTENT="гдⷭ҇а бж҃е" HPOS="2049" VPOS="342" WIDTH="57" HEIGHT="84" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_175" TAGREFS="LT1" HPOS="2034" VPOS="380" WIDTH="107" HEIGHT="68" BASELINE="2044 428 2133 430">
+            <Shape>
+              <Polygon POINTS="2131 388 2133 430 2130 440 2042 438 2044 408 2098 389" />
+            </Shape>
+            <String CONTENT="ѡ҆брѣже́нїемъ" HPOS="2034" VPOS="380" WIDTH="107" HEIGHT="68" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_176" TAGREFS="LT1" HPOS="2073" VPOS="426" WIDTH="38" HEIGHT="78" BASELINE="2081 468 2103 468">
+            <Shape>
+              <Polygon POINTS="2103 434 2103 496 2081 496 2081 434" />
+            </Shape>
+            <String CONTENT="12" HPOS="2073" VPOS="426" WIDTH="38" HEIGHT="78" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_177" TAGREFS="LT1" HPOS="2033" VPOS="488" WIDTH="99" HEIGHT="93" BASELINE="2041 542 2124 542">
+            <Shape>
+              <Polygon POINTS="2041 496 2123 496 2124 542 2124 573 2041 573" />
+            </Shape>
+            <String CONTENT="Бу" HPOS="2033" VPOS="488" WIDTH="99" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_178" TAGREFS="LT1" HPOS="2026" VPOS="634" WIDTH="102" HEIGHT="108" BASELINE="2038 700 2120 696">
+            <Shape>
+              <Polygon POINTS="2034 642 2116 644 2120 696 2120 723 2106 732 2041 734 2038 700" />
+            </Shape>
+            <String CONTENT="1934" HPOS="2026" VPOS="634" WIDTH="102" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_179" TAGREFS="LT1" HPOS="2041" VPOS="798" WIDTH="91" HEIGHT="58" BASELINE="2049 824 2124 827">
+            <Shape>
+              <Polygon POINTS="2124 806 2124 827 2123 838 2093 848 2091 848 2049 845 2049 806" />
+            </Shape>
+            <String CONTENT="— А." HPOS="2041" VPOS="798" WIDTH="91" HEIGHT="58" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_180" TAGREFS="LT1" HPOS="2181" VPOS="273" WIDTH="59" HEIGHT="117" BASELINE="2211 382 2212 283">
+            <Shape>
+              <Polygon POINTS="2189 379 2190 281 2226 283 2232 381 2211 382" />
+            </Shape>
+            <String CONTENT="з ч҃." HPOS="2181" VPOS="273" WIDTH="59" HEIGHT="117" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_181" TAGREFS="LT1" HPOS="2198" VPOS="357" WIDTH="28" HEIGHT="95" BASELINE="2206 430 2218 430">
+            <Shape>
+              <Polygon POINTS="2218 365 2218 444 2206 444 2206 365" />
+            </Shape>
+            <String CONTENT="Зач҇," HPOS="2198" VPOS="357" WIDTH="28" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_182" TAGREFS="LT1" HPOS="2223" VPOS="334" WIDTH="52" HEIGHT="33" BASELINE="2252 359 2252 342">
+            <Shape>
+              <Polygon POINTS="2231 342 2267 342 2265 359 2252 359 2231 358" />
+            </Shape>
+            <String CONTENT="і҆ꙋ́дѣ." HPOS="2223" VPOS="334" WIDTH="52" HEIGHT="33" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_183" TAGREFS="LT1" HPOS="2230" VPOS="347" WIDTH="39" HEIGHT="105" BASELINE="2239 430 2258 431">
+            <Shape>
+              <Polygon POINTS="2238 438 2244 355 2261 358 2258 431 2254 444" />
+            </Shape>
+            <String CONTENT="Б в҃." HPOS="2230" VPOS="347" WIDTH="39" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_184" TAGREFS="LT1" HPOS="2227" VPOS="426" WIDTH="46" HEIGHT="83" BASELINE="2239 471 2262 468">
+            <Shape>
+              <Polygon POINTS="2242 501 2235 434 2257 434 2262 468 2265 500" />
+            </Shape>
+            <String CONTENT="13" HPOS="2227" VPOS="426" WIDTH="46" HEIGHT="83" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_185" TAGREFS="LT1" HPOS="2262" VPOS="209" WIDTH="67" HEIGHT="187" BASELINE="2291 388 2294 218">
+            <Shape>
+              <Polygon POINTS="2270 217 2316 218 2321 350 2321 352 2318 388 2291 388 2270 385" />
+            </Shape>
+            <String CONTENT="въ і҃." HPOS="2262" VPOS="209" WIDTH="67" HEIGHT="187" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_186" TAGREFS="LT1" HPOS="2276" VPOS="357" WIDTH="36" HEIGHT="95" BASELINE="2287 430 2295 431">
+            <Shape>
+              <Polygon POINTS="2290 444 2284 441 2297 365 2304 365 2295 431" />
+            </Shape>
+            <String CONTENT="Бойⷮ." HPOS="2276" VPOS="357" WIDTH="36" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_187" TAGREFS="LT1" HPOS="2426" VPOS="199" WIDTH="70" HEIGHT="250" BASELINE="2458 441 2462 208">
+            <Shape>
+              <Polygon POINTS="2434 437 2441 207 2488 208 2482 441 2458 441" />
+            </Shape>
+            <String CONTENT="помочились" HPOS="2426" VPOS="199" WIDTH="70" HEIGHT="250" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_188" TAGREFS="LT1" HPOS="2436" VPOS="429" WIDTH="40" HEIGHT="79" BASELINE="2451 471 2465 474">
+            <Shape>
+              <Polygon POINTS="2458 500 2444 499 2457 437 2468 437 2465 474" />
+            </Shape>
+            <String CONTENT="і҃а" HPOS="2436" VPOS="429" WIDTH="40" HEIGHT="79" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_189" TAGREFS="LT1" HPOS="2136" VPOS="481" WIDTH="388" HEIGHT="108" BASELINE="2146 543 2516 540">
+            <Shape>
+              <Polygon POINTS="2146 571 2144 490 2341 489 2346 489 2458 494 2513 504 2516 540 2514 573 2415 581 2176 579" />
+            </Shape>
+            <String CONTENT="Кришевска повар" HPOS="2136" VPOS="481" WIDTH="388" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_190" TAGREFS="LT1" HPOS="2139" VPOS="627" WIDTH="147" HEIGHT="103" BASELINE="2150 690 2278 686">
+            <Shape>
+              <Polygon POINTS="2278 686 2277 722 2150 717 2147 635 2219 635 2274 647" />
+            </Shape>
+            <String CONTENT="Новая" HPOS="2139" VPOS="627" WIDTH="147" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_191" TAGREFS="LT1" HPOS="2132" VPOS="698" WIDTH="217" HEIGHT="79" BASELINE="2142 749 2341 755">
+            <Shape>
+              <Polygon POINTS="2341 710 2341 755 2339 769 2140 766 2142 709 2173 706" />
+            </Shape>
+            <String CONTENT="Колонія XIV3." HPOS="2132" VPOS="698" WIDTH="217" HEIGHT="79" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_192" TAGREFS="LT1" HPOS="2181" VPOS="793" WIDTH="125" HEIGHT="53" BASELINE="2190 824 2298 819">
+            <Shape>
+              <Polygon POINTS="2189 804 2294 801 2298 819 2298 838 2190 838" />
+            </Shape>
+            <String CONTENT="— 11 —" HPOS="2181" VPOS="793" WIDTH="125" HEIGHT="53" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_193" TAGREFS="LT1" HPOS="2349" VPOS="640" WIDTH="189" HEIGHT="110" BASELINE="2359 696 2530 693">
+            <Shape>
+              <Polygon POINTS="2359 734 2357 657 2429 650 2465 648 2471 648 2527 660 2530 693 2527 740 2493 742 2491 742" />
+            </Shape>
+            <String CONTENT="маляр." HPOS="2349" VPOS="640" WIDTH="189" HEIGHT="110" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_194" TAGREFS="LT1" HPOS="2358" VPOS="869" WIDTH="66" HEIGHT="60" BASELINE="2367 910 2416 909">
+            <Shape>
+              <Polygon POINTS="2367 921 2366 877 2415 890 2416 909 2416 916" />
+            </Shape>
+            <String CONTENT="nan" HPOS="2358" VPOS="869" WIDTH="66" HEIGHT="60" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_195" TAGREFS="LT1" HPOS="2415" VPOS="879" WIDTH="50" HEIGHT="52" BASELINE="2425 909 2457 907">
+            <Shape>
+              <Polygon POINTS="2425 923 2423 887 2452 887 2457 907 2457 920" />
+            </Shape>
+            <String CONTENT="-" HPOS="2415" VPOS="879" WIDTH="50" HEIGHT="52" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_196" TAGREFS="LT1" HPOS="2034" VPOS="934" WIDTH="462" HEIGHT="109" BASELINE="2044 999 2290 986 2488 992">
+            <Shape>
+              <Polygon POINTS="2044 1024 2042 952 2124 943 2347 942 2436 942 2485 953 2488 992 2487 1028 2162 1035 2159 1035" />
+            </Shape>
+            <String CONTENT="194 фраикевск повар" HPOS="2034" VPOS="934" WIDTH="462" HEIGHT="109" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_197" TAGREFS="LT1" HPOS="2046" VPOS="1023" WIDTH="68" HEIGHT="82" BASELINE="2058 1075 2106 1071">
+            <Shape>
+              <Polygon POINTS="2054 1042 2098 1031 2106 1071 2104 1097 2060 1094" />
+            </Shape>
+            <String CONTENT="IV" HPOS="2046" VPOS="1023" WIDTH="68" HEIGHT="82" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_198" TAGREFS="LT1" HPOS="2030" VPOS="1082" WIDTH="108" HEIGHT="98" BASELINE="2041 1146 2130 1142">
+            <Shape>
+              <Polygon POINTS="2038 1106 2124 1090 2130 1142 2130 1163 2042 1172" />
+            </Shape>
+            <String CONTENT="142" HPOS="2030" VPOS="1082" WIDTH="108" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_199" TAGREFS="LT1" HPOS="2043" VPOS="1167" WIDTH="66" HEIGHT="79" BASELINE="2057 1221 2100 1215">
+            <Shape>
+              <Polygon POINTS="2058 1238 2051 1180 2091 1175 2100 1215 2101 1235" />
+            </Shape>
+            <String CONTENT="117" HPOS="2043" VPOS="1167" WIDTH="66" HEIGHT="79" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_200" TAGREFS="LT1" HPOS="2026" VPOS="1234" WIDTH="113" HEIGHT="101" BASELINE="2037 1298 2131 1294">
+            <Shape>
+              <Polygon POINTS="2038 1327 2034 1242 2127 1245 2131 1294 2131 1313" />
+            </Shape>
+            <String CONTENT="і ячя" HPOS="2026" VPOS="1234" WIDTH="113" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_201" TAGREFS="LT1" HPOS="2053" VPOS="1305" WIDTH="61" HEIGHT="72" BASELINE="2065 1357 2106 1354">
+            <Shape>
+              <Polygon POINTS="2065 1369 2061 1314 2100 1313 2106 1354 2106 1366" />
+            </Shape>
+            <String CONTENT="IV" HPOS="2053" VPOS="1305" WIDTH="61" HEIGHT="72" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_202" TAGREFS="LT1" HPOS="2158" VPOS="1014" WIDTH="144" HEIGHT="87" BASELINE="2167 1072 2294 1068">
+            <Shape>
+              <Polygon POINTS="2167 1093 2166 1045 2213 1022 2258 1022 2291 1026 2294 1068 2293 1091" />
+            </Shape>
+            <String CONTENT="міо" HPOS="2158" VPOS="1014" WIDTH="144" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_203" TAGREFS="LT1" HPOS="2154" VPOS="1089" WIDTH="144" HEIGHT="92" BASELINE="2163 1134 2290 1130">
+            <Shape>
+              <Polygon POINTS="2163 1173 2162 1103 2177 1098 2213 1097 2216 1097 2287 1103 2290 1130 2290 1173" />
+            </Shape>
+            <String CONTENT="— 18." HPOS="2154" VPOS="1089" WIDTH="144" HEIGHT="92" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_204" TAGREFS="LT1" HPOS="2158" VPOS="1239" WIDTH="89" HEIGHT="59" BASELINE="2167 1278 2239 1280">
+            <Shape>
+              <Polygon POINTS="2238 1247 2239 1280 2238 1290 2166 1290 2167 1254" />
+            </Shape>
+            <String CONTENT="- и҃" HPOS="2158" VPOS="1239" WIDTH="89" HEIGHT="59" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_205" TAGREFS="LT1" HPOS="2378" VPOS="1231" WIDTH="51" HEIGHT="100" BASELINE="2388 1272 2421 1274">
+            <Shape>
+              <Polygon POINTS="2386 1323 2388 1239 2421 1245 2421 1274 2418 1314" />
+            </Shape>
+            <String CONTENT="польской" HPOS="2378" VPOS="1231" WIDTH="51" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_206" TAGREFS="LT1" HPOS="2036" VPOS="1372" WIDTH="515" HEIGHT="114" BASELINE="2045 1439 2179 1426 2543 1431">
+            <Shape>
+              <Polygon POINTS="2045 1464 2044 1385 2180 1380 2314 1380 2480 1383 2541 1396 2543 1431 2541 1465 2375 1477 2167 1478 2100 1478 2095 1477" />
+            </Shape>
+            <String CONTENT="1932 (Чернимивском коз" HPOS="2036" VPOS="1372" WIDTH="515" HEIGHT="114" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_207" TAGREFS="LT1" HPOS="2059" VPOS="1571" WIDTH="43" HEIGHT="60" BASELINE="2067 1596 2094 1596">
+            <Shape>
+              <Polygon POINTS="2094 1622 2067 1623 2067 1579 2093 1579 2094 1596" />
+            </Shape>
+            <String CONTENT="-" HPOS="2059" VPOS="1571" WIDTH="43" HEIGHT="60" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_208" TAGREFS="LT1" HPOS="2049" VPOS="1644" WIDTH="65" HEIGHT="46" BASELINE="2057 1669 2106 1669">
+            <Shape>
+              <Polygon POINTS="2106 1652 2106 1681 2057 1682 2057 1652" />
+            </Shape>
+            <String CONTENT="положивает" HPOS="2049" VPOS="1644" WIDTH="65" HEIGHT="46" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_209" TAGREFS="LT1" HPOS="2036" VPOS="1666" WIDTH="493" HEIGHT="111" BASELINE="2045 1730 2521 1721">
+            <Shape>
+              <Polygon POINTS="2045 1756 2044 1685 2055 1679 2108 1678 2344 1674 2349 1674 2428 1677 2517 1685 2521 1721 2521 1757 2356 1766 2152 1769 2149 1769" />
+            </Shape>
+            <String CONTENT="1942 франкве дом хаз" HPOS="2036" VPOS="1666" WIDTH="493" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_210" TAGREFS="LT1" HPOS="2194" VPOS="1743" WIDTH="99" HEIGHT="71" BASELINE="2202 1796 2285 1796">
+            <Shape>
+              <Polygon POINTS="2202 1760 2284 1751 2285 1796 2285 1805 2202 1806" />
+            </Shape>
+            <String CONTENT="л҃ѕ" HPOS="2194" VPOS="1743" WIDTH="99" HEIGHT="71" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_211" TAGREFS="LT1" HPOS="2594" VPOS="397" WIDTH="58" HEIGHT="41" BASELINE="2623 430 2625 408">
+            <Shape>
+              <Polygon POINTS="2644 428 2623 430 2603 427 2602 405 2642 408" />
+            </Shape>
+            <String CONTENT="і҆ꙋ́дѣ." HPOS="2594" VPOS="397" WIDTH="58" HEIGHT="41" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_212" TAGREFS="LT1" HPOS="2592" VPOS="249" WIDTH="62" HEIGHT="145" BASELINE="2626 386 2629 258">
+            <Shape>
+              <Polygon POINTS="2600 257 2646 258 2639 386 2626 386 2605 384" />
+            </Shape>
+            <String CONTENT="в҃." HPOS="2592" VPOS="249" WIDTH="62" HEIGHT="145" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_213" TAGREFS="LT1" HPOS="2630" VPOS="237" WIDTH="59" HEIGHT="160" BASELINE="2665 389 2668 247">
+            <Shape>
+              <Polygon POINTS="2681 247 2680 389 2665 389 2638 385 2642 245" />
+            </Shape>
+            <String CONTENT="і҃" HPOS="2630" VPOS="237" WIDTH="59" HEIGHT="160" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_214" TAGREFS="LT1" HPOS="2654" VPOS="394" WIDTH="25" HEIGHT="69" BASELINE="2662 438 2671 438">
+            <Shape>
+              <Polygon POINTS="2671 402 2671 455 2662 455 2662 402" />
+            </Shape>
+            <String CONTENT="приложится колько" HPOS="2654" VPOS="394" WIDTH="25" HEIGHT="69" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_215" TAGREFS="LT1" HPOS="2643" VPOS="435" WIDTH="43" HEIGHT="80" BASELINE="2658 476 2674 473">
+            <Shape>
+              <Polygon POINTS="2651 443 2667 443 2674 473 2678 507 2662 507" />
+            </Shape>
+            <String CONTENT="nan" HPOS="2643" VPOS="435" WIDTH="43" HEIGHT="80" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_216" TAGREFS="LT1" HPOS="2672" VPOS="227" WIDTH="63" HEIGHT="212" BASELINE="2704 431 2707 237">
+            <Shape>
+              <Polygon POINTS="2680 428 2682 235 2727 237 2723 430 2704 431" />
+            </Shape>
+            <String CONTENT="на его явились" HPOS="2672" VPOS="227" WIDTH="63" HEIGHT="212" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_217" TAGREFS="LT1" HPOS="2687" VPOS="363" WIDTH="31" HEIGHT="100" BASELINE="2695 437 2710 437">
+            <Shape>
+              <Polygon POINTS="2695 371 2708 371 2710 437 2710 455 2695 455" />
+            </Shape>
+            <String CONTENT="Б" HPOS="2687" VPOS="363" WIDTH="31" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_218" TAGREFS="LT1" HPOS="2559" VPOS="506" WIDTH="188" HEIGHT="90" BASELINE="2569 546 2739 549">
+            <Shape>
+              <Polygon POINTS="2567 581 2569 514 2739 517 2739 549 2737 579 2713 588 2665 588" />
+            </Shape>
+            <String CONTENT="пекарь." HPOS="2559" VPOS="506" WIDTH="188" HEIGHT="90" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_219" TAGREFS="LT1" HPOS="2548" VPOS="796" WIDTH="223" HEIGHT="95" BASELINE="2559 852 2763 842">
+            <Shape>
+              <Polygon POINTS="2560 883 2556 804 2599 804 2677 806 2760 812 2763 842 2763 871 2700 878 2608 883" />
+            </Shape>
+            <String CONTENT="Утриманк" HPOS="2548" VPOS="796" WIDTH="223" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_220" TAGREFS="LT1" HPOS="2569" VPOS="932" WIDTH="192" HEIGHT="118" BASELINE="2579 992 2753 986">
+            <Shape>
+              <Polygon POINTS="2579 1037 2577 957 2659 940 2662 940 2750 942 2753 986 2753 1018 2657 1042 2652 1042" />
+            </Shape>
+            <String CONTENT="утреб." HPOS="2569" VPOS="932" WIDTH="192" HEIGHT="118" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_221" TAGREFS="LT1" HPOS="2559" VPOS="1054" WIDTH="180" HEIGHT="88" BASELINE="2570 1101 2731 1107">
+            <Shape>
+              <Polygon POINTS="2567 1129 2570 1062 2731 1064 2731 1107 2727 1129 2703 1134 2697 1134" />
+            </Shape>
+            <String CONTENT="убаршица" HPOS="2559" VPOS="1054" WIDTH="180" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_222" TAGREFS="LT1" HPOS="2571" VPOS="1233" WIDTH="194" HEIGHT="111" BASELINE="2580 1281 2757 1284">
+            <Shape>
+              <Polygon POINTS="2579 1333 2580 1251 2606 1245 2652 1241 2659 1241 2757 1242 2757 1284 2756 1314 2654 1336 2651 1336" />
+            </Shape>
+            <String CONTENT="утр.85" HPOS="2571" VPOS="1233" WIDTH="194" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_223" TAGREFS="LT1" HPOS="2800" VPOS="243" WIDTH="60" HEIGHT="205" BASELINE="2825 440 2831 421 2835 253">
+            <Shape>
+              <Polygon POINTS="2808 434 2809 251 2852 253 2848 440 2825 440" />
+            </Shape>
+            <String CONTENT="гдⷭ҇а бж҃е" HPOS="2800" VPOS="243" WIDTH="60" HEIGHT="205" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_224" TAGREFS="LT1" HPOS="2774" VPOS="1680" WIDTH="178" HEIGHT="92" BASELINE="2782 1728 2944 1728">
+            <Shape>
+              <Polygon POINTS="2783 1688 2857 1688 2944 1702 2944 1754 2877 1764 2822 1764 2782 1757 2782 1728" />
+            </Shape>
+            <String CONTENT="продал." HPOS="2774" VPOS="1680" WIDTH="178" HEIGHT="92" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_225" TAGREFS="LT1" HPOS="2797" VPOS="1752" WIDTH="103" HEIGHT="81" BASELINE="2806 1797 2892 1795">
+            <Shape>
+              <Polygon POINTS="2806 1825 2805 1772 2852 1760 2855 1760 2888 1770 2892 1795 2892 1825" />
+            </Shape>
+            <String CONTENT="речі" HPOS="2797" VPOS="1752" WIDTH="103" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_226" TAGREFS="LT1" HPOS="2982" VPOS="502" WIDTH="65" HEIGHT="88" BASELINE="2993 552 3038 548">
+            <Shape>
+              <Polygon POINTS="2990 527 3031 510 3038 548 3039 578 2996 582" />
+            </Shape>
+            <String CONTENT="є" HPOS="2982" VPOS="502" WIDTH="65" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_227" TAGREFS="LT1" HPOS="2964" VPOS="650" WIDTH="116" HEIGHT="100" BASELINE="2973 697 3072 694">
+            <Shape>
+              <Polygon POINTS="3072 729 2976 742 2973 697 2972 658 3069 665 3072 694" />
+            </Shape>
+            <String CONTENT="нема" HPOS="2964" VPOS="650" WIDTH="116" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_228" TAGREFS="LT1" HPOS="2966" VPOS="1233" WIDTH="113" HEIGHT="101" BASELINE="2974 1285 3071 1285">
+            <Shape>
+              <Polygon POINTS="2976 1241 3069 1247 3071 1285 3071 1316 3025 1326 3023 1326 2974 1316 2974 1285" />
+            </Shape>
+            <String CONTENT="нича" HPOS="2966" VPOS="1233" WIDTH="113" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_229" TAGREFS="LT1" HPOS="2961" VPOS="1379" WIDTH="108" HEIGHT="134" BASELINE="2970 1431 3061 1428">
+            <Shape>
+              <Polygon POINTS="2969 1389 3056 1387 3061 1428 3061 1462 2995 1504 2992 1505 2972 1505 2970 1431" />
+            </Shape>
+            <String CONTENT="нема" HPOS="2961" VPOS="1379" WIDTH="108" HEIGHT="134" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_230" TAGREFS="LT1" HPOS="2034" VPOS="2251" WIDTH="107" HEIGHT="117" BASELINE="2048 2328 2131 2321">
+            <Shape>
+              <Polygon POINTS="2049 2360 2042 2272 2088 2259 2091 2259 2126 2263 2131 2321 2133 2347" />
+            </Shape>
+            <String CONTENT="125" HPOS="2034" VPOS="2251" WIDTH="107" HEIGHT="117" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_231" TAGREFS="LT1" HPOS="2175" VPOS="1887" WIDTH="114" HEIGHT="97" BASELINE="2186 1956 2281 1951">
+            <Shape>
+              <Polygon POINTS="2186 1976 2183 1917 2209 1898 2213 1897 2242 1895 2247 1895 2278 1911 2281 1951 2281 1976" />
+            </Shape>
+            <String CONTENT="32" HPOS="2175" VPOS="1887" WIDTH="114" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_232" TAGREFS="LT1" HPOS="2142" VPOS="1965" WIDTH="628" HEIGHT="101" BASELINE="2152 2020 2579 2025 2762 2010">
+            <Shape>
+              <Polygon POINTS="2152 2056 2150 1982 2163 1974 2550 1973 2554 1973 2757 1976 2762 2010 2760 2046 2605 2056 2536 2058 2341 2058" />
+            </Shape>
+            <String CONTENT="казатинская дом гда урешанки" HPOS="2142" VPOS="1965" WIDTH="628" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_233" TAGREFS="LT1" HPOS="2200" VPOS="2043" WIDTH="89" HEIGHT="89" BASELINE="2212 2095 2280 2091">
+            <Shape>
+              <Polygon POINTS="2213 2124 2208 2051 2277 2058 2280 2091 2281 2118" />
+            </Shape>
+            <String CONTENT="32" HPOS="2200" VPOS="2043" WIDTH="89" HEIGHT="89" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_234" TAGREFS="LT1" HPOS="2168" VPOS="2120" WIDTH="134" HEIGHT="88" BASELINE="2177 2158 2294 2161">
+            <Shape>
+              <Polygon POINTS="2176 2194 2177 2131 2236 2128 2238 2128 2293 2138 2294 2161 2291 2200" />
+            </Shape>
+            <String CONTENT="— к —" HPOS="2168" VPOS="2120" WIDTH="134" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_235" TAGREFS="LT1" HPOS="2565" VPOS="2035" WIDTH="171" HEIGHT="93" BASELINE="2575 2087 2654 2084 2727 2094">
+            <Shape>
+              <Polygon POINTS="2724 2117 2573 2120 2575 2051 2662 2043 2665 2043 2716 2048 2728 2052 2727 2094" />
+            </Shape>
+            <String CONTENT="чол д҃іо" HPOS="2565" VPOS="2035" WIDTH="171" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_236" TAGREFS="LT1" HPOS="2344" VPOS="2106" WIDTH="415" HEIGHT="98" BASELINE="2353 2163 2485 2157 2751 2161">
+            <Shape>
+              <Polygon POINTS="2352 2186 2353 2114 2575 2115 2665 2120 2750 2128 2751 2161 2750 2187 2490 2196 2422 2196" />
+            </Shape>
+            <String CONTENT="Саможник салопокик" HPOS="2344" VPOS="2106" WIDTH="415" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_237" TAGREFS="LT1" HPOS="2142" VPOS="2251" WIDTH="407" HEIGHT="117" BASELINE="2152 2317 2294 2308 2541 2309">
+            <Shape>
+              <Polygon POINTS="2152 2360 2150 2271 2190 2261 2295 2259 2360 2259 2421 2263 2540 2275 2541 2309 2541 2338 2493 2355 2193 2360" />
+            </Shape>
+            <String CONTENT="сверзнове семсарь" HPOS="2142" VPOS="2251" WIDTH="407" HEIGHT="117" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_238" TAGREFS="LT1" HPOS="2555" VPOS="2261" WIDTH="179" HEIGHT="94" BASELINE="2564 2308 2726 2311">
+            <Shape>
+              <Polygon POINTS="2563 2337 2564 2269 2726 2279 2726 2311 2724 2344 2598 2347" />
+            </Shape>
+            <String CONTENT="смеларе" HPOS="2555" VPOS="2261" WIDTH="179" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_239" TAGREFS="LT1" HPOS="2758" VPOS="1883" WIDTH="203" HEIGHT="102" BASELINE="2769 1943 2953 1937">
+            <Shape>
+              <Polygon POINTS="2769 1977 2766 1901 2796 1895 2875 1892 2911 1891 2914 1891 2950 1900 2953 1937 2953 1970" />
+            </Shape>
+            <String CONTENT="Москавия." HPOS="2758" VPOS="1883" WIDTH="203" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_240" TAGREFS="LT1" HPOS="2764" VPOS="2070" WIDTH="195" HEIGHT="101" BASELINE="2775 2122 2949 2140">
+            <Shape>
+              <Polygon POINTS="2772 2140 2777 2078 2951 2084 2949 2140 2946 2161 2861 2163 2857 2163" />
+            </Shape>
+            <String CONTENT="тов прогрес" HPOS="2764" VPOS="2070" WIDTH="195" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_241" TAGREFS="LT1" HPOS="2752" VPOS="2152" WIDTH="184" HEIGHT="95" BASELINE="2763 2222 2928 2215">
+            <Shape>
+              <Polygon POINTS="2763 2239 2760 2173 2859 2161 2923 2160 2928 2215 2928 2229" />
+            </Shape>
+            <String CONTENT="Московья" HPOS="2752" VPOS="2152" WIDTH="184" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_242" TAGREFS="LT1" HPOS="2777" VPOS="2244" WIDTH="158" HEIGHT="102" BASELINE="2785 2308 2927 2308">
+            <Shape>
+              <Polygon POINTS="2927 2275 2927 2308 2926 2338 2785 2337 2785 2258 2790 2252 2795 2252 2858 2255" />
+            </Shape>
+            <String CONTENT="хелза." HPOS="2777" VPOS="2244" WIDTH="158" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_243" TAGREFS="LT1" HPOS="2767" VPOS="2323" WIDTH="151" HEIGHT="111" BASELINE="2775 2361 2910 2361">
+            <Shape>
+              <Polygon POINTS="2910 2331 2910 2426 2865 2426 2775 2416 2775 2331" />
+            </Shape>
+            <String CONTENT="завод" HPOS="2767" VPOS="2323" WIDTH="151" HEIGHT="111" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_244" TAGREFS="LT1" HPOS="3010" VPOS="1484" WIDTH="43" HEIGHT="64" BASELINE="3018 1513 3045 1513">
+            <Shape>
+              <Polygon POINTS="3045 1513 3044 1540 3018 1539 3018 1492 3045 1492" />
+            </Shape>
+            <String CONTENT="польской." HPOS="3010" VPOS="1484" WIDTH="43" HEIGHT="64" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_245" TAGREFS="LT1" HPOS="3123" VPOS="271" WIDTH="65" HEIGHT="175" BASELINE="3160 438 3163 280">
+            <Shape>
+              <Polygon POINTS="3131 434 3133 279 3177 280 3180 437 3160 438" />
+            </Shape>
+            <String CONTENT="го і҃" HPOS="3123" VPOS="271" WIDTH="65" HEIGHT="175" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_246" TAGREFS="LT1" HPOS="3162" VPOS="437" WIDTH="39" HEIGHT="81" BASELINE="3173 481 3192 480">
+            <Shape>
+              <Polygon POINTS="3174 510 3170 445 3189 445 3192 480 3193 507" />
+            </Shape>
+            <String CONTENT="188" HPOS="3162" VPOS="437" WIDTH="39" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_247" TAGREFS="LT1" HPOS="3174" VPOS="365" WIDTH="59" HEIGHT="83" BASELINE="3203 440 3206 376">
+            <Shape>
+              <Polygon POINTS="3182 373 3225 376 3220 440 3203 440 3182 437" />
+            </Shape>
+            <String CONTENT="з҃і" HPOS="3174" VPOS="365" WIDTH="59" HEIGHT="83" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_248" TAGREFS="LT1" HPOS="3097" VPOS="508" WIDTH="163" HEIGHT="86" BASELINE="3107 553 3252 556">
+            <Shape>
+              <Polygon POINTS="3105 586 3107 516 3251 519 3252 556 3251 585" />
+            </Shape>
+            <String CONTENT="Увідрк" HPOS="3097" VPOS="508" WIDTH="163" HEIGHT="86" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_249" TAGREFS="LT1" HPOS="3126" VPOS="573" WIDTH="95" HEIGHT="93" BASELINE="3134 619 3213 619">
+            <Shape>
+              <Polygon POINTS="3213 655 3134 658 3134 582 3209 581 3213 619" />
+            </Shape>
+            <String CONTENT="Хор" HPOS="3126" VPOS="573" WIDTH="95" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_250" TAGREFS="LT1" HPOS="3112" VPOS="647" WIDTH="150" HEIGHT="98" BASELINE="3121 703 3254 701">
+            <Shape>
+              <Polygon POINTS="3249 657 3254 701 3252 736 3123 737 3121 703 3120 664 3154 655 3157 655" />
+            </Shape>
+            <String CONTENT="лвідрк." HPOS="3112" VPOS="647" WIDTH="150" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_251" TAGREFS="LT1" HPOS="3113" VPOS="708" WIDTH="79" HEIGHT="104" BASELINE="3127 759 3182 766">
+            <Shape>
+              <Polygon POINTS="3176 804 3121 799 3130 719 3141 716 3146 716 3184 727 3182 766" />
+            </Shape>
+            <String CONTENT="208" HPOS="3113" VPOS="708" WIDTH="79" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_252" TAGREFS="LT1" HPOS="3094" VPOS="1375" WIDTH="170" HEIGHT="120" BASELINE="3104 1428 3256 1436">
+            <Shape>
+              <Polygon POINTS="3102 1464 3105 1393 3147 1383 3149 1383 3184 1385 3187 1386 3256 1413 3256 1436 3252 1464 3182 1487 3177 1487 3153 1485 3150 1484" />
+            </Shape>
+            <String CONTENT="хвора." HPOS="3094" VPOS="1375" WIDTH="170" HEIGHT="120" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_253" TAGREFS="LT1" HPOS="3048" VPOS="1518" WIDTH="186" HEIGHT="108" BASELINE="3061 1587 3138 1576 3225 1576">
+            <Shape>
+              <Polygon POINTS="3062 1610 3056 1527 3092 1526 3094 1526 3222 1544 3225 1576 3226 1606 3104 1618 3102 1618" />
+            </Shape>
+            <String CONTENT="Утрина" HPOS="3048" VPOS="1518" WIDTH="186" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_254" TAGREFS="LT1" HPOS="3094" VPOS="1594" WIDTH="110" HEIGHT="93" BASELINE="3105 1655 3196 1651">
+            <Shape>
+              <Polygon POINTS="3105 1679 3102 1625 3138 1602 3141 1602 3192 1603 3196 1651 3196 1679" />
+            </Shape>
+            <String CONTENT="37" HPOS="3094" VPOS="1594" WIDTH="110" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_255" TAGREFS="LT1" HPOS="2959" VPOS="1666" WIDTH="275" HEIGHT="112" BASELINE="2969 1723 3226 1715">
+            <Shape>
+              <Polygon POINTS="2970 1770 2967 1681 3220 1674 3226 1715 3226 1749 3189 1757 3156 1764 3071 1767" />
+            </Shape>
+            <String CONTENT="нема Пеліурк." HPOS="2959" VPOS="1666" WIDTH="275" HEIGHT="112" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_256" TAGREFS="LT1" HPOS="2029" VPOS="1817" WIDTH="997" HEIGHT="101" BASELINE="2038 1882 2307 1866 3018 1869">
+            <Shape>
+              <Polygon POINTS="2038 1908 2037 1833 2091 1828 2833 1825 2992 1825 3016 1828 3018 1869 3018 1898 2802 1905 2723 1907 2608 1908 2242 1910 2124 1910" />
+            </Shape>
+            <String CONTENT="19го Каразинская саможник запокакий Дерева, прочте в" HPOS="2029" VPOS="1817" WIDTH="997" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_257" TAGREFS="LT1" HPOS="2037" VPOS="1968" WIDTH="110" HEIGHT="105" BASELINE="2048 2023 2139 2020">
+            <Shape>
+              <Polygon POINTS="2048 2065 2045 1983 2088 1976 2090 1976 2136 1982 2139 2020 2139 2049" />
+            </Shape>
+            <String CONTENT="1920" HPOS="2037" VPOS="1968" WIDTH="110" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_258" TAGREFS="LT1" HPOS="2049" VPOS="2123" WIDTH="70" HEIGHT="88" BASELINE="2060 2161 2111 2164">
+            <Shape>
+              <Polygon POINTS="2110 2131 2111 2164 2108 2200 2057 2203 2060 2137" />
+            </Shape>
+            <String CONTENT="— 18." HPOS="2049" VPOS="2123" WIDTH="70" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_259" TAGREFS="LT1" HPOS="2825" VPOS="1979" WIDTH="52" HEIGHT="57" BASELINE="2833 2009 2869 2009">
+            <Shape>
+              <Polygon POINTS="2869 1989 2869 2028 2833 2028 2833 1987" />
+            </Shape>
+            <String CONTENT="николько" HPOS="2825" VPOS="1979" WIDTH="52" HEIGHT="57" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_260" TAGREFS="LT1" HPOS="2969" VPOS="232" WIDTH="108" HEIGHT="49" BASELINE="3041 273 3041 240">
+            <Shape>
+              <Polygon POINTS="2977 240 3061 240 3069 268 3041 273 2977 273" />
+            </Shape>
+            <String CONTENT="И҆ речѐ гдⷭ҇ь" HPOS="2969" VPOS="232" WIDTH="108" HEIGHT="49" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_261" TAGREFS="LT1" HPOS="2959" VPOS="931" WIDTH="118" HEIGHT="105" BASELINE="2970 998 3069 993">
+            <Shape>
+              <Polygon POINTS="3069 1018 2972 1028 2970 998 2967 939 2993 939 3067 962 3069 993" />
+            </Shape>
+            <String CONTENT="нана" HPOS="2959" VPOS="931" WIDTH="118" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_262" TAGREFS="LT1" HPOS="2764" VPOS="1039" WIDTH="221" HEIGHT="112" BASELINE="2773 1106 2869 1104 2973 1120">
+            <Shape>
+              <Polygon POINTS="2969 1143 2772 1117 2776 1061 2829 1054 2941 1047 2946 1047 2977 1049 2973 1120" />
+            </Shape>
+            <String CONTENT="Камендотур" HPOS="2764" VPOS="1039" WIDTH="221" HEIGHT="112" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_263" TAGREFS="LT1" HPOS="2554" VPOS="1467" WIDTH="267" HEIGHT="84" BASELINE="2563 1504 2813 1507">
+            <Shape>
+              <Polygon POINTS="2562 1543 2563 1475 2813 1485 2813 1507 2812 1533" />
+            </Shape>
+            <String CONTENT="прицукілкъ." HPOS="2554" VPOS="1467" WIDTH="267" HEIGHT="84" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_264" TAGREFS="LT1" HPOS="2552" VPOS="1531" WIDTH="222" HEIGHT="95" BASELINE="2563 1586 2766 1574">
+            <Shape>
+              <Polygon POINTS="2563 1586 2560 1539 2704 1539 2762 1544 2766 1574 2766 1600 2690 1613 2569 1618" />
+            </Shape>
+            <String CONTENT="Утримания" HPOS="2552" VPOS="1531" WIDTH="222" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_265" TAGREFS="LT1" HPOS="2562" VPOS="1674" WIDTH="192" HEIGHT="103" BASELINE="2570 1721 2746 1721">
+            <Shape>
+              <Polygon POINTS="2746 1721 2744 1769 2570 1757 2570 1690 2662 1682 2665 1682 2746 1692" />
+            </Shape>
+            <String CONTENT="инвалид" HPOS="2562" VPOS="1674" WIDTH="192" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_266" TAGREFS="LT1" HPOS="2841" VPOS="278" WIDTH="62" HEIGHT="122" BASELINE="2872 286 2872 392">
+            <Shape>
+              <Polygon POINTS="2849 286 2895 286 2895 392 2855 392" />
+            </Shape>
+            <String CONTENT="з я҃" HPOS="2841" VPOS="278" WIDTH="62" HEIGHT="122" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_267" TAGREFS="LT1" HPOS="2815" VPOS="391" WIDTH="111" HEIGHT="71" BASELINE="2825 440 2918 441">
+            <Shape>
+              <Polygon POINTS="2823 450 2826 399 2881 399 2917 417 2918 441 2915 454" />
+            </Shape>
+            <String CONTENT="И҆ речѐ є҆мꙋ̀:" HPOS="2815" VPOS="391" WIDTH="111" HEIGHT="71" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_268" TAGREFS="LT1" HPOS="2782" VPOS="1105" WIDTH="107" HEIGHT="80" BASELINE="2793 1147 2881 1143">
+            <Shape>
+              <Polygon POINTS="2790 1113 2878 1113 2881 1143 2881 1176 2796 1177 2793 1147" />
+            </Shape>
+            <String CONTENT="9 сад" HPOS="2782" VPOS="1105" WIDTH="107" HEIGHT="80" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_269" TAGREFS="LT1" HPOS="2572" VPOS="1379" WIDTH="300" HEIGHT="87" BASELINE="2582 1428 2864 1429">
+            <Shape>
+              <Polygon POINTS="2580 1439 2582 1400 2613 1392 2646 1387 2747 1387 2803 1389 2864 1403 2864 1429 2862 1458 2776 1458" />
+            </Shape>
+            <String CONTENT="-утр. жень" HPOS="2572" VPOS="1379" WIDTH="300" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_270" TAGREFS="LT1" HPOS="2554" VPOS="1423" WIDTH="220" HEIGHT="77" BASELINE="2563 1467 2766 1471">
+            <Shape>
+              <Polygon POINTS="2562 1480 2563 1432 2655 1431 2658 1431 2766 1448 2766 1471 2763 1492" />
+            </Shape>
+            <String CONTENT="детей, як" HPOS="2554" VPOS="1423" WIDTH="220" HEIGHT="77" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_271" TAGREFS="LT1" HPOS="2554" VPOS="1602" WIDTH="111" HEIGHT="90" BASELINE="2562 1651 2657 1651">
+            <Shape>
+              <Polygon POINTS="2657 1613 2657 1678 2585 1684 2583 1684 2562 1675 2562 1610" />
+            </Shape>
+            <String CONTENT="N 7" HPOS="2554" VPOS="1602" WIDTH="111" HEIGHT="90" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_272" TAGREFS="LT1" HPOS="2880" VPOS="370" WIDTH="61" HEIGHT="49" BASELINE="2911 411 2913 381">
+            <Shape>
+              <Polygon POINTS="2933 411 2911 411 2888 408 2888 378 2933 381" />
+            </Shape>
+            <String CONTENT="ѕ҃" HPOS="2880" VPOS="370" WIDTH="61" HEIGHT="49" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_273" TAGREFS="LT1" HPOS="2752" VPOS="488" WIDTH="229" HEIGHT="116" BASELINE="2762 548 2973 550">
+            <Shape>
+              <Polygon POINTS="2760 594 2763 496 2970 499 2973 550 2969 596 2777 595" />
+            </Shape>
+            <String CONTENT="13 лебзавор" HPOS="2752" VPOS="488" WIDTH="229" HEIGHT="116" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_274" TAGREFS="LT1" HPOS="2549" VPOS="643" WIDTH="255" HEIGHT="95" BASELINE="2557 696 2796 696">
+            <Shape>
+              <Polygon POINTS="2796 671 2796 717 2707 730 2705 730 2557 723 2557 651 2595 651 2671 657" />
+            </Shape>
+            <String CONTENT="утримаина" HPOS="2549" VPOS="643" WIDTH="255" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_275" TAGREFS="LT1" HPOS="2558" VPOS="719" WIDTH="118" HEIGHT="68" BASELINE="2567 763 2668 768">
+            <Shape>
+              <Polygon POINTS="2566 778 2567 734 2596 727 2638 727 2668 739 2668 768 2665 779" />
+            </Shape>
+            <String CONTENT="N." HPOS="2558" VPOS="719" WIDTH="118" HEIGHT="68" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_276" TAGREFS="LT1" HPOS="2587" VPOS="865" WIDTH="89" HEIGHT="64" BASELINE="2595 910 2668 910">
+            <Shape>
+              <Polygon POINTS="2595 883 2667 873 2668 910 2668 921 2595 921" />
+            </Shape>
+            <String CONTENT="N҃" HPOS="2587" VPOS="865" WIDTH="89" HEIGHT="64" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_277" TAGREFS="LT1" HPOS="2552" VPOS="1105" WIDTH="90" HEIGHT="76" BASELINE="2563 1147 2632 1142">
+            <Shape>
+              <Polygon POINTS="2560 1124 2628 1113 2632 1142 2634 1170 2564 1173" />
+            </Shape>
+            <String CONTENT="476." HPOS="2552" VPOS="1105" WIDTH="90" HEIGHT="76" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_278" TAGREFS="LT1" HPOS="2854" VPOS="436" WIDTH="38" HEIGHT="84" BASELINE="2862 477 2884 477">
+            <Shape>
+              <Polygon POINTS="2884 477 2882 512 2862 510 2862 444 2882 444" />
+            </Shape>
+            <String CONTENT="16" HPOS="2854" VPOS="436" WIDTH="38" HEIGHT="84" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_279" TAGREFS="LT1" HPOS="3002" VPOS="436" WIDTH="45" HEIGHT="81" BASELINE="3018 480 3035 477">
+            <Shape>
+              <Polygon POINTS="3022 509 3010 444 3028 444 3035 477 3039 506" />
+            </Shape>
+            <String CONTENT="і҃" HPOS="3002" VPOS="436" WIDTH="45" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_280" TAGREFS="LT1" HPOS="3103" VPOS="1738" WIDTH="107" HEIGHT="106" BASELINE="3114 1787 3200 1783">
+            <Shape>
+              <Polygon POINTS="3117 1836 3111 1750 3138 1746 3143 1746 3197 1757 3200 1783 3202 1829 3156 1835" />
+            </Shape>
+            <String CONTENT="хар." HPOS="3103" VPOS="1738" WIDTH="107" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_281" TAGREFS="LT1" HPOS="2966" VPOS="1958" WIDTH="265" HEIGHT="102" BASELINE="2974 2012 3223 2012">
+            <Shape>
+              <Polygon POINTS="3223 1966 3223 2043 3159 2051 3054 2052 2992 2052 2987 2051 2974 2042 2974 1966" />
+            </Shape>
+            <String CONTENT="нема) 1 відрк" HPOS="2966" VPOS="1958" WIDTH="265" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_282" TAGREFS="LT1" HPOS="2984" VPOS="2250" WIDTH="47" HEIGHT="93" BASELINE="2996 2308 3019 2311">
+            <Shape>
+              <Polygon POINTS="3015 2335 2992 2334 3002 2258 3023 2262 3019 2311" />
+            </Shape>
+            <String CONTENT="ѕ҃" HPOS="2984" VPOS="2250" WIDTH="47" HEIGHT="93" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_283" TAGREFS="LT1" HPOS="3102" VPOS="2021" WIDTH="93" HEIGHT="104" BASELINE="3113 2069 3186 2066">
+            <Shape>
+              <Polygon POINTS="3114 2117 3110 2033 3134 2029 3138 2029 3182 2040 3186 2066 3187 2114" />
+            </Shape>
+            <String CONTENT="Хар" HPOS="3102" VPOS="2021" WIDTH="93" HEIGHT="104" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_284" TAGREFS="LT1" HPOS="3267" VPOS="492" WIDTH="58" HEIGHT="81" BASELINE="3278 558 3317 556">
+            <Shape>
+              <Polygon POINTS="3278 565 3275 500 3314 501 3317 556 3317 565" />
+            </Shape>
+            <String CONTENT="і" HPOS="3267" VPOS="492" WIDTH="58" HEIGHT="81" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_285" TAGREFS="LT1" HPOS="3297" VPOS="321" WIDTH="72" HEIGHT="132" BASELINE="3330 445 3337 432 3340 330">
+            <Shape>
+              <Polygon POINTS="3305 435 3308 329 3361 330 3359 445 3330 445" />
+            </Shape>
+            <String CONTENT="гдⷭ҇е" HPOS="3297" VPOS="321" WIDTH="72" HEIGHT="132" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_286" TAGREFS="LT1" HPOS="3312" VPOS="437" WIDTH="44" HEIGHT="87" BASELINE="3324 481 3347 478">
+            <Shape>
+              <Polygon POINTS="3327 513 3320 445 3343 447 3347 478 3348 516" />
+            </Shape>
+            <String CONTENT="119" HPOS="3312" VPOS="437" WIDTH="44" HEIGHT="87" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_287" TAGREFS="LT1" HPOS="3266" VPOS="567" WIDTH="147" HEIGHT="98" BASELINE="3277 627 3405 621">
+            <Shape>
+              <Polygon POINTS="3405 642 3372 657 3277 650 3274 575 3334 575 3400 582 3405 621" />
+            </Shape>
+            <String CONTENT="728у 18" HPOS="3266" VPOS="567" WIDTH="147" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_288" TAGREFS="LT1" HPOS="3271" VPOS="642" WIDTH="98" HEIGHT="77" BASELINE="3282 699 3361 694">
+            <Shape>
+              <Polygon POINTS="3282 711 3279 650 3356 653 3361 694 3361 706" />
+            </Shape>
+            <String CONTENT="-30" HPOS="3271" VPOS="642" WIDTH="98" HEIGHT="77" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_289" TAGREFS="LT1" HPOS="3435" VPOS="296" WIDTH="80" HEIGHT="156" BASELINE="3475 444 3481 306">
+            <Shape>
+              <Polygon POINTS="3443 440 3449 304 3500 306 3507 340 3504 396 3498 444 3475 444" />
+            </Shape>
+            <String CONTENT="в҃." HPOS="3435" VPOS="296" WIDTH="80" HEIGHT="156" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_290" TAGREFS="LT1" HPOS="3457" VPOS="439" WIDTH="39" HEIGHT="82" BASELINE="3465 481 3488 481">
+            <Shape>
+              <Polygon POINTS="3488 448 3488 512 3465 513 3465 447" />
+            </Shape>
+            <String CONTENT="20" HPOS="3457" VPOS="439" WIDTH="39" HEIGHT="82" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_291" TAGREFS="LT1" HPOS="3417" VPOS="501" WIDTH="144" HEIGHT="95" BASELINE="3426 556 3553 559">
+            <Shape>
+              <Polygon POINTS="3425 588 3426 510 3482 509 3484 509 3553 522 3553 559 3551 586" />
+            </Shape>
+            <String CONTENT="т. Р. Ксь" HPOS="3417" VPOS="501" WIDTH="144" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_292" TAGREFS="LT1" HPOS="3266" VPOS="716" WIDTH="170" HEIGHT="98" BASELINE="3275 776 3428 772">
+            <Shape>
+              <Polygon POINTS="3274 734 3423 724 3428 772 3426 798 3307 806 3305 806 3275 798" />
+            </Shape>
+            <String CONTENT="N 845" HPOS="3266" VPOS="716" WIDTH="170" HEIGHT="98" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_293" TAGREFS="LT1" HPOS="3270" VPOS="784" WIDTH="181" HEIGHT="101" BASELINE="3278 847 3443 844">
+            <Shape>
+              <Polygon POINTS="3278 877 3278 795 3393 792 3397 793 3441 812 3443 844 3442 871 3330 877" />
+            </Shape>
+            <String CONTENT="мурне" HPOS="3270" VPOS="784" WIDTH="181" HEIGHT="101" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_294" TAGREFS="LT1" HPOS="3284" VPOS="853" WIDTH="130" HEIGHT="76" BASELINE="3294 893 3406 896">
+            <Shape>
+              <Polygon POINTS="3405 861 3406 896 3403 921 3292 910 3294 861" />
+            </Shape>
+            <String CONTENT="257." HPOS="3284" VPOS="853" WIDTH="130" HEIGHT="76" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_295" TAGREFS="LT1" HPOS="3284" VPOS="952" WIDTH="154" HEIGHT="85" BASELINE="3292 999 3430 999">
+            <Shape>
+              <Polygon POINTS="3430 972 3430 1026 3292 1029 3292 975 3325 960 3328 960 3413 962" />
+            </Shape>
+            <String CONTENT="Тоябуз" HPOS="3284" VPOS="952" WIDTH="154" HEIGHT="85" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_296" TAGREFS="LT1" HPOS="3292" VPOS="1085" WIDTH="128" HEIGHT="108" BASELINE="3301 1159 3412 1165">
+            <Shape>
+              <Polygon POINTS="3410 1107 3412 1165 3410 1183 3300 1185 3301 1159 3304 1093 3338 1096" />
+            </Shape>
+            <String CONTENT="Ион 1898" HPOS="3292" VPOS="1085" WIDTH="128" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_297" TAGREFS="LT1" HPOS="3261" VPOS="1227" WIDTH="85" HEIGHT="105" BASELINE="3271 1287 3338 1285">
+            <Shape>
+              <Polygon POINTS="3271 1324 3269 1235 3336 1248 3338 1285 3338 1310" />
+            </Shape>
+            <String CONTENT="х҃с" HPOS="3261" VPOS="1227" WIDTH="85" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_298" TAGREFS="LT1" HPOS="3526" VPOS="954" WIDTH="39" HEIGHT="78" BASELINE="3534 998 3557 998">
+            <Shape>
+              <Polygon POINTS="3536 1024 3534 998 3534 970 3554 962 3557 998 3557 1015" />
+            </Shape>
+            <String CONTENT="въ" HPOS="3526" VPOS="954" WIDTH="39" HEIGHT="78" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_299" TAGREFS="LT1" HPOS="3563" VPOS="872" WIDTH="55" HEIGHT="68" BASELINE="3573 920 3606 926">
+            <Shape>
+              <Polygon POINTS="3605 932 3571 927 3579 880 3610 886 3606 926" />
+            </Shape>
+            <String CONTENT="-" HPOS="3563" VPOS="872" WIDTH="55" HEIGHT="68" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_300" TAGREFS="LT1" HPOS="3621" VPOS="235" WIDTH="72" HEIGHT="214" BASELINE="3656 441 3662 244">
+            <Shape>
+              <Polygon POINTS="3629 437 3636 243 3685 244 3685 340 3679 440 3656 441" />
+            </Shape>
+            <String CONTENT="і҃ в҃." HPOS="3621" VPOS="235" WIDTH="72" HEIGHT="214" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_301" TAGREFS="LT1" HPOS="3656" VPOS="437" WIDTH="41" HEIGHT="91" BASELINE="3664 483 3689 483">
+            <Shape>
+              <Polygon POINTS="3689 519 3664 520 3664 445 3688 445 3689 483" />
+            </Shape>
+            <String CONTENT="21" HPOS="3656" VPOS="437" WIDTH="41" HEIGHT="91" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_302" TAGREFS="LT1" HPOS="3673" VPOS="262" WIDTH="60" HEIGHT="187" BASELINE="3702 441 3705 271">
+            <Shape>
+              <Polygon POINTS="3681 270 3725 271 3723 441 3702 441 3681 438" />
+            </Shape>
+            <String CONTENT="въ ч." HPOS="3673" VPOS="262" WIDTH="60" HEIGHT="187" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_303" TAGREFS="LT1" HPOS="3673" VPOS="501" WIDTH="199" HEIGHT="106" BASELINE="3682 563 3864 571">
+            <Shape>
+              <Polygon POINTS="3864 523 3864 571 3861 589 3812 598 3769 599 3764 599 3681 592 3682 563 3684 509" />
+            </Shape>
+            <String CONTENT="25" HPOS="3673" VPOS="501" WIDTH="199" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_304" TAGREFS="LT1" HPOS="3641" VPOS="712" WIDTH="235" HEIGHT="115" BASELINE="3652 778 3868 772">
+            <Shape>
+              <Polygon POINTS="3652 806 3649 720 3758 722 3864 736 3868 772 3868 795 3855 804 3815 819 3810 819 3746 816" />
+            </Shape>
+            <String CONTENT="ꙁ N476" HPOS="3641" VPOS="712" WIDTH="235" HEIGHT="115" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_305" TAGREFS="LT1" HPOS="3614" VPOS="859" WIDTH="262" HEIGHT="116" BASELINE="3623 927 3868 930">
+            <Shape>
+              <Polygon POINTS="3622 955 3623 881 3744 867 3868 886 3868 930 3865 967" />
+            </Shape>
+            <String CONTENT="787 д." HPOS="3614" VPOS="859" WIDTH="262" HEIGHT="116" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_306" TAGREFS="LT1" HPOS="3599" VPOS="939" WIDTH="281" HEIGHT="110" BASELINE="3609 1009 3872 1012">
+            <Shape>
+              <Polygon POINTS="3607 1032 3609 970 3666 947 3740 947 3774 952 3869 972 3872 1012 3871 1041 3838 1041 3710 1037" />
+            </Shape>
+            <String CONTENT="757 г N" HPOS="3599" VPOS="939" WIDTH="281" HEIGHT="110" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_307" TAGREFS="LT1" HPOS="3549" VPOS="1077" WIDTH="330" HEIGHT="113" BASELINE="3560 1142 3869 1157">
+            <Shape>
+              <Polygon POINTS="3557 1173 3561 1085 3720 1094 3843 1101 3869 1114 3871 1119 3869 1157 3866 1180 3678 1182 3676 1182" />
+            </Shape>
+            <String CONTENT="4 ятія на" HPOS="3549" VPOS="1077" WIDTH="330" HEIGHT="113" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_308" TAGREFS="LT1" HPOS="3556" VPOS="1246" WIDTH="57" HEIGHT="79" BASELINE="3567 1284 3603 1281">
+            <Shape>
+              <Polygon POINTS="3564 1258 3599 1254 3603 1281 3605 1317 3569 1317" />
+            </Shape>
+            <String CONTENT="по" HPOS="3556" VPOS="1246" WIDTH="57" HEIGHT="79" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_309" TAGREFS="LT1" HPOS="3260" VPOS="1290" WIDTH="571" HEIGHT="116" BASELINE="3269 1362 3488 1354 3618 1363 3823 1356">
+            <Shape>
+              <Polygon POINTS="3269 1386 3268 1308 3430 1304 3777 1298 3783 1298 3816 1304 3823 1356 3822 1375 3710 1393 3586 1398 3384 1398 3317 1392" />
+            </Shape>
+            <String CONTENT="вечь50. Чел. убі 50" HPOS="3260" VPOS="1290" WIDTH="571" HEIGHT="116" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_310" TAGREFS="LT1" HPOS="3264" VPOS="1372" WIDTH="91" HEIGHT="94" BASELINE="3275 1434 3347 1429">
+            <Shape>
+              <Polygon POINTS="3343 1380 3347 1429 3346 1458 3275 1454 3272 1399 3308 1380" />
+            </Shape>
+            <String CONTENT="хи" HPOS="3264" VPOS="1372" WIDTH="91" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_311" TAGREFS="LT1" HPOS="3264" VPOS="1440" WIDTH="287" HEIGHT="109" BASELINE="3275 1508 3541 1497">
+            <Shape>
+              <Polygon POINTS="3275 1541 3272 1455 3433 1448 3439 1448 3537 1459 3541 1497 3543 1534 3435 1541" />
+            </Shape>
+            <String CONTENT="Сездорки." HPOS="3264" VPOS="1440" WIDTH="287" HEIGHT="109" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_312" TAGREFS="LT1" HPOS="3271" VPOS="1533" WIDTH="107" HEIGHT="88" BASELINE="3281 1580 3370 1579">
+            <Shape>
+              <Polygon POINTS="3279 1547 3366 1541 3370 1579 3369 1606 3327 1613 3325 1613 3281 1605" />
+            </Shape>
+            <String CONTENT="метъ" HPOS="3271" VPOS="1533" WIDTH="107" HEIGHT="88" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_313" TAGREFS="LT1" HPOS="3271" VPOS="1592" WIDTH="106" HEIGHT="75" BASELINE="3281 1644 3369 1642">
+            <Shape>
+              <Polygon POINTS="3281 1659 3279 1606 3292 1600 3364 1600 3369 1642 3369 1654" />
+            </Shape>
+            <String CONTENT="1927." HPOS="3271" VPOS="1592" WIDTH="106" HEIGHT="75" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_314" TAGREFS="LT1" HPOS="3289" VPOS="1661" WIDTH="89" HEIGHT="71" BASELINE="3300 1717 3370 1714">
+            <Shape>
+              <Polygon POINTS="3300 1724 3297 1679 3328 1669 3331 1669 3367 1678 3370 1714 3369 1723" />
+            </Shape>
+            <String CONTENT="Xи" HPOS="3289" VPOS="1661" WIDTH="89" HEIGHT="71" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_315" TAGREFS="LT1" HPOS="3270" VPOS="1735" WIDTH="179" HEIGHT="105" BASELINE="3281 1792 3441 1797">
+            <Shape>
+              <Polygon POINTS="3441 1757 3441 1797 3439 1822 3422 1832 3297 1832 3278 1830 3281 1751 3308 1743 3313 1743 3403 1746" />
+            </Shape>
+            <String CONTENT="67 ч." HPOS="3270" VPOS="1735" WIDTH="179" HEIGHT="105" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_316" TAGREFS="LT1" HPOS="3273" VPOS="1815" WIDTH="122" HEIGHT="84" BASELINE="3285 1872 3387 1862">
+            <Shape>
+              <Polygon POINTS="3281 1836 3382 1823 3387 1862 3387 1869 3343 1881 3288 1891 3285 1872" />
+            </Shape>
+            <String CONTENT="щі ха" HPOS="3273" VPOS="1815" WIDTH="122" HEIGHT="84" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_317" TAGREFS="LT1" HPOS="3279" VPOS="1861" WIDTH="147" HEIGHT="94" BASELINE="3288 1921 3418 1927">
+            <Shape>
+              <Polygon POINTS="3418 1869 3418 1927 3416 1938 3386 1947 3383 1947 3287 1940 3288 1885" />
+            </Shape>
+            <String CONTENT="/окзу." HPOS="3279" VPOS="1861" WIDTH="147" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_318" TAGREFS="LT1" HPOS="3274" VPOS="1949" WIDTH="72" HEIGHT="102" BASELINE="3282 2015 3338 2015">
+            <Shape>
+              <Polygon POINTS="3338 1967 3338 2015 3337 2043 3282 2038 3282 1957" />
+            </Shape>
+            <String CONTENT="х҃с" HPOS="3274" VPOS="1949" WIDTH="72" HEIGHT="102" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_319" TAGREFS="LT1" HPOS="3266" VPOS="2031" WIDTH="149" HEIGHT="95" BASELINE="3274 2092 3407 2092">
+            <Shape>
+              <Polygon POINTS="3406 2039 3407 2092 3406 2118 3274 2114 3274 2046" />
+            </Shape>
+            <String CONTENT="1885." HPOS="3266" VPOS="2031" WIDTH="149" HEIGHT="95" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_320" TAGREFS="LT1" HPOS="3244" VPOS="2103" WIDTH="137" HEIGHT="97" BASELINE="3254 2169 3373 2170">
+            <Shape>
+              <Polygon POINTS="3252 2192 3254 2111 3373 2130 3373 2170 3372 2192" />
+            </Shape>
+            <String CONTENT="міяі." HPOS="3244" VPOS="2103" WIDTH="137" HEIGHT="97" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_321" TAGREFS="LT1" HPOS="3214" VPOS="2172" WIDTH="236" HEIGHT="108" BASELINE="3223 2236 3442 2232">
+            <Shape>
+              <Polygon POINTS="3223 2263 3222 2184 3279 2181 3410 2180 3412 2180 3441 2193 3442 2232 3441 2269 3369 2272 3366 2272" />
+            </Shape>
+            <String CONTENT="Зрайдирова" HPOS="3214" VPOS="2172" WIDTH="236" HEIGHT="108" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_322" TAGREFS="LT1" HPOS="3086" VPOS="2255" WIDTH="165" HEIGHT="103" BASELINE="3094 2312 3243 2315">
+            <Shape>
+              <Polygon POINTS="3243 2278 3243 2315 3242 2343 3169 2350 3094 2347 3094 2263" />
+            </Shape>
+            <String CONTENT="Івідрк" HPOS="3086" VPOS="2255" WIDTH="165" HEIGHT="103" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_323" TAGREFS="LT1" HPOS="3128" VPOS="2324" WIDTH="73" HEIGHT="109" BASELINE="3138 2389 3193 2386">
+            <Shape>
+              <Polygon POINTS="3138 2419 3136 2332 3190 2347 3193 2386 3193 2425" />
+            </Shape>
+            <String CONTENT="Док" HPOS="3128" VPOS="2324" WIDTH="73" HEIGHT="109" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_324" TAGREFS="LT1" HPOS="3415" VPOS="1601" WIDTH="25" HEIGHT="89" BASELINE="3423 1646 3432 1646">
+            <Shape>
+              <Polygon POINTS="3432 1646 3429 1682 3423 1679 3423 1609 3432 1610" />
+            </Shape>
+            <String CONTENT="і" HPOS="3415" VPOS="1601" WIDTH="25" HEIGHT="89" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_325" TAGREFS="LT1" HPOS="3277" VPOS="2255" WIDTH="91" HEIGHT="94" BASELINE="3287 2312 3360 2314">
+            <Shape>
+              <Polygon POINTS="3285 2335 3287 2263 3360 2271 3360 2314 3357 2341" />
+            </Shape>
+            <String CONTENT="1-3" HPOS="3277" VPOS="2255" WIDTH="91" HEIGHT="94" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_326" TAGREFS="LT1" HPOS="3266" VPOS="2320" WIDTH="165" HEIGHT="114" BASELINE="3277 2389 3423 2383">
+            <Shape>
+              <Polygon POINTS="3277 2426 3274 2332 3397 2328 3400 2328 3420 2335 3423 2383 3423 2420" />
+            </Shape>
+            <String CONTENT="руців." HPOS="3266" VPOS="2320" WIDTH="165" HEIGHT="114" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_327" TAGREFS="LT1" HPOS="3556" VPOS="1381" WIDTH="51" HEIGHT="84" BASELINE="3566 1436 3599 1439">
+            <Shape>
+              <Polygon POINTS="3599 1389 3599 1439 3596 1457 3564 1452 3569 1393" />
+            </Shape>
+            <String CONTENT="26." HPOS="3556" VPOS="1381" WIDTH="51" HEIGHT="84" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_328" TAGREFS="LT1" HPOS="3634" VPOS="1453" WIDTH="240" HEIGHT="99" BASELINE="3643 1517 3866 1518">
+            <Shape>
+              <Polygon POINTS="3642 1543 3643 1475 3787 1461 3829 1461 3866 1475 3866 1518 3864 1534 3704 1544" />
+            </Shape>
+            <String CONTENT="77" HPOS="3634" VPOS="1453" WIDTH="240" HEIGHT="99" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_329" TAGREFS="LT1" HPOS="3607" VPOS="1600" WIDTH="269" HEIGHT="113" BASELINE="3616 1662 3868 1667">
+            <Shape>
+              <Polygon POINTS="3864 1618 3868 1667 3866 1687 3796 1705 3792 1705 3754 1704 3710 1701 3615 1691 3616 1626 3682 1608 3685 1608 3812 1615" />
+            </Shape>
+            <String CONTENT="75." HPOS="3607" VPOS="1600" WIDTH="269" HEIGHT="113" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_330" TAGREFS="LT1" HPOS="3640" VPOS="1756" WIDTH="243" HEIGHT="118" BASELINE="3651 1820 3875 1816">
+            <Shape>
+              <Polygon POINTS="3651 1852 3648 1764 3852 1773 3865 1777 3872 1780 3875 1816 3874 1841 3800 1866 3764 1866" />
+            </Shape>
+            <String CONTENT="75. N." HPOS="3640" VPOS="1756" WIDTH="243" HEIGHT="118" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_331" TAGREFS="LT1" HPOS="3620" VPOS="1884" WIDTH="162" HEIGHT="100" BASELINE="3629 1951 3774 1948">
+            <Shape>
+              <Polygon POINTS="3629 1976 3628 1907 3662 1892 3665 1892 3771 1895 3774 1948 3774 1974" />
+            </Shape>
+            <String CONTENT="� і 5҃і5" HPOS="3620" VPOS="1884" WIDTH="162" HEIGHT="100" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_332" TAGREFS="LT1" HPOS="3845" VPOS="1912" WIDTH="44" HEIGHT="67" BASELINE="3853 1946 3881 1946">
+            <Shape>
+              <Polygon POINTS="3881 1970 3853 1971 3853 1923 3879 1920 3881 1946" />
+            </Shape>
+            <String CONTENT="69" HPOS="3845" VPOS="1912" WIDTH="44" HEIGHT="67" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_333" TAGREFS="LT1" HPOS="3617" VPOS="2030" WIDTH="266" HEIGHT="113" BASELINE="3629 2101 3875 2085">
+            <Shape>
+              <Polygon POINTS="3630 2135 3625 2052 3761 2042 3833 2038 3835 2038 3871 2045 3875 2085 3875 2107 3871 2114 3711 2131" />
+            </Shape>
+            <String CONTENT="7535 N4" HPOS="3617" VPOS="2030" WIDTH="266" HEIGHT="113" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_334" TAGREFS="LT1" HPOS="3638" VPOS="2176" WIDTH="229" HEIGHT="106" BASELINE="3649 2240 3859 2236">
+            <Shape>
+              <Polygon POINTS="3646 2184 3856 2186 3859 2236 3859 2255 3789 2272 3704 2274 3651 2274 3649 2240" />
+            </Shape>
+            <String CONTENT="2576" HPOS="3638" VPOS="2176" WIDTH="229" HEIGHT="106" WC="0.95" />
+          </TextLine>
+          <TextLine ID="line_335" TAGREFS="LT1" HPOS="3703" VPOS="2320" WIDTH="160" HEIGHT="124" BASELINE="3714 2386 3855 2380">
+            <Shape>
+              <Polygon POINTS="3715 2436 3711 2338 3754 2332 3813 2328 3816 2328 3852 2337 3855 2380 3855 2406 3786 2435" />
+            </Shape>
+            <String CONTENT="-157." HPOS="3703" VPOS="2320" WIDTH="160" HEIGHT="124" WC="0.95" />
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>
