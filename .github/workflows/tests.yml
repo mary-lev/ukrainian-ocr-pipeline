@@ -1,0 +1,122 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, "3.10", "3.11"]
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgl1-mesa-glx libglib2.0-0
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+        pip install -e .[dev]
+        
+    - name: Check dependencies
+      run: |
+        python run_tests.py --check-deps
+    
+    - name: Run unit tests
+      run: |
+        python run_tests.py --unit --verbose
+    
+    - name: Run integration tests
+      run: |
+        python run_tests.py --integration --verbose
+    
+    - name: Test import functionality
+      run: |
+        python -c "import ukrainian_ocr; print('✅ Package imports successfully')"
+        python -c "from ukrainian_ocr import UkrainianOCRPipeline, OCRConfig; print('✅ Main classes import successfully')"
+        python -c "from ukrainian_ocr.utils.gpu import check_gpu_availability; gpu_info = check_gpu_availability(); print(f'✅ GPU utils work: {gpu_info[\"cuda_available\"]}')"
+
+  test-package-installation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+    
+    - name: Test package installation from source
+      run: |
+        python -m pip install --upgrade pip
+        pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+        pip install -e .
+        
+        # Test basic functionality
+        python -c "
+        import ukrainian_ocr
+        from ukrainian_ocr import UkrainianOCRPipeline, OCRConfig
+        
+        config = OCRConfig()
+        config.update_for_cpu()
+        
+        pipeline = UkrainianOCRPipeline(config=config, verbose=False)
+        print('✅ Package installation and basic functionality test passed')
+        "
+
+  test-colab-simulation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+    
+    - name: Simulate Colab installation
+      run: |
+        python -m pip install --upgrade pip
+        pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+        pip install -e .[colab] --quiet
+        
+        # Simulate Colab notebook workflow
+        python -c "
+        # Simulate the Colab notebook workflow
+        from ukrainian_ocr.utils.gpu import setup_colab_gpu
+        
+        # Check GPU (will be False in CI)
+        gpu_info = setup_colab_gpu()
+        print(f'GPU available: {gpu_info[\"cuda_available\"]}')
+        
+        # Create config and optimize for Colab
+        from ukrainian_ocr import OCRConfig
+        config = OCRConfig()
+        config.update_for_colab()
+        
+        print(f'Device: {config.device}')
+        print(f'Batch size: {config.batch_size}')
+        print(f'NER backend: {config.ner.backend}')
+        
+        # Initialize pipeline
+        from ukrainian_ocr import UkrainianOCRPipeline
+        pipeline = UkrainianOCRPipeline(config=config, device='auto', verbose=False)
+        
+        print('✅ Colab workflow simulation passed')
+        "

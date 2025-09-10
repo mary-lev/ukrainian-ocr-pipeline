@@ -9,7 +9,7 @@ __email__ = "your.email@example.com"
 
 # Core imports
 from .core.pipeline import UkrainianOCRPipeline
-from .core.config import OCRConfig
+from .config import OCRConfig
 from .core.batch_processor import BatchProcessor
 
 # Component imports
@@ -20,7 +20,7 @@ from .core.enhancement import ALTOEnhancer
 
 # Utility imports
 from .utils.gpu import check_gpu_availability, optimize_for_device
-from .utils.models import download_model, list_available_models
+from .utils.models import ModelManager
 
 __all__ = [
     # Main classes
@@ -37,8 +37,7 @@ __all__ = [
     # Utils
     "check_gpu_availability",
     "optimize_for_device",
-    "download_model",
-    "list_available_models",
+    "ModelManager",
 ]
 
 # Package metadata

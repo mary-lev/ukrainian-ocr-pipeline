@@ -228,3 +228,4 @@ def setup_colab_gpu():
         return gpu_info
     else:
         logger.info("Not running in Colab environment")
+        return check_gpu_availability()
