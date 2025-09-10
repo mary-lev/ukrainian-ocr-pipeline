@@ -220,9 +220,10 @@ class UkrainianOCRPipeline:
                 image_path, image, lines_with_text
             )
             
-            # Save basic ALTO
-            # IOUtils.save_alto_xml(alto_xml, str(paths['alto_basic']))
-            # Placeholder for ALTO XML creation and saving
+            # Save basic ALTO XML
+            with open(paths['alto_basic'], 'w', encoding='utf-8') as f:
+                f.write(alto_xml)
+            self.logger.info(f"Basic ALTO XML saved: {paths['alto_basic']}")
             
             # Step 5: NER Enhancement
             self.logger.info("Extracting named entities...")
@@ -243,15 +244,24 @@ class UkrainianOCRPipeline:
             
             if entities_by_line:
                 try:
-                    # For now, create a placeholder enhanced ALTO structure
-                    # In a full implementation, this would create actual enhanced ALTO XML files
+                    # Create enhanced ALTO XML with NER annotations
+                    enhanced_alto_xml = self._create_enhanced_alto_xml(
+                        image_path, image, lines_with_text, entities_by_line
+                    )
+                    
+                    # Save enhanced ALTO XML
+                    with open(paths['alto_enhanced'], 'w', encoding='utf-8') as f:
+                        f.write(enhanced_alto_xml)
+                    
+                    entities_count = sum(len(data['entities']) for data in entities_by_line.values())
                     enhanced_alto = {
                         'basic_alto_path': str(paths['alto_basic']),
                         'enhanced_alto_path': str(paths['alto_enhanced']),
-                        'entities_count': sum(len(data['entities']) for data in entities_by_line.values()),
+                        'entities_count': entities_count,
                         'lines_with_entities': len(entities_by_line)
                     }
-                    self.logger.info(f"Enhanced ALTO placeholder created with {enhanced_alto['entities_count']} entities")
+                    self.logger.info(f"Enhanced ALTO XML created with {entities_count} entities")
+                    
                 except Exception as e:
                     self.logger.warning(f"Could not create enhanced ALTO: {e}")
                     enhanced_alto = None
@@ -354,9 +364,204 @@ class UkrainianOCRPipeline:
     
     def _create_alto_xml(self, image_path: Path, image, lines: List[Dict]) -> str:
         """Create ALTO XML from processing results"""
-        # Implementation similar to existing ALTO creation
-        # This would be moved from the existing code
-        pass
+        import xml.etree.ElementTree as ET
+        from xml.dom import minidom
+        
+        # Create ALTO structure
+        alto = ET.Element('alto', {
+            'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+            'xmlns': 'http://www.loc.gov/standards/alto/ns-v4#',
+            'xsi:schemaLocation': 'http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd'
+        })
+        
+        # Add Description
+        description = ET.SubElement(alto, 'Description')
+        measurement_unit = ET.SubElement(description, 'MeasurementUnit')
+        measurement_unit.text = 'pixel'
+        
+        source_info = ET.SubElement(description, 'sourceImageInformation')
+        filename = ET.SubElement(source_info, 'fileName')
+        filename.text = image_path.name
+        
+        # Add Tags
+        tags = ET.SubElement(alto, 'Tags')
+        # Add text block type
+        block_tag = ET.SubElement(tags, 'OtherTag')
+        block_tag.set('ID', 'BT1')
+        block_tag.set('LABEL', 'text')
+        block_tag.set('DESCRIPTION', 'block type text')
+        # Add line type
+        line_tag = ET.SubElement(tags, 'OtherTag')
+        line_tag.set('ID', 'LT1')
+        line_tag.set('LABEL', 'default')
+        line_tag.set('DESCRIPTION', 'line type default')
+        
+        # Add Layout
+        layout = ET.SubElement(alto, 'Layout')
+        page = ET.SubElement(layout, 'Page')
+        page.set('ID', f'page_{image_path.stem}')
+        page.set('PHYSICAL_IMG_NR', '1')
+        
+        # Get image dimensions
+        if hasattr(image, 'shape'):
+            height, width = image.shape[:2]
+        else:
+            height, width = 3000, 2000  # Default dimensions
+            
+        page.set('WIDTH', str(width))
+        page.set('HEIGHT', str(height))
+        
+        # Add PrintSpace
+        print_space = ET.SubElement(page, 'PrintSpace')
+        print_space.set('HPOS', '0')
+        print_space.set('VPOS', '0')
+        print_space.set('WIDTH', str(width))
+        print_space.set('HEIGHT', str(height))
+        
+        # Add TextBlock
+        text_block = ET.SubElement(print_space, 'TextBlock')
+        text_block.set('ID', f'block_{image_path.stem}')
+        text_block.set('TAGREFS', 'BT1')
+        
+        # Add text lines
+        for idx, line in enumerate(lines):
+            text_content = line.get('text', '').strip()
+            if not text_content:
+                continue
+                
+            text_line = ET.SubElement(text_block, 'TextLine')
+            text_line.set('ID', f'line_{idx}')
+            text_line.set('TAGREFS', 'LT1')
+            
+            # Get line coordinates
+            bbox = line.get('bbox', [0, 0, 100, 30])
+            if len(bbox) >= 4:
+                x1, y1, x2, y2 = map(int, bbox[:4])
+            else:
+                x1, y1, x2, y2 = 0, idx * 30, 100, (idx + 1) * 30
+                
+            text_line.set('HPOS', str(x1))
+            text_line.set('VPOS', str(y1))
+            text_line.set('WIDTH', str(x2 - x1))
+            text_line.set('HEIGHT', str(y2 - y1))
+            
+            # Add baseline
+            baseline_points = line.get('baseline', [])
+            if baseline_points and len(baseline_points) >= 2:
+                try:
+                    baseline_str = ' '.join(f"{int(p[0])} {int(p[1])}" for p in baseline_points)
+                    text_line.set('BASELINE', baseline_str)
+                except (ValueError, IndexError):
+                    # Create default baseline from bbox
+                    y_base = y2 - 5  # Slightly above bottom
+                    text_line.set('BASELINE', f"{x1} {y_base} {x2} {y_base}")
+            else:
+                # Create default baseline from bbox
+                y_base = y2 - 5  # Slightly above bottom
+                text_line.set('BASELINE', f"{x1} {y_base} {x2} {y_base}")
+            
+            # Add Shape/Polygon
+            shape = ET.SubElement(text_line, 'Shape')
+            polygon = ET.SubElement(shape, 'Polygon')
+            
+            polygon_points = line.get('polygon', [])
+            if polygon_points and len(polygon_points) >= 3:
+                try:
+                    points_str = ' '.join(f"{int(p[0])} {int(p[1])}" for p in polygon_points)
+                    polygon.set('POINTS', points_str)
+                except (ValueError, IndexError):
+                    # Create polygon from bbox
+                    points_str = f"{x1} {y1} {x2} {y1} {x2} {y2} {x1} {y2}"
+                    polygon.set('POINTS', points_str)
+            else:
+                # Create polygon from bbox
+                points_str = f"{x1} {y1} {x2} {y1} {x2} {y2} {x1} {y2}"
+                polygon.set('POINTS', points_str)
+                
+            # Add String element
+            string = ET.SubElement(text_line, 'String')
+            string.set('CONTENT', text_content)
+            string.set('HPOS', str(x1))
+            string.set('VPOS', str(y1))
+            string.set('WIDTH', str(x2 - x1))
+            string.set('HEIGHT', str(y2 - y1))
+            
+            # Add confidence if available
+            confidence = line.get('confidence', 0.0)
+            if confidence > 0:
+                string.set('WC', f"{confidence:.2f}")
+                
+        # Convert to pretty XML
+        rough_string = ET.tostring(alto, 'utf-8')
+        reparsed = minidom.parseString(rough_string)
+        return reparsed.toprettyxml(indent="  ")
+        
+    def _create_enhanced_alto_xml(self, image_path: Path, image, lines: List[Dict], entities_by_line: Dict) -> str:
+        """Create enhanced ALTO XML with NER entity annotations"""
+        import xml.etree.ElementTree as ET
+        from xml.dom import minidom
+        
+        # Start with basic ALTO structure
+        alto_xml = self._create_alto_xml(image_path, image, lines)
+        
+        # Parse the XML to add entity annotations
+        try:
+            from xml.etree import ElementTree as ET
+            root = ET.fromstring(alto_xml)
+            
+            # Add entity-specific tags
+            tags_elem = root.find('.//{http://www.loc.gov/standards/alto/ns-v4#}Tags')
+            if tags_elem is not None:
+                # Add PERSON entity tag
+                person_tag = ET.SubElement(tags_elem, 'OtherTag')
+                person_tag.set('ID', 'PERSON')
+                person_tag.set('LABEL', 'person')
+                person_tag.set('DESCRIPTION', 'Person name entity')
+                
+                # Add LOCATION entity tag
+                location_tag = ET.SubElement(tags_elem, 'OtherTag')
+                location_tag.set('ID', 'LOCATION')
+                location_tag.set('LABEL', 'location')
+                location_tag.set('DESCRIPTION', 'Location name entity')
+                
+            # Find all TextLine elements and annotate with entities
+            text_lines = root.findall('.//{http://www.loc.gov/standards/alto/ns-v4#}TextLine')
+            
+            for i, text_line in enumerate(text_lines):
+                line_id = f"line_{i}"
+                
+                if line_id in entities_by_line:
+                    entities = entities_by_line[line_id]['entities']
+                    
+                    # Add entity information as attributes or sub-elements
+                    entity_types = [entity.get('label', 'UNKNOWN') for entity in entities]
+                    entity_texts = [entity.get('text', '') for entity in entities]
+                    
+                    if entity_types:
+                        # Add entity information as custom attributes
+                        text_line.set('ENTITY_TYPES', ','.join(entity_types))
+                        text_line.set('ENTITY_TEXTS', ','.join(entity_texts))
+                        
+                        # Also add TAGREFS for entity types
+                        existing_tagrefs = text_line.get('TAGREFS', 'LT1')
+                        entity_tagrefs = []
+                        for entity_type in set(entity_types):
+                            if entity_type.upper() in ['PERSON', 'LOCATION']:
+                                entity_tagrefs.append(entity_type.upper())
+                        
+                        if entity_tagrefs:
+                            all_tagrefs = existing_tagrefs + ' ' + ' '.join(entity_tagrefs)
+                            text_line.set('TAGREFS', all_tagrefs)
+            
+            # Convert back to string
+            rough_string = ET.tostring(root, 'utf-8')
+            reparsed = minidom.parseString(rough_string)
+            return reparsed.toprettyxml(indent="  ")
+            
+        except Exception as e:
+            self.logger.warning(f"Could not enhance ALTO with entities: {e}")
+            # Fall back to basic ALTO
+            return alto_xml
         
     def _extract_person_regions(self, alto_file: str, image_path: Path, output_dir: Path) -> str:
         """Extract person-dense regions from enhanced ALTO"""
