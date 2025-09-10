@@ -126,35 +126,88 @@ def upgrade_transformers():
 def setup_colab_environment():
     """
     Setup Google Colab environment for Ukrainian OCR Pipeline
-    Simple setup that forces clean reinstall of dependencies
+    Simple setup that only installs missing dependencies
     """
+    env_info = {
+        'is_colab': False,
+        'has_gpu': False,
+        'gpu_name': None,
+        'dependencies_installed': False
+    }
+    
     try:
         # Check if running in Colab
         import google.colab
+        env_info['is_colab'] = True
         print("✅ Running in Google Colab")
         
-        # Force clean install of dependencies
-        print("🔧 Installing dependencies (clean reinstall)...")
-        force_install_dependencies()
+        # Simple install of missing dependencies only
+        print("🔧 Installing missing dependencies...")
+        install_missing_dependencies()
+        env_info['dependencies_installed'] = True
         
         # Check GPU availability
         import torch
         if torch.cuda.is_available():
-            gpu_name = torch.cuda.get_device_name(0)
+            env_info['has_gpu'] = True
+            env_info['gpu_name'] = torch.cuda.get_device_name(0)
             gpu_memory = torch.cuda.get_device_properties(0).total_memory / 1024**3
-            print(f"✅ GPU detected: {gpu_name} ({gpu_memory:.1f}GB)")
+            print(f"✅ GPU detected: {env_info['gpu_name']} ({gpu_memory:.1f}GB)")
         else:
             print("⚠️ No GPU detected - will use CPU processing")
         
         print("✅ Setup complete!")
-        return True
+        return env_info
         
     except ImportError:
         print("❌ Not running in Google Colab")
-        return False
+        return env_info
     except Exception as e:
         print(f"❌ Setup failed: {e}")
-        return False
+        return env_info
+
+
+def install_missing_dependencies():
+    """Install only missing dependencies - much faster approach"""
+    import subprocess
+    import sys
+    
+    # Check what's missing and only install those
+    missing_packages = []
+    
+    # Check transformers version
+    try:
+        import transformers
+        from transformers import TrOCRProcessor
+        print(f"✅ transformers {transformers.__version__} with TrOCRProcessor available")
+    except (ImportError, ModuleNotFoundError):
+        missing_packages.append('transformers>=4.36.0')
+    
+    # Check kraken
+    try:
+        import kraken
+        print(f"✅ kraken available")
+    except (ImportError, ModuleNotFoundError):
+        missing_packages.append('kraken[pytorch]>=4.3.0')
+    
+    # Check spacy
+    try:
+        import spacy
+        print(f"✅ spacy {spacy.__version__} available")
+    except (ImportError, ModuleNotFoundError):
+        missing_packages.append('spacy>=3.6.0')
+    
+    # Install only what's missing
+    if missing_packages:
+        print(f"📦 Installing missing packages: {', '.join(missing_packages)}")
+        for package in missing_packages:
+            try:
+                subprocess.check_call([sys.executable, '-m', 'pip', 'install', package, '--quiet'])
+                print(f"✅ Installed {package}")
+            except subprocess.CalledProcessError as e:
+                print(f"⚠️ Failed to install {package}: {e}")
+    else:
+        print("✅ All required packages are already installed")
 
 
 def force_install_dependencies():
@@ -328,9 +381,9 @@ def setup_complete_colab_environment():
     print("=" * 60)
     
     # Simple setup
-    setup_success = setup_colab_environment()
+    env_info = setup_colab_environment()
     
-    if setup_success:
+    if env_info['is_colab'] and env_info['dependencies_installed']:
         # Pre-load models
         preload_models()
         
@@ -344,7 +397,7 @@ def setup_complete_colab_environment():
         print("```")
         print("=" * 60)
         
-    return setup_success
+    return env_info
 
 
 def upgrade_ner_to_spacy():
