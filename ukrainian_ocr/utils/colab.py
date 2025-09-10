@@ -168,7 +168,7 @@ def setup_colab_environment():
 
 
 def install_missing_dependencies():
-    """Install only missing dependencies - much faster approach"""
+    """Install only missing dependencies - match local working versions"""
     import subprocess
     import sys
     
@@ -176,24 +176,26 @@ def install_missing_dependencies():
     missing_packages = []
     upgrade_packages = []
     
-    # Check sklearn version compatibility
-    try:
-        import sklearn
-        sklearn_version = sklearn.__version__
-        major, minor = map(int, sklearn_version.split('.')[:2])
-        if major > 1 or (major == 1 and minor >= 5):
-            print(f"⚠️ scikit-learn {sklearn_version} may cause trapezoid import issues")
-            upgrade_packages.append('scikit-learn<1.5.0')
-    except (ImportError, ModuleNotFoundError):
-        missing_packages.append('scikit-learn<1.5.0')
-    
-    # Check transformers version
+    # Check transformers version - need newer version for TrOCRProcessor compatibility
     try:
         import transformers
         from transformers import TrOCRProcessor
-        print(f"✅ transformers {transformers.__version__} with TrOCRProcessor available")
+        version = transformers.__version__
+        major, minor = map(int, version.split('.')[:2])
+        if major < 4 or (major == 4 and minor < 50):
+            print(f"⚠️ transformers {version} is too old, upgrading to match local working version")
+            upgrade_packages.append('transformers>=4.56.0')
+        else:
+            print(f"✅ transformers {version} with TrOCRProcessor available")
     except (ImportError, ModuleNotFoundError, AttributeError):
-        missing_packages.append('transformers>=4.36.0')
+        missing_packages.append('transformers>=4.56.0')
+    
+    # Check sklearn - use current Colab version (should be fine with newer transformers)
+    try:
+        import sklearn
+        print(f"✅ scikit-learn {sklearn.__version__} available")
+    except (ImportError, ModuleNotFoundError):
+        missing_packages.append('scikit-learn>=1.5.0')
     
     # Check kraken
     try:

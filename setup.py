@@ -76,7 +76,7 @@ setup(
         "Pillow>=8.0.0",
         "pyyaml>=6.0",
         "tqdm>=4.60.0",
-        "scikit-learn>=1.0.0,<1.5.0",
+        "scikit-learn>=1.5.0",
         "torch>=2.0.0",
         "transformers>=4.36.0",
     ],
