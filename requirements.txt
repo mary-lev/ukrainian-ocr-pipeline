@@ -11,7 +11,7 @@ scikit-learn>=1.0.0
 
 # Machine Learning (CPU versions - GPU installed separately)
 torch>=2.0.0
-transformers>=4.30.0
+transformers>=4.56.1
 
 # Optional dependencies (install as needed)
 # GPU acceleration:

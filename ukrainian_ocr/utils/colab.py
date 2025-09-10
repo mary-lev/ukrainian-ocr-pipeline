@@ -83,27 +83,15 @@ def download_results(
 
 
 def check_pytorch_compatibility():
-    """Check and fix PyTorch compatibility issues in Colab"""
+    """Check PyTorch availability"""
     try:
         import torch
         torch_version = torch.__version__
-        print(f"🔥 Current PyTorch version: {torch_version}")
-        
-        # Check if we have torch.compiler issues
-        if hasattr(torch, 'compiler'):
-            try:
-                # Test torch.compiler.disable with reason
-                torch.compiler.disable(reason="test")
-                torch.compiler.enable()
-                print("✅ PyTorch compiler compatibility: OK")
-            except TypeError:
-                print("⚠️ PyTorch compiler has compatibility issues, but workarounds applied")
-        else:
-            print("ℹ️ PyTorch compiler not available (older version)")
-            
+        print(f"🔥 PyTorch version: {torch_version}")
+        print("✅ PyTorch available!")
         return True
     except Exception as e:
-        print(f"❌ PyTorch compatibility check failed: {e}")
+        print(f"❌ PyTorch not available: {e}")
         return False
 
 
@@ -138,60 +126,64 @@ def upgrade_transformers():
 def setup_colab_environment():
     """
     Setup Google Colab environment for Ukrainian OCR Pipeline
-    
-    Returns:
-        Dictionary with environment information
+    Simple setup that forces clean reinstall of dependencies
     """
-    env_info = {
-        'is_colab': False,
-        'has_gpu': False,
-        'gpu_name': None,
-        'python_version': None,
-        'dependencies_installed': False,
-        'pytorch_compatible': False
-    }
-    
     try:
         # Check if running in Colab
         import google.colab
-        env_info['is_colab'] = True
         print("✅ Running in Google Colab")
         
-        # Install required dependencies
-        print("🔧 Installing required dependencies...")
-        install_colab_dependencies()
-        env_info['dependencies_installed'] = True
-        
-        # Check PyTorch compatibility
-        print("🔥 Checking PyTorch compatibility...")
-        env_info['pytorch_compatible'] = check_pytorch_compatibility()
-        
-        # Check and upgrade transformers if needed
-        print("🤖 Checking transformers compatibility...")
-        upgrade_transformers()
+        # Force clean install of dependencies
+        print("🔧 Installing dependencies (clean reinstall)...")
+        force_install_dependencies()
         
         # Check GPU availability
         import torch
         if torch.cuda.is_available():
-            env_info['has_gpu'] = True
-            env_info['gpu_name'] = torch.cuda.get_device_name(0)
+            gpu_name = torch.cuda.get_device_name(0)
             gpu_memory = torch.cuda.get_device_properties(0).total_memory / 1024**3
-            print(f"✅ GPU detected: {env_info['gpu_name']} ({gpu_memory:.1f}GB)")
+            print(f"✅ GPU detected: {gpu_name} ({gpu_memory:.1f}GB)")
         else:
             print("⚠️ No GPU detected - will use CPU processing")
         
-        # Get Python version
-        import sys
-        env_info['python_version'] = sys.version
-        print(f"🐍 Python: {sys.version.split()[0]}")
-        
-        # Check PyTorch version
-        print(f"🔥 PyTorch: {torch.__version__}")
+        print("✅ Setup complete!")
+        return True
         
     except ImportError:
         print("❌ Not running in Google Colab")
+        return False
+    except Exception as e:
+        print(f"❌ Setup failed: {e}")
+        return False
+
+
+def force_install_dependencies():
+    """Force clean reinstall of all dependencies"""
+    import subprocess
+    import sys
     
-    return env_info
+    # Key dependencies that need clean reinstall
+    dependencies = [
+        'transformers>=4.36.0',
+        'torch>=2.0.0', 
+        'kraken[pytorch]>=4.3.0',
+        'spacy>=3.6.0',
+    ]
+    
+    print("🔄 Uninstalling and reinstalling key packages...")
+    for dep in dependencies:
+        package_name = dep.split('>=')[0].split('[')[0]
+        try:
+            # Uninstall first
+            subprocess.run([sys.executable, '-m', 'pip', 'uninstall', package_name, '-y'], 
+                         capture_output=True)
+            # Reinstall
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', dep, '--quiet'])
+            print(f"✅ Reinstalled {package_name}")
+        except:
+            print(f"⚠️ Issue with {package_name} (may not have been installed)")
+    
+    print("✅ Dependencies reinstalled!")
 
 
 def install_colab_dependencies():
@@ -335,10 +327,10 @@ def setup_complete_colab_environment():
     print("🚀 Setting up Ukrainian OCR Pipeline for Google Colab...")
     print("=" * 60)
     
-    # Setup environment
-    env_info = setup_colab_environment()
+    # Simple setup
+    setup_success = setup_colab_environment()
     
-    if env_info['is_colab'] and env_info['dependencies_installed']:
+    if setup_success:
         # Pre-load models
         preload_models()
         
@@ -352,7 +344,7 @@ def setup_complete_colab_environment():
         print("```")
         print("=" * 60)
         
-    return env_info
+    return setup_success
 
 
 def upgrade_ner_to_spacy():
