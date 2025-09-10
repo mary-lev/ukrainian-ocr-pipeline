@@ -26,7 +26,10 @@ from .utils.models import ModelManager
 try:
     from .utils.colab import (
         download_results, 
-        setup_colab_environment, 
+        setup_colab_environment,
+        setup_complete_colab_environment,
+        preload_models,
+        install_colab_dependencies,
         list_output_files,
         get_processing_results_summary
     )
@@ -56,7 +59,10 @@ __all__ = [
 if _colab_available:
     __all__.extend([
         "download_results",
-        "setup_colab_environment", 
+        "setup_colab_environment",
+        "setup_complete_colab_environment",
+        "preload_models",
+        "install_colab_dependencies",
         "list_output_files",
         "get_processing_results_summary"
     ])

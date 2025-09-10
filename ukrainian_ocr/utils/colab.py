@@ -93,7 +93,8 @@ def setup_colab_environment():
         'is_colab': False,
         'has_gpu': False,
         'gpu_name': None,
-        'python_version': None
+        'python_version': None,
+        'dependencies_installed': False
     }
     
     try:
@@ -101,6 +102,11 @@ def setup_colab_environment():
         import google.colab
         env_info['is_colab'] = True
         print("✅ Running in Google Colab")
+        
+        # Install required dependencies
+        print("🔧 Installing required dependencies...")
+        install_colab_dependencies()
+        env_info['dependencies_installed'] = True
         
         # Check GPU availability
         import torch
@@ -123,6 +129,116 @@ def setup_colab_environment():
     except ImportError:
         print("❌ Not running in Google Colab")
     
+    return env_info
+
+
+def install_colab_dependencies():
+    """
+    Install all required dependencies for Colab
+    """
+    import subprocess
+    import sys
+    
+    dependencies = [
+        'kraken[pytorch]',
+        'transformers[torch]',
+        'spacy',
+        'opencv-python',
+        'pillow',
+        'numpy',
+        'tqdm',
+        'scikit-learn'
+    ]
+    
+    print("📦 Installing dependencies...")
+    for dep in dependencies:
+        try:
+            subprocess.check_call([
+                sys.executable, '-m', 'pip', 'install', dep, '--quiet'
+            ])
+            print(f"  ✅ {dep}")
+        except subprocess.CalledProcessError as e:
+            print(f"  ❌ Failed to install {dep}: {e}")
+    
+    # Download spaCy model for NER
+    try:
+        print("🔤 Downloading spaCy language model...")
+        subprocess.check_call([
+            sys.executable, '-m', 'spacy', 'download', 'ru_core_news_lg', '--quiet'
+        ])
+        print("  ✅ ru_core_news_lg")
+    except subprocess.CalledProcessError:
+        print("  ⚠️ Could not download ru_core_news_lg, will use smaller model")
+        
+    print("✅ Dependencies installation complete!")
+
+
+def preload_models():
+    """
+    Pre-load and cache models for faster processing
+    """
+    print("🚀 Pre-loading models...")
+    
+    try:
+        # Pre-load TrOCR model
+        print("  📝 Loading TrOCR model...")
+        from transformers import TrOCRProcessor, VisionEncoderDecoderModel
+        
+        model_name = "cyrillic-trocr/trocr-handwritten-cyrillic"
+        processor = TrOCRProcessor.from_pretrained(model_name)
+        model = VisionEncoderDecoderModel.from_pretrained(model_name)
+        print("  ✅ TrOCR model loaded")
+        
+        # Pre-load Kraken (downloads default model if needed)
+        print("  🖼️ Loading Kraken segmentation...")
+        import kraken
+        from kraken import blla
+        print("  ✅ Kraken loaded")
+        
+        # Pre-load spaCy NER model
+        print("  🏷️ Loading spaCy NER model...")
+        try:
+            import spacy
+            nlp = spacy.load("ru_core_news_lg")
+            print("  ✅ spaCy ru_core_news_lg loaded")
+        except OSError:
+            try:
+                nlp = spacy.load("ru_core_news_md")
+                print("  ✅ spaCy ru_core_news_md loaded")
+            except OSError:
+                print("  ⚠️ No Russian spaCy model found")
+        
+        print("🎉 All models pre-loaded successfully!")
+        
+    except Exception as e:
+        print(f"⚠️ Error pre-loading models: {e}")
+        print("Models will be loaded on-demand instead")
+
+
+def setup_complete_colab_environment():
+    """
+    Complete setup for Colab environment including dependencies and models
+    """
+    print("🚀 Setting up Ukrainian OCR Pipeline for Google Colab...")
+    print("=" * 60)
+    
+    # Setup environment
+    env_info = setup_colab_environment()
+    
+    if env_info['is_colab'] and env_info['dependencies_installed']:
+        # Pre-load models
+        preload_models()
+        
+        print("\n" + "=" * 60)
+        print("✅ Setup complete! You can now use the Ukrainian OCR Pipeline.")
+        print("\nExample usage:")
+        print("```python")
+        print("from ukrainian_ocr import UkrainianOCRPipeline")
+        print("pipeline = UkrainianOCRPipeline(device='auto')")
+        print("result = pipeline.process_single_image('your_image.jpg')")
+        print("```")
+        print("=" * 60)
+        
     return env_info
 
 

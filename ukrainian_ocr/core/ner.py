@@ -22,28 +22,110 @@ class NERExtractor:
         """Load NER model based on backend"""
         try:
             if self.backend == "spacy":
-                import spacy
-                model_name = self.model_name or "uk_core_news_sm"
                 try:
-                    self.nlp = spacy.load(model_name)
-                except OSError:
-                    self.logger.warning(f"Model {model_name} not found, using placeholder")
+                    import spacy
+                    # Try different Russian/Ukrainian models
+                    model_candidates = [
+                        self.model_name,
+                        "ru_core_news_lg", 
+                        "ru_core_news_md", 
+                        "ru_core_news_sm",
+                        "uk_core_news_sm"
+                    ]
+                    
+                    # Remove None values
+                    model_candidates = [m for m in model_candidates if m]
+                    
+                    for model_name in model_candidates:
+                        try:
+                            self.nlp = spacy.load(model_name)
+                            self.logger.info(f"Loaded spaCy model: {model_name}")
+                            return
+                        except OSError:
+                            continue
+                    
+                    self.logger.warning("No spaCy models found, using rule-based extraction")
                     self.nlp = None
+                    
+                except ImportError:
+                    # Try to auto-install spaCy for better results
+                    if self._should_auto_install():
+                        self.logger.info("Attempting to install spaCy for better NER results...")
+                        if self._install_spacy():
+                            # Retry loading after installation
+                            return self._load_model()
+                    
+                    self.logger.warning("spaCy not installed, using rule-based extraction")
+                    self.nlp = None
+                    
             elif self.backend == "transformers":
-                from transformers import pipeline
-                model_name = self.model_name or "dbmdz/bert-base-multilingual-cased-ner"
                 try:
+                    from transformers import pipeline
+                    model_name = self.model_name or "dbmdz/bert-base-multilingual-cased-ner"
                     self.nlp = pipeline("ner", model=model_name, tokenizer=model_name)
-                except Exception:
-                    self.logger.warning(f"Transformers model {model_name} not found, using placeholder")
+                    self.logger.info(f"Loaded Transformers model: {model_name}")
+                except ImportError:
+                    self.logger.warning("Transformers not installed, using rule-based extraction")
+                    self.nlp = None
+                except Exception as e:
+                    self.logger.warning(f"Transformers model loading failed: {e}, using rule-based extraction")
                     self.nlp = None
             else:
-                self.logger.warning(f"Unknown backend {self.backend}, using placeholder")
+                self.logger.warning(f"Unknown NER backend '{self.backend}', using rule-based extraction")
                 self.nlp = None
                 
         except Exception as e:
-            self.logger.error(f"Error loading NER model: {e}")
+            self.logger.warning(f"NER model loading failed: {e}, using rule-based extraction")
             self.nlp = None
+            
+        if self.nlp is None:
+            self.logger.info("Using rule-based NER extraction (install spaCy for better results)")
+    
+    def _should_auto_install(self) -> bool:
+        """Check if we should attempt auto-installation"""
+        # Only auto-install in known environments (like Colab or Jupyter)
+        try:
+            # Check for Colab
+            import google.colab
+            return True
+        except ImportError:
+            pass
+        
+        # Check for Jupyter
+        try:
+            import IPython
+            return True
+        except ImportError:
+            pass
+        
+        # Don't auto-install in production environments
+        return False
+    
+    def _install_spacy(self) -> bool:
+        """Attempt to install spaCy and a Russian model"""
+        try:
+            import subprocess
+            import sys
+            
+            # Install spaCy
+            subprocess.check_call([
+                sys.executable, '-m', 'pip', 'install', 'spacy', '--quiet'
+            ])
+            
+            # Try to install a Russian model
+            try:
+                subprocess.check_call([
+                    sys.executable, '-m', 'spacy', 'download', 'ru_core_news_sm', '--quiet'
+                ])
+                self.logger.info("Successfully installed spaCy with ru_core_news_sm model")
+            except subprocess.CalledProcessError:
+                self.logger.warning("spaCy installed but model download failed")
+                
+            return True
+            
+        except subprocess.CalledProcessError as e:
+            self.logger.warning(f"Failed to install spaCy: {e}")
+            return False
     
     def extract_entities(self, text: str, confidence_threshold: float = 0.5) -> List[Dict]:
         """
@@ -107,47 +189,106 @@ class NERExtractor:
         return entities
     
     def _placeholder_extraction(self, text: str) -> List[Dict]:
-        """Placeholder entity extraction for testing"""
+        """Rule-based entity extraction for Ukrainian/Russian text"""
         
-        # Simple rule-based extraction for Ukrainian names and places
         entities = []
         
-        # Common Ukrainian name patterns
+        # Enhanced Ukrainian/Russian name patterns
         name_patterns = [
-            r'\b[А-ЯІЇЄЁ][а-яіїєё]+\s+[А-ЯІЇЄЁ][а-яіїєё]+(?:ич|енко|ський|цький|ук|юк|ко)\b',
-            r'\b[А-ЯІЇЄЁ][а-яіїєё]+(?:енко|ський|цький|ук|юк|ко)\b',
+            # Full names with patronymic
+            r'\b[А-ЯІЇЄЁA-Z][а-яіїєёa-z]+\s+[А-ЯІЇЄЁA-Z][а-яіїєёa-z]+(?:ич|енко|ський|цький|ук|юк|ко|ова|іна|евич|ович|івич)\b',
+            # Last names with typical endings
+            r'\b[А-ЯІЇЄЁA-Z][а-яіїєёa-z]+(?:енко|ський|цький|ук|юк|ко|ова|іна|евич|ович|івич|ев|ева|ин|ина|ський|цька)\b',
+            # First + Last name combinations
+            r'\b(?:Іван|Петро|Микола|Олександр|Василь|Андрій|Михайло|Дмитро|Сергій|Володимир|Анна|Марія|Катерина|Ольга|Наталія|Тетяна|Людмила|Ірина)\s+[А-ЯІЇЄЁA-Z][а-яіїєёa-z]+\b',
         ]
         
-        # Common location patterns
+        # Enhanced location patterns
         place_patterns = [
-            r'\b(?:село|місто|район|область|губернія)\s+[А-ЯІЇЄЁ][а-яіїєё]+\b',
-            r'\b[А-ЯІЇЄЁ][а-яіїєё]+(?:ськ|ський|град|город|ів|ово|ево|ине|енки)\b',
-            r'\bХарків|Київ|Львів|Одеса|Дніпро|Запоріжжя\b'
+            # Administrative units
+            r'\b(?:село|с\.|місто|м\.|район|р-н|область|обл\.|губернія|губ\.)\s+[А-ЯІЇЄЁA-Z][а-яіїєёa-z-]+\b',
+            # Cities with typical endings
+            r'\b[А-ЯІЇЄЁA-Z][а-яіїєёa-z]+(?:ськ|ський|град|город|ів|ово|ево|ине|енки|ичі|ці|ка|ки)\b',
+            # Major Ukrainian cities
+            r'\b(?:Харків|Київ|Львів|Одеса|Дніпро|Запоріжжя|Вінниця|Чернігів|Суми|Полтава|Черкаси|Житомир|Рівне|Івано-Франківськ|Тернопіль|Луцьк|Ужгород|Чернівці|Кропивницький|Мелітополь|Кременчук|Білгород|Курськ|Воронеж|Москва|Петербург)\b',
+            # Historical regions
+            r'\b(?:Слобожанщина|Галичина|Волинь|Поділля|Буковина|Закарпаття)\b'
+        ]
+        
+        # Date patterns
+        date_patterns = [
+            r'\b(?:1[8-9]\d{2}|20[0-2]\d)\s*(?:року|года|р\.)\b',
+            r'\b\d{1,2}\s*(?:січня|лютого|березня|квітня|травня|червня|липня|серпня|вересня|жовтня|листопада|грудня)\s*(?:1[8-9]\d{2}|20[0-2]\d)\b'
         ]
         
         # Extract person names
         for pattern in name_patterns:
-            for match in re.finditer(pattern, text):
-                entities.append({
-                    'text': match.group(),
-                    'label': 'PERSON',
-                    'start': match.start(),
-                    'end': match.end(),
-                    'confidence': 0.8
-                })
+            for match in re.finditer(pattern, text, re.IGNORECASE):
+                # Skip if it's likely a place name
+                matched_text = match.group()
+                if not any(place_word in matched_text.lower() for place_word in ['ськ', 'град', 'город']):
+                    entities.append({
+                        'text': matched_text,
+                        'label': 'PERSON',
+                        'start': match.start(),
+                        'end': match.end(),
+                        'confidence': 0.85
+                    })
         
         # Extract locations
         for pattern in place_patterns:
-            for match in re.finditer(pattern, text):
+            for match in re.finditer(pattern, text, re.IGNORECASE):
                 entities.append({
                     'text': match.group(),
                     'label': 'LOCATION',
                     'start': match.start(),
                     'end': match.end(),
-                    'confidence': 0.7
+                    'confidence': 0.80
                 })
+        
+        # Extract dates
+        for pattern in date_patterns:
+            for match in re.finditer(pattern, text, re.IGNORECASE):
+                entities.append({
+                    'text': match.group(),
+                    'label': 'DATE',
+                    'start': match.start(),
+                    'end': match.end(),
+                    'confidence': 0.90
+                })
+        
+        # Remove overlapping entities (keep higher confidence)
+        entities = self._remove_overlapping_entities(entities)
                 
         return entities
+    
+    def _remove_overlapping_entities(self, entities: List[Dict]) -> List[Dict]:
+        """Remove overlapping entities, keeping higher confidence ones"""
+        if not entities:
+            return entities
+        
+        # Sort by start position
+        entities.sort(key=lambda x: x['start'])
+        
+        filtered = []
+        for entity in entities:
+            # Check if this entity overlaps with any in filtered list
+            overlaps = False
+            for filtered_entity in filtered:
+                if (entity['start'] < filtered_entity['end'] and 
+                    entity['end'] > filtered_entity['start']):
+                    # Keep the one with higher confidence
+                    if entity['confidence'] > filtered_entity['confidence']:
+                        filtered.remove(filtered_entity)
+                        break
+                    else:
+                        overlaps = True
+                        break
+            
+            if not overlaps:
+                filtered.append(entity)
+        
+        return filtered
     
     def extract_from_alto(self, alto_path: str, confidence_threshold: float = 0.5) -> Dict:
         """
