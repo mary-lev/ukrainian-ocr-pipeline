@@ -319,3 +319,4 @@ debug_*.py
 
 COLAB_TROUBLESHOOTING.md
 examples/test_results
+examples/ukrainian_ocr_output
