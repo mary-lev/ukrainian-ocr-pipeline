@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/ukrainian-ocr-pipeline.svg)](https://badge.fury.io/py/ukrainian-ocr-pipeline)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/ukrainian-ocr-pipeline/blob/main/examples/Ukrainian_OCR_Colab_Demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mary-lev/ukrainian-ocr-pipeline/blob/main/examples/Ukrainian_OCR_Colab_Demo.ipynb)
 
 High-performance OCR pipeline for historical Ukrainian documents with Named Entity Recognition (NER). Optimized for cloud inference with GPU acceleration.
 
