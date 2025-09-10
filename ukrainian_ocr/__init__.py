@@ -32,6 +32,7 @@ try:
         install_colab_dependencies,
         upgrade_ner_to_spacy,
         check_pytorch_compatibility,
+        upgrade_transformers,
         list_output_files,
         get_processing_results_summary
     )
@@ -72,6 +73,7 @@ if _colab_available:
         "install_colab_dependencies",
         "upgrade_ner_to_spacy",
         "check_pytorch_compatibility",
+        "upgrade_transformers",
         "list_output_files",
         "get_processing_results_summary"
     ])

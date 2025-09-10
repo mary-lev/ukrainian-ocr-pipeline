@@ -107,6 +107,34 @@ def check_pytorch_compatibility():
         return False
 
 
+def upgrade_transformers():
+    """Install/upgrade transformers to the required version for TrOCR"""
+    import subprocess
+    import sys
+    
+    print("🔧 Installing transformers>=4.36.0 for TrOCR support...")
+    
+    try:
+        # Install/upgrade transformers to the required version
+        subprocess.check_call([
+            sys.executable, '-m', 'pip', 'install', '--upgrade', 
+            'transformers>=4.36.0', '--quiet'
+        ])
+        
+        print("✅ Transformers installed successfully!")
+        
+        # Verify installation
+        import transformers
+        from transformers import TrOCRProcessor
+        print(f"📦 Transformers version: {transformers.__version__}")
+        print("✅ TrOCRProcessor available!")
+        return True
+            
+    except Exception as e:
+        print(f"❌ Failed to install transformers: {e}")
+        raise
+
+
 def setup_colab_environment():
     """
     Setup Google Colab environment for Ukrainian OCR Pipeline
@@ -137,6 +165,10 @@ def setup_colab_environment():
         # Check PyTorch compatibility
         print("🔥 Checking PyTorch compatibility...")
         env_info['pytorch_compatible'] = check_pytorch_compatibility()
+        
+        # Check and upgrade transformers if needed
+        print("🤖 Checking transformers compatibility...")
+        upgrade_transformers()
         
         # Check GPU availability
         import torch
@@ -171,14 +203,14 @@ def install_colab_dependencies():
     
     dependencies = [
         'kraken[pytorch]',
-        'transformers[torch]>=4.30.0',  # Ensure compatible transformers version
+        'transformers>=4.36.0',  # TrOCRProcessor available from 4.36+
+        'torch>=2.0.0',  # Ensure compatible PyTorch version
         'spacy>=3.4.0',
         'opencv-python',
         'pillow',
         'numpy',
         'tqdm',
-        'scikit-learn',
-        'torch>=2.0.0'  # Ensure compatible PyTorch version
+        'scikit-learn'
     ]
     
     print("📦 Installing dependencies...")

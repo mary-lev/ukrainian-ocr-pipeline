@@ -30,41 +30,13 @@ class TrOCRProcessor:
     def _load_model(self):
         """Load TrOCR model and processor"""
         try:
-            # Install transformers if needed (for Colab)
-            self._ensure_transformers_installed()
-            
-            from transformers import (
-                TrOCRProcessor, 
-                VisionEncoderDecoderModel,
-                ViTFeatureExtractor,
-                AutoTokenizer
-            )
+            from transformers import TrOCRProcessor, VisionEncoderDecoderModel, AutoTokenizer
             
             self.logger.info(f"Loading TrOCR model: {self.model_path}")
             self.logger.info(f"Using device: {self.device}")
             
-            # Load processor and model from HuggingFace with compatibility handling
-            try:
-                self.processor = TrOCRProcessor.from_pretrained(self.model_path, use_fast=True)
-            except Exception as proc_error:
-                self.logger.warning(f"Failed to load processor with use_fast=True: {proc_error}")
-                self.processor = TrOCRProcessor.from_pretrained(self.model_path)
-                
-            # Load model with PyTorch compatibility handling
-            import torch
-            
-            # Disable torch.compile if causing issues (Colab compatibility)
-            try:
-                if hasattr(torch, 'compiler') and hasattr(torch.compiler, 'disable'):
-                    try:
-                        # Try with reason parameter (newer PyTorch)
-                        torch.compiler.disable(reason="TrOCR compatibility")
-                    except TypeError:
-                        # Fallback for older PyTorch versions
-                        torch.compiler.disable()
-            except:
-                pass  # torch.compiler may not be available
-            
+            # Load processor and model from HuggingFace
+            self.processor = TrOCRProcessor.from_pretrained(self.model_path)
             self.model = VisionEncoderDecoderModel.from_pretrained(self.model_path)
             
             # Move to device and set to eval mode
@@ -79,18 +51,6 @@ class TrOCRProcessor:
         except Exception as e:
             self.logger.error(f"Error loading TrOCR model: {e}")
             raise
-            
-    def _ensure_transformers_installed(self):
-        """Install transformers if not available (for Colab)"""
-        try:
-            import transformers
-        except ImportError:
-            self.logger.info("Installing transformers for TrOCR...")
-            import subprocess
-            subprocess.check_call([
-                'pip', 'install', 'transformers[torch]', '--quiet'
-            ])
-            self.logger.info("Transformers installed successfully")
     
     def process_lines(
         self, 

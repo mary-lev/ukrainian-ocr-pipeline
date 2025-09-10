@@ -78,7 +78,7 @@ setup(
         "tqdm>=4.60.0",
         "scikit-learn>=1.0.0",
         "torch>=2.0.0",
-        "transformers>=4.30.0",
+        "transformers>=4.36.0",
     ],
     
     # Optional dependencies for different use cases
@@ -118,7 +118,7 @@ setup(
         # Colab-specific dependencies
         "colab": [
             "torch>=2.0.0",
-            "transformers>=4.30.0",
+            "transformers>=4.36.0",
             "accelerate>=0.20.0",
             "ipywidgets>=8.0.0",
         ],
