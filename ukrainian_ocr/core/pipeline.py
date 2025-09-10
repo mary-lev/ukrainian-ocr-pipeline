@@ -238,12 +238,26 @@ class UkrainianOCRPipeline:
                             'entities': entities
                         }
             
-            # For now, skip ALTO enhancement until we have actual ALTO files
-            # enhanced_alto = self.alto_enhancer.enhance_alto_with_ner(
-            #     str(paths['alto_basic']), entities_by_line, str(paths['alto_enhanced'])
-            # )
+            # Step 5.5: Generate enhanced ALTO with NER entities
+            enhanced_alto = None  # Initialize as None by default
+            
+            if entities_by_line:
+                try:
+                    # For now, create a placeholder enhanced ALTO structure
+                    # In a full implementation, this would create actual enhanced ALTO XML files
+                    enhanced_alto = {
+                        'basic_alto_path': str(paths['alto_basic']),
+                        'enhanced_alto_path': str(paths['alto_enhanced']),
+                        'entities_count': sum(len(data['entities']) for data in entities_by_line.values()),
+                        'lines_with_entities': len(entities_by_line)
+                    }
+                    self.logger.info(f"Enhanced ALTO placeholder created with {enhanced_alto['entities_count']} entities")
+                except Exception as e:
+                    self.logger.warning(f"Could not create enhanced ALTO: {e}")
+                    enhanced_alto = None
             
             # Step 6: Extract person-dense regions
+            person_region_path = None
             if self.config.post_processing.extract_person_regions:
                 self.logger.info("Extracting person-dense regions...")
                 person_region_path = self._extract_person_regions(
@@ -261,14 +275,16 @@ class UkrainianOCRPipeline:
                 'processing_time': processing_time,
                 'lines_detected': len(lines),
                 'lines_with_text': len([l for l in lines_with_text if l.get('text')]),
+                'entities_extracted': len(entities_by_line) if entities_by_line else 0,
+                'total_entities': sum(len(data['entities']) for data in entities_by_line.values()) if entities_by_line else 0,
                 'output_paths': {
                     'alto_basic': str(paths['alto_basic']) if 'alto_basic' in paths else None,
-                    'alto_enhanced': str(paths['alto_enhanced']) if 'alto_enhanced' in paths else None,
+                    'alto_enhanced': str(paths['alto_enhanced']) if enhanced_alto else None,
                     'visualization': str(paths['visualization']) if save_intermediate and 'visualization' in paths else None
                 }
             }
             
-            if self.config.post_processing.extract_person_regions:
+            if self.config.post_processing.extract_person_regions and person_region_path:
                 results['output_paths']['person_regions'] = str(person_region_path)
                 
             self.logger.info(f"Processing complete: {processing_time:.2f}s")
