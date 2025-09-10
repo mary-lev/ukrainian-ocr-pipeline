@@ -142,7 +142,7 @@ def install_colab_dependencies():
     dependencies = [
         'kraken[pytorch]',
         'transformers[torch]',
-        'spacy',
+        'spacy>=3.4.0',
         'opencv-python',
         'pillow',
         'numpy',
@@ -160,16 +160,49 @@ def install_colab_dependencies():
         except subprocess.CalledProcessError as e:
             print(f"  ❌ Failed to install {dep}: {e}")
     
-    # Download spaCy model for NER
-    try:
-        print("🔤 Downloading spaCy language model...")
-        subprocess.check_call([
-            sys.executable, '-m', 'spacy', 'download', 'ru_core_news_lg', '--quiet'
-        ])
-        print("  ✅ ru_core_news_lg")
-    except subprocess.CalledProcessError:
-        print("  ⚠️ Could not download ru_core_news_lg, will use smaller model")
-        
+    # Download spaCy models for NER (try multiple models)
+    print("🔤 Downloading spaCy language models...")
+    spacy_models = [
+        ('ru_core_news_lg', 'Large Russian model (~500MB) - best quality'),
+        ('ru_core_news_md', 'Medium Russian model (~50MB) - good quality'), 
+        ('ru_core_news_sm', 'Small Russian model (~15MB) - fast')
+    ]
+    
+    spacy_installed = False
+    successful_models = []
+    
+    # Try to install models in order of preference
+    for model_name, description in spacy_models:
+        try:
+            print(f"  📥 Trying {model_name} - {description}")
+            subprocess.check_call([
+                sys.executable, '-m', 'spacy', 'download', model_name, '--quiet'
+            ])
+            print(f"  ✅ {model_name} installed successfully")
+            successful_models.append(model_name)
+            spacy_installed = True
+            
+            # Test the model to make sure it works
+            try:
+                import spacy
+                nlp = spacy.load(model_name)
+                test_text = "Іван Петренко з Харкова"
+                doc = nlp(test_text)
+                print(f"  🧪 Model test: Found {len(doc.ents)} entities in test text")
+                break  # Stop after first successful working model
+            except Exception as test_error:
+                print(f"  ⚠️ Model {model_name} installed but failed test: {test_error}")
+                continue
+                
+        except subprocess.CalledProcessError as e:
+            print(f"  ⚠️ Could not download {model_name}: {e}")
+            continue
+    
+    if spacy_installed:
+        print(f"  🎉 spaCy setup complete! Installed models: {', '.join(successful_models)}")
+    else:
+        print("  ⚠️ No spaCy models installed - will use rule-based NER")
+    
     print("✅ Dependencies installation complete!")
 
 
@@ -199,14 +232,31 @@ def preload_models():
         print("  🏷️ Loading spaCy NER model...")
         try:
             import spacy
-            nlp = spacy.load("ru_core_news_lg")
-            print("  ✅ spaCy ru_core_news_lg loaded")
-        except OSError:
-            try:
-                nlp = spacy.load("ru_core_news_md")
-                print("  ✅ spaCy ru_core_news_md loaded")
-            except OSError:
-                print("  ⚠️ No Russian spaCy model found")
+            
+            # Try loading models in order of preference
+            spacy_models = ['ru_core_news_lg', 'ru_core_news_md', 'ru_core_news_sm']
+            nlp = None
+            
+            for model_name in spacy_models:
+                try:
+                    nlp = spacy.load(model_name)
+                    print(f"  ✅ spaCy {model_name} loaded successfully")
+                    
+                    # Test the model with sample Ukrainian/Russian text
+                    test_text = "Іван Петренко з села Березівка 1920 року"
+                    doc = nlp(test_text)
+                    entities_found = len(doc.ents)
+                    print(f"  🧪 Model test: found {entities_found} entities in sample text")
+                    break
+                    
+                except OSError:
+                    continue
+            
+            if nlp is None:
+                print("  ⚠️ No spaCy models found - NER will use rule-based extraction")
+            
+        except ImportError:
+            print("  ⚠️ spaCy not available - NER will use rule-based extraction")
         
         print("🎉 All models pre-loaded successfully!")
         
@@ -240,6 +290,70 @@ def setup_complete_colab_environment():
         print("=" * 60)
         
     return env_info
+
+
+def upgrade_ner_to_spacy():
+    """
+    Upgrade NER from rule-based to spaCy-based for better results
+    Call this after initial setup if you want better entity recognition
+    """
+    import subprocess
+    import sys
+    
+    print("🔧 Upgrading NER to use spaCy models...")
+    
+    # Install spaCy if not already installed
+    try:
+        import spacy
+        print("✅ spaCy already installed")
+    except ImportError:
+        print("📦 Installing spaCy...")
+        try:
+            subprocess.check_call([
+                sys.executable, '-m', 'pip', 'install', 'spacy>=3.4.0', '--quiet'
+            ])
+            print("✅ spaCy installed")
+        except subprocess.CalledProcessError as e:
+            print(f"❌ Failed to install spaCy: {e}")
+            return False
+    
+    # Try to download a Russian model
+    spacy_models = [
+        ('ru_core_news_lg', 'Large Russian model (~500MB) - best quality'),
+        ('ru_core_news_md', 'Medium Russian model (~50MB) - good quality'), 
+        ('ru_core_news_sm', 'Small Russian model (~15MB) - basic quality')
+    ]
+    
+    print("📥 Downloading spaCy language model...")
+    for model_name, description in spacy_models:
+        try:
+            print(f"  Trying {model_name} - {description}")
+            subprocess.check_call([
+                sys.executable, '-m', 'spacy', 'download', model_name, '--quiet'
+            ])
+            
+            # Test the installed model
+            import spacy
+            nlp = spacy.load(model_name)
+            test_text = "Іван Петренко з Харкова, 1920 року народження"
+            doc = nlp(test_text)
+            entities = [(ent.text, ent.label_) for ent in doc.ents]
+            
+            print(f"  ✅ {model_name} installed and working!")
+            print(f"  🧪 Test: Found {len(entities)} entities: {entities}")
+            print("🎉 NER upgrade complete! Restart your pipeline to use spaCy-based NER.")
+            return True
+            
+        except subprocess.CalledProcessError:
+            print(f"  ⚠️ Could not download {model_name}")
+            continue
+        except Exception as e:
+            print(f"  ⚠️ Error testing {model_name}: {e}")
+            continue
+    
+    print("❌ Could not install any spaCy models")
+    print("💡 NER will continue using rule-based extraction")
+    return False
 
 
 def list_output_files(output_dir: str) -> List[str]:

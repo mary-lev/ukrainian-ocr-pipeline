@@ -96,31 +96,66 @@ class KrakenSegmenter:
             self.logger.info("Running Kraken BLLA segmentation...")
             
             # Run segmentation with BLLA model with error handling
+            seg_result = None
+            device_tried = self.device
+            
             try:
+                self.logger.info(f"Running Kraken segmentation on {device_tried}")
                 seg_result = blla.segment(
                     pil_image,
                     text_direction=self.DEFAULT_PARAMS['text_direction'],
                     model=self.model,  # None uses default model
-                    device=self.device,
+                    device=device_tried,
                     raise_on_error=False,  # Don't raise on topology errors
                     autocast=self.DEFAULT_PARAMS['autocast']
                 )
             except Exception as seg_error:
-                self.logger.warning(f"Segmentation error: {seg_error}")
-                # Try again with more conservative settings
-                try:
-                    self.logger.info("Retrying segmentation with conservative settings...")
-                    seg_result = blla.segment(
-                        pil_image,
-                        text_direction='horizontal-lr',  # Force horizontal
-                        model=None,  # Use default model
-                        device='cpu',  # Force CPU to avoid GPU memory issues
-                        raise_on_error=False,
-                        autocast=False
-                    )
-                except Exception as retry_error:
-                    self.logger.error(f"Segmentation failed completely: {retry_error}")
-                    return self._create_emergency_fallback_segmentation(image)
+                error_str = str(seg_error)
+                self.logger.warning(f"Segmentation error on {device_tried}: {seg_error}")
+                
+                # Check for cuDNN/CUDA-specific issues
+                cuda_issues = any(issue in error_str for issue in [
+                    'cuDNN', 'CUDNN', 'CUDA', 'out of memory', 'runtime version'
+                ])
+                
+                if cuda_issues and device_tried != 'cpu':
+                    self.logger.warning("CUDA/cuDNN compatibility issue detected, retrying with CPU...")
+                    device_tried = 'cpu'
+                    
+                    # Try again with CPU
+                    try:
+                        seg_result = blla.segment(
+                            pil_image,
+                            text_direction='horizontal-lr',  # Force horizontal
+                            model=None,  # Use default model
+                            device='cpu',  # Force CPU to avoid GPU issues
+                            raise_on_error=False,
+                            autocast=False
+                        )
+                        self.logger.info("Segmentation successful on CPU fallback")
+                    except Exception as cpu_error:
+                        self.logger.error(f"Segmentation failed even on CPU: {cpu_error}")
+                        return self._create_emergency_fallback_segmentation(image)
+                else:
+                    # Non-CUDA error, try conservative settings on same device
+                    try:
+                        self.logger.info(f"Retrying segmentation with conservative settings on {device_tried}...")
+                        seg_result = blla.segment(
+                            pil_image,
+                            text_direction='horizontal-lr',  # Force horizontal
+                            model=None,  # Use default model
+                            device=device_tried,
+                            raise_on_error=False,
+                            autocast=False
+                        )
+                    except Exception as retry_error:
+                        self.logger.error(f"Segmentation failed completely: {retry_error}")
+                        return self._create_emergency_fallback_segmentation(image)
+            
+            # Check if segmentation was successful
+            if seg_result is None:
+                self.logger.error("Segmentation failed - no result obtained")
+                return self._create_emergency_fallback_segmentation(image)
             
             # Convert to format expected by OCR pipeline
             lines = self._convert_kraken_output(seg_result)

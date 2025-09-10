@@ -149,9 +149,16 @@ class UkrainianOCRPipeline:
             
         if not self.ner_extractor:
             self.logger.info("Loading NER model...")
+            # Prepare backend config for NER
+            backend_config = self.config.ner.backend_config or {}
+            if self.config.ner.model_name:
+                backend_config['model'] = self.config.ner.model_name
+            if self.config.ner.api_key:
+                backend_config['api_key'] = self.config.ner.api_key
+                
             self.ner_extractor = NERExtractor(
                 backend=self.config.ner.backend,
-                model_name=self.config.ner.model_name
+                backend_config=backend_config
             )
             
         if not self.alto_enhancer:
@@ -227,17 +234,26 @@ class UkrainianOCRPipeline:
             
             # Step 5: NER Enhancement
             self.logger.info("Extracting named entities...")
-            # Extract entities from text lines
+            # Use the new NER system to extract entities from all lines
+            ner_results = self.ner_extractor.extract_entities_from_lines(lines_with_text)
+            
             entities_by_line = {}
-            for line in lines_with_text:
-                line_text = line.get('text', '')
-                if line_text.strip():
-                    entities = self.ner_extractor.extract_entities(line_text)
-                    if entities:
-                        entities_by_line[line.get('id', f"line_{len(entities_by_line)}")] = {
-                            'text': line_text,
-                            'entities': entities
-                        }
+            if ner_results.get('entities'):
+                # Group entities by the lines they appear in
+                for entity in ner_results['entities']:
+                    source_line = entity.get('source_line', '')
+                    if source_line:
+                        # Find the line ID that matches this text
+                        for line in lines_with_text:
+                            if line.get('text') == source_line:
+                                line_id = line.get('id', f"line_{len(entities_by_line)}")
+                                if line_id not in entities_by_line:
+                                    entities_by_line[line_id] = {
+                                        'text': source_line,
+                                        'entities': []
+                                    }
+                                entities_by_line[line_id]['entities'].append(entity)
+                                break
             
             # Step 5.5: Generate enhanced ALTO with NER entities
             enhanced_alto = None  # Initialize as None by default
@@ -287,6 +303,7 @@ class UkrainianOCRPipeline:
                 'lines_with_text': len([l for l in lines_with_text if l.get('text')]),
                 'entities_extracted': len(entities_by_line) if entities_by_line else 0,
                 'total_entities': sum(len(data['entities']) for data in entities_by_line.values()) if entities_by_line else 0,
+                'ner_backend': ner_results.get('backend', 'unknown') if ner_results else 'none',
                 'output_paths': {
                     'alto_basic': str(paths['alto_basic']) if 'alto_basic' in paths else None,
                     'alto_enhanced': str(paths['alto_enhanced']) if enhanced_alto else None,

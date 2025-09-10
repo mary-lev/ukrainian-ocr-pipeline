@@ -1,0 +1,40 @@
+# Include important documentation files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include TESTING.md
+
+# Include configuration files
+include *.ini
+include *.cfg
+include *.yaml
+include *.yml
+include *.json
+
+# Include package data
+recursive-include ukrainian_ocr *.py
+recursive-include ukrainian_ocr *.yaml
+recursive-include ukrainian_ocr *.json
+
+# Include example files but not output
+include examples/*.py
+include examples/*.md
+include examples/*.ipynb
+exclude examples/output/*
+exclude examples/results/*
+
+# Exclude test files from distribution
+recursive-exclude tests *
+exclude tests
+
+# Exclude development and build artifacts
+exclude .gitignore
+exclude .github
+exclude Makefile
+exclude run_tests.py
+exclude TEST_SUMMARY.md
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.orig
+recursive-exclude * *.bak
+recursive-exclude * *~

@@ -28,9 +28,11 @@ class OCRProcessorConfig:
 @dataclass
 class NERConfig:
     """Configuration for Named Entity Recognition"""
-    backend: str = "spacy"  # "spacy" or "transformers"
-    model_name: str = "uk_core_news_sm"
+    backend: str = "spacy"  # "spacy", "transformers", "openai", or "rule_based"
+    model_name: str = "ru_core_news_lg"  # Default to best available model
     confidence_threshold: float = 0.5
+    api_key: Optional[str] = None  # For OpenAI backend
+    backend_config: Optional[Dict] = None  # Additional backend configuration
 
 @dataclass
 class PostProcessingConfig:
@@ -162,24 +164,44 @@ class OCRPipelineConfig:
         
         # Auto-detect device
         if torch.cuda.is_available():
-            self.device = 'cuda'
-            # Optimize batch size based on GPU memory
-            gpu_memory_gb = torch.cuda.get_device_properties(0).total_memory / 1024**3
-            if gpu_memory_gb >= 16:
-                self.batch_size = 8
-            elif gpu_memory_gb >= 8:
-                self.batch_size = 4
-            else:
-                self.batch_size = 2
+            try:
+                # Test CUDA compatibility
+                torch.cuda.synchronize()
+                self.device = 'cuda'
+                # Optimize batch size based on GPU memory
+                gpu_memory_gb = torch.cuda.get_device_properties(0).total_memory / 1024**3
+                if gpu_memory_gb >= 16:
+                    self.batch_size = 8
+                elif gpu_memory_gb >= 8:
+                    self.batch_size = 4
+                else:
+                    self.batch_size = 2
+            except Exception as e:
+                print(f"⚠️ CUDA compatibility issue detected: {e}")
+                print("🔧 Falling back to CPU for stability")
+                self.device = 'cpu'
+                self.batch_size = 1
         else:
             self.device = 'cpu'
             self.batch_size = 1
         
-        # Optimize OCR settings for speed
-        self.ocr.device = self.device
+        # Optimize OCR settings for speed - OCR can use CUDA even if segmentation can't
+        ocr_device = self.device
+        if self.device == 'cpu' and torch.cuda.is_available():
+            # Try CUDA for OCR even if segmentation uses CPU
+            try:
+                torch.cuda.synchronize()
+                ocr_device = 'cuda'
+            except:
+                ocr_device = 'cpu'
+        
+        self.ocr.device = ocr_device
         self.ocr.batch_size = self.batch_size
         self.ocr.preprocessing = False  # Skip preprocessing for speed
         self.ocr.num_beams = 1  # Use greedy search for speed
+        
+        # Try CUDA for segmentation, but fallback to CPU on cuDNN errors
+        self.segmentation.device = self.device  # Try CUDA first, fallback in segmentation module
         
         # Enable progress tracking
         self.verbose = True

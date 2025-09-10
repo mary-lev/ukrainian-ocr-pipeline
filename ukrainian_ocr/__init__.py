@@ -15,7 +15,7 @@ from .core.batch_processor import BatchProcessor
 # Component imports
 from .core.segmentation import KrakenSegmenter
 from .core.ocr import TrOCRProcessor
-from .core.ner import NERExtractor
+from .core.ner import NERExtractor, Entity, SpacyNERBackend, TransformersNERBackend, OpenAINERBackend, RuleBasedNERBackend
 from .core.enhancement import ALTOEnhancer
 
 # Utility imports
@@ -30,6 +30,7 @@ try:
         setup_complete_colab_environment,
         preload_models,
         install_colab_dependencies,
+        upgrade_ner_to_spacy,
         list_output_files,
         get_processing_results_summary
     )
@@ -47,6 +48,11 @@ __all__ = [
     "KrakenSegmenter",
     "TrOCRProcessor", 
     "NERExtractor",
+    "Entity",
+    "SpacyNERBackend",
+    "TransformersNERBackend", 
+    "OpenAINERBackend",
+    "RuleBasedNERBackend",
     "ALTOEnhancer",
     
     # Utils
@@ -63,6 +69,7 @@ if _colab_available:
         "setup_complete_colab_environment",
         "preload_models",
         "install_colab_dependencies",
+        "upgrade_ner_to_spacy",
         "list_output_files",
         "get_processing_results_summary"
     ])

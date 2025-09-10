@@ -44,7 +44,7 @@ class TrOCRProcessor:
             self.logger.info(f"Using device: {self.device}")
             
             # Load processor and model from HuggingFace
-            self.processor = TrOCRProcessor.from_pretrained(self.model_path)
+            self.processor = TrOCRProcessor.from_pretrained(self.model_path, use_fast=True)
             self.model = VisionEncoderDecoderModel.from_pretrained(self.model_path)
             
             # Move to device and set to eval mode
