@@ -26,15 +26,9 @@ from .utils.models import ModelManager
 try:
     from .utils.colab import (
         download_results, 
-        setup_colab_environment,
-        setup_complete_colab_environment,
-        preload_models,
-        install_colab_dependencies,
-        upgrade_ner_to_spacy,
-        check_pytorch_compatibility,
-        upgrade_transformers,
+        check_gpu,
         list_output_files,
-        get_processing_results_summary
+        get_processing_summary
     )
     _colab_available = True
 except ImportError:
@@ -67,15 +61,9 @@ __all__ = [
 if _colab_available:
     __all__.extend([
         "download_results",
-        "setup_colab_environment",
-        "setup_complete_colab_environment",
-        "preload_models",
-        "install_colab_dependencies",
-        "upgrade_ner_to_spacy",
-        "check_pytorch_compatibility",
-        "upgrade_transformers",
+        "check_gpu",
         "list_output_files",
-        "get_processing_results_summary"
+        "get_processing_summary"
     ])
 
 # Package metadata

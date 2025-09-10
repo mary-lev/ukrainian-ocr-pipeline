@@ -78,7 +78,7 @@ setup(
         "tqdm>=4.60.0",
         "scikit-learn>=1.5.0",
         "torch>=2.0.0",
-        "transformers>=4.36.0",
+        "transformers>=4.56.0",
     ],
     
     # Optional dependencies for different use cases

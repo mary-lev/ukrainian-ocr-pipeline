@@ -30,7 +30,12 @@ class TrOCRProcessor:
     def _load_model(self):
         """Load TrOCR model and processor"""
         try:
-            from transformers import TrOCRProcessor, VisionEncoderDecoderModel, AutoTokenizer
+            # Import with basic error handling
+            try:
+                from transformers import TrOCRProcessor, VisionEncoderDecoderModel, AutoTokenizer
+            except ImportError as ie:
+                self.logger.error(f"Failed to import transformers: {ie}")
+                raise
             
             self.logger.info(f"Loading TrOCR model: {self.model_path}")
             self.logger.info(f"Using device: {self.device}")
