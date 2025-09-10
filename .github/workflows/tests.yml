@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8, 3.9, "3.10", "3.11"]
+        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
     - uses: actions/checkout@v3
@@ -47,7 +47,7 @@ jobs:
     - name: Test import functionality
       run: |
         python -c "import ukrainian_ocr; print('✅ Package imports successfully')"
-        python -c "from ukrainian_ocr import UkrainianOCRPipeline, OCRConfig; print('✅ Main classes import successfully')"
+        python -c "from ukrainian_ocr import UkrainianOCRPipeline; from ukrainian_ocr.core.config import OCRPipelineConfig; print('✅ Main classes import successfully')"
         python -c "from ukrainian_ocr.utils.gpu import check_gpu_availability; gpu_info = check_gpu_availability(); print(f'✅ GPU utils work: {gpu_info[\"cuda_available\"]}')"
 
   test-package-installation:
@@ -70,10 +70,10 @@ jobs:
         # Test basic functionality
         python -c "
         import ukrainian_ocr
-        from ukrainian_ocr import UkrainianOCRPipeline, OCRConfig
+        from ukrainian_ocr import UkrainianOCRPipeline
+        from ukrainian_ocr.core.config import OCRPipelineConfig
         
-        config = OCRConfig()
-        config.update_for_cpu()
+        config = OCRPipelineConfig()
         
         pipeline = UkrainianOCRPipeline(config=config, verbose=False)
         print('✅ Package installation and basic functionality test passed')
@@ -99,15 +99,15 @@ jobs:
         # Simulate Colab notebook workflow
         python -c "
         # Simulate the Colab notebook workflow
-        from ukrainian_ocr.utils.gpu import setup_colab_gpu
+        from ukrainian_ocr.utils.gpu import check_gpu_availability
         
         # Check GPU (will be False in CI)
-        gpu_info = setup_colab_gpu()
+        gpu_info = check_gpu_availability()
         print(f'GPU available: {gpu_info[\"cuda_available\"]}')
         
         # Create config and optimize for Colab
-        from ukrainian_ocr import OCRConfig
-        config = OCRConfig()
+        from ukrainian_ocr.core.config import OCRPipelineConfig
+        config = OCRPipelineConfig()
         config.update_for_colab()
         
         print(f'Device: {config.device}')
@@ -116,7 +116,7 @@ jobs:
         
         # Initialize pipeline
         from ukrainian_ocr import UkrainianOCRPipeline
-        pipeline = UkrainianOCRPipeline(config=config, device='auto', verbose=False)
+        pipeline = UkrainianOCRPipeline(config=config, verbose=False)
         
         print('✅ Colab workflow simulation passed')
         "

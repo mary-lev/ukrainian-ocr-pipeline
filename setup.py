@@ -9,8 +9,8 @@ import sys
 from setuptools import setup, find_packages
 
 # Ensure minimum Python version
-if sys.version_info < (3, 8):
-    sys.exit("Python 3.8+ is required")
+if sys.version_info < (3, 10):
+    sys.exit("Python 3.10+ is required")
 
 # Read README safely
 def read_readme():
@@ -54,10 +54,9 @@ setup(
         "Topic :: Scientific/Engineering :: Image Processing",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Operating System :: OS Independent",
     ],
     
@@ -67,7 +66,7 @@ setup(
     packages=find_packages(exclude=["tests", "tests.*", "examples", "examples.*"]),
     
     # Python version requirement
-    python_requires=">=3.8",
+    python_requires=">=3.10",
     
     # Core dependencies - keep minimal for better compatibility
     install_requires=[
