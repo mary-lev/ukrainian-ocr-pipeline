@@ -31,6 +31,7 @@ try:
         preload_models,
         install_colab_dependencies,
         upgrade_ner_to_spacy,
+        check_pytorch_compatibility,
         list_output_files,
         get_processing_results_summary
     )
@@ -70,6 +71,7 @@ if _colab_available:
         "preload_models",
         "install_colab_dependencies",
         "upgrade_ner_to_spacy",
+        "check_pytorch_compatibility",
         "list_output_files",
         "get_processing_results_summary"
     ])

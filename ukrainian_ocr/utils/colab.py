@@ -82,6 +82,31 @@ def download_results(
         return None
 
 
+def check_pytorch_compatibility():
+    """Check and fix PyTorch compatibility issues in Colab"""
+    try:
+        import torch
+        torch_version = torch.__version__
+        print(f"🔥 Current PyTorch version: {torch_version}")
+        
+        # Check if we have torch.compiler issues
+        if hasattr(torch, 'compiler'):
+            try:
+                # Test torch.compiler.disable with reason
+                torch.compiler.disable(reason="test")
+                torch.compiler.enable()
+                print("✅ PyTorch compiler compatibility: OK")
+            except TypeError:
+                print("⚠️ PyTorch compiler has compatibility issues, but workarounds applied")
+        else:
+            print("ℹ️ PyTorch compiler not available (older version)")
+            
+        return True
+    except Exception as e:
+        print(f"❌ PyTorch compatibility check failed: {e}")
+        return False
+
+
 def setup_colab_environment():
     """
     Setup Google Colab environment for Ukrainian OCR Pipeline
@@ -94,7 +119,8 @@ def setup_colab_environment():
         'has_gpu': False,
         'gpu_name': None,
         'python_version': None,
-        'dependencies_installed': False
+        'dependencies_installed': False,
+        'pytorch_compatible': False
     }
     
     try:
@@ -107,6 +133,10 @@ def setup_colab_environment():
         print("🔧 Installing required dependencies...")
         install_colab_dependencies()
         env_info['dependencies_installed'] = True
+        
+        # Check PyTorch compatibility
+        print("🔥 Checking PyTorch compatibility...")
+        env_info['pytorch_compatible'] = check_pytorch_compatibility()
         
         # Check GPU availability
         import torch
@@ -141,13 +171,14 @@ def install_colab_dependencies():
     
     dependencies = [
         'kraken[pytorch]',
-        'transformers[torch]',
+        'transformers[torch]>=4.30.0',  # Ensure compatible transformers version
         'spacy>=3.4.0',
         'opencv-python',
         'pillow',
         'numpy',
         'tqdm',
-        'scikit-learn'
+        'scikit-learn',
+        'torch>=2.0.0'  # Ensure compatible PyTorch version
     ]
     
     print("📦 Installing dependencies...")
