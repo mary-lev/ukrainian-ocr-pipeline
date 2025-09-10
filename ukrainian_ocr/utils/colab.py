@@ -174,13 +174,25 @@ def install_missing_dependencies():
     
     # Check what's missing and only install those
     missing_packages = []
+    upgrade_packages = []
+    
+    # Check sklearn version compatibility
+    try:
+        import sklearn
+        sklearn_version = sklearn.__version__
+        major, minor = map(int, sklearn_version.split('.')[:2])
+        if major > 1 or (major == 1 and minor >= 5):
+            print(f"⚠️ scikit-learn {sklearn_version} may cause trapezoid import issues")
+            upgrade_packages.append('scikit-learn<1.5.0')
+    except (ImportError, ModuleNotFoundError):
+        missing_packages.append('scikit-learn<1.5.0')
     
     # Check transformers version
     try:
         import transformers
         from transformers import TrOCRProcessor
         print(f"✅ transformers {transformers.__version__} with TrOCRProcessor available")
-    except (ImportError, ModuleNotFoundError):
+    except (ImportError, ModuleNotFoundError, AttributeError):
         missing_packages.append('transformers>=4.36.0')
     
     # Check kraken
@@ -197,13 +209,14 @@ def install_missing_dependencies():
     except (ImportError, ModuleNotFoundError):
         missing_packages.append('spacy>=3.6.0')
     
-    # Install only what's missing
-    if missing_packages:
-        print(f"📦 Installing missing packages: {', '.join(missing_packages)}")
-        for package in missing_packages:
+    # Install/upgrade packages
+    all_packages = missing_packages + upgrade_packages
+    if all_packages:
+        print(f"📦 Installing/upgrading packages: {', '.join(all_packages)}")
+        for package in all_packages:
             try:
                 subprocess.check_call([sys.executable, '-m', 'pip', 'install', package, '--quiet'])
-                print(f"✅ Installed {package}")
+                print(f"✅ Installed/upgraded {package}")
             except subprocess.CalledProcessError as e:
                 print(f"⚠️ Failed to install {package}: {e}")
     else:
